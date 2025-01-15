@@ -5,26 +5,27 @@
 #              Vide video YOUTUBE : https://www.youtube.com/watch?v=H16dZMYmvqo
 #
 # Author:      ylalo
-# Version      1.2
+# Version      1.5
 #
 # Created:     27-11-2024
 # Copyright:   (c) ylalo 2024
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 #import subprocess
-import dash_core_components as dcc
-from dash import Dash, html, Input, Output, callback, dash_table
+import dash
+from dash import Dash, html, Input, Output, callback, dash_table,dcc
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 import dash_cytoscape as cyto
 import os
-import git
+#import git
+#from git import Repo
 import webbrowser
 import base64
-import platform
-import ctypes
-import requests
-from urllib.parse import urlparse
+#import platform
+#from github import Github
+#import shutil
+
 
 adir = os.getcwd()
 afile = adir + '\\js.txt'
@@ -13511,7 +13512,8 @@ aNodes = [{"data":{"id":"32","personneid":32,
 
 
 
-############################################## GITHUB
+
+###############################################GITHUB
 
 dirc = 'C://Users//Public//Downloads'
 os.chdir('C://Users//Public//Downloads')
@@ -13520,13 +13522,10 @@ repo_url = 'https://github.com/kun-dun/kungen.git'
 local_repo_path = 'repo'
 #specific_directory = 'asset\\63'  # Remplacez par le chemin du répertoire spécifique
 target_directory = ''  #'C:\\Users\\Public\\Downloads\\'+ specific_directory
-
+repodir=dirc+'//'+local_repo_path
 # Clone the repository if it doesn't exist
-if not os.path.exists(local_repo_path):
-    repo = git.Repo.clone_from(repo_url, local_repo_path)
-else:
-    repo = git.Repo(local_repo_path)
-    repo.remotes.origin.pull()
+
+
 
 
 # Remplacez 'username' par le nom d'utilisateur GitHub et 'repo_name' par le nom du dépôt
@@ -13541,6 +13540,13 @@ gen = Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP],
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}])
 server = gen.server
+
+######################### LOG
+# Initialize logger
+#logger = setup_logger()
+
+
+###################################
 
 styles = {
     'pre': {
@@ -13596,51 +13602,6 @@ my_stylesheet = [
         }
     }
 ]
-
-def download_github_file(github_url, save_path=None):
-    """
-    Download a file from GitHub and save it locally.
-
-    Args:
-        github_url (str): Raw GitHub URL of the file
-        save_path (str): Local path to save the file. If None, saves in current directory
-    """
-    try:
-        # Convert regular GitHub URL to raw URL if needed
-        if 'raw.githubusercontent.com' not in github_url:
-            github_url = github_url.replace('github.com', 'raw.githubusercontent.com')
-            github_url = github_url.replace('/blob/', '/')
-
-        # Download the file
-        response = requests.get(github_url, stream=True)
-        response.raise_for_status()
-
-        # Get filename from URL if save_path not provided
-        if not save_path:
-            filename = os.path.basename(urlparse(github_url).path)
-            save_path = localdir+filename
-
-        # Save the file
-        with open(save_path, 'wb') as file:
-            for chunk in response.iter_content(chunk_size=8192):
-                if chunk:
-                    file.write(chunk)
-
-        #return f"File successfully downloaded to {save_path}"
-        return save_path
-
-    except requests.exceptions.RequestException as e:
-        return f"Error downloading file: {e}"
-    except IOError as e:
-        return f"Error saving file: {e}"
-
-# Example usage:
-
-localdir = "C:/Users/Public/Downloads/"
-
-
-# Example usage:
-
 def _from_rgb(rgb):
     return "#%02x%02x%02x" % rgb
 
@@ -13653,45 +13614,37 @@ def bimage(image_filename):
 
 gen.layout = dbc.Container([
     dbc.Row([
-        dbc.Col([
-           html.Img(id='imagem-dinamica', src=bimage(aphoto), style={
+        dbc.Col([ html.Img(id='imagem-dinamica', src=bimage(aphoto), style={
             'position': 'absolute',
             'top': '30px',
-            'left': '10px'})
-        ])
-    ]),
-    dbc.Row([
-        dbc.Col(html.H1("GÉNÉALOGIE",
-                        className='text-center fs-1'),width=12)
-    ]),
+            'left': '10px'})])
+           ]),
+    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE",className='text-center fs-1'),width=12)]),
 
-    dbc.Row([
-        dbc.Col(html.H1("(Zoom :Rouler la souris)",
-                        className='text-center fs-6'),  # fs-6 = font size : maior o numero, menor a font
-                width=12)
-    ]),
-    dbc.Row(
-        dbc.Col(html.H1("Cliquer sur la Personne pour voir les Détails",
-                        className='text-center fs-6'),
-                width=12)
-    ),
+    dbc.Row([dbc.Col(html.H1("(Zoom :Rouler la souris)",className='text-center fs-6'),width=12)]),   # fs-6 = font size : maior o numero, menor a font
+    dbc.Row(dbc.Col(html.H1("Cliquer sur la Personne pour voir les Détails",className='text-center fs-6'),width=12) ),
+    dbc.Row([html.H1()]),  #linhas em branco
     dbc.Row([html.H1()]),
     dbc.Row([html.H1()]),
     dbc.Row([html.H1()]),
-    dbc.Row([html.H1()]),
-
-     dbc.Row([
-        dbc.Col(html.Button('Ouvrir', id='submit-func', n_clicks=0),md=1),
-        dbc.Col([dcc.Dropdown(id='my-dpdn', multi=False, placeholder='Choisir un Document',
-                         className='text-center text-primary'),
-        html.Div(id='dd-output-container'),
-        dcc.Store(id='current-node-data')],md=4)]),
-
-
 
     dbc.Row([
-        dbc.Col([ html.Label('Rechercher un Nom', id='lab-rech', n_clicks=0)],width=1),
-        dbc.Col([ html.Div(dcc.Input(id='input-on-rech', type='text'))]),
+        dbc.Col(dcc.Dropdown(id='my-dpdn', multi=False, placeholder='Choisir un Document',className='text-center text-primary'),md=4),
+        dbc.Col(md=1),   #coluna em branco para dar espacejamento
+        dbc.Col( html.Div(dcc.Input(id='input-on-rech', type='text', placeholder='Rechercher um Nom',className='text-center ')),md=4),
+                 html.H1("(Personnes Trouvées en Jaune)",className='text-center fs-6'),
+                 html.Div(id='output-container'),
+
+        # Content display
+        html.Div(id='file-content'),
+        dcc.Store(id='current-node-data')
+            ]),
+
+    dbc.Row([html.H1()]),   #Linha em branco.......
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+
 
     dbc.Row([
         dbc.Col([cyto.Cytoscape(
@@ -13709,11 +13662,11 @@ gen.layout = dbc.Container([
         stylesheet=my_stylesheet,
         elements=aNodes),# Componente para exibir os dados do nó clicado
         html.Div(id='cytoscape-tapNodeData-json')],width=12),
-        dbc.Col([html.Div(id='container-button-func', children='resultat')]
-        ),
-    ])
-    ])
-],fluid= True)
+        dbc.Col([html.Div(id='container-button-func', children='resultat')])
+            ])  ###fim cytoscape
+
+],fluid= True)  #fim container
+
 
 
 ############# CALLBACK SEARCH
@@ -13736,72 +13689,26 @@ def update_search(search_text, stylesheet):
     })
     return stylesheet
 
-######################## CALLBACK DROPDOWN
-@callback(
-    Output('my-dpdn', 'options'),
-    Output('my-dpdn', 'value'),
-    Input('current-node-data', 'data')
-)
-def update_dropdown(data):
-    if data is None:
-        return [], None
-
-    person_dir = "asset/"+str(data['personneid'])+'/'
-
-    os.path.join(adir, person_dir)
-
-    if not os.path.exists(person_dir):
-       return [], None
-    files = os.listdir(adir+'/'+person_dir)
-
-    options = [{'label': f, 'value': os.path.join(person_dir, f)} for f in files]
-    #print(files)
-    return options, None
-
-
-###################  CALLBACK ABRE ARQUIVO DROPDOWN
-@callback(
-    Output('container-button-func', 'children'),
-    Input('submit-func', 'n_clicks'),
-    State('my-dpdn', 'value'),
-    prevent_initial_call=True
-)
-
-def execute_file(n_clicks, file_path):
-
-    end = 'https://github.com/kun-dun/kungen/blob/main/'
-    aurl=end+file_path
-    #savepath = "C:/Users/Public/Downloads/"
-    #basename = os.path.basename(savepath)
-    locfile=download_github_file(aurl, "")
-
-  #  if not file_path:
-   #     return ''
-
-    #system = platform.system()
-    webbrowser.open(locfile)
-
-    return ''
-
 
 
 #######################  CALLBACK PHOTO
-
-@callback(
-    Output('imagem-dinamica', 'src'),
-    [Input('current-node-data', 'data')]
-)
-@callback(
+@gen.callback(
     Output('current-node-data', 'data'),
     [Input('cytoscape-event-callbacks-1', 'tapNodeData')]
 )
 def update_stored_node_data(data):
     return data
+
+@gen.callback(
+    Output('imagem-dinamica', 'src'),
+    [Input('current-node-data', 'data')]
+)
+
 def update_image(data):
     if data is None:
         return bimage(aphoto)
 
-    photo_path = ''#dirc + '//repo//photos//'+data['personneid']+'.jpg' #   f"photos/{data['personneid']}.jpg"
+    photo_path = dirc + '//repo//photos//'+str(data['personneid'])+'.jpg' #   f"photos/{data['personneid']}.jpg"
     #print(photo_path)
     if os.path.exists(photo_path):
         return bimage(photo_path)
@@ -13825,7 +13732,7 @@ def center_on_node(node_data):
 
 
 ######################## CALLBACK INFO PESSOA
-@callback(
+@gen.callback(
     Output('cytoscape-tapNodeData-json', 'children'),
     [Input('current-node-data', 'data')]
 )
@@ -13835,7 +13742,7 @@ def display_tap_node_data(data):
 
 
     details = [
-        f"{data['nom']},{data['prenoms']}",
+        f"{data['nom']},{data['prenoms']},{data['personneid']}",
         f"Né le : {data['naissance']}",
         f"à {data['villenaiss']} {data['paysnaiss']}"
     ]
@@ -13871,10 +13778,39 @@ def display_tap_node_data(data):
             "font-size": "6",
             'line-height': '1',
             "text-max-width": 40
-        }
-    )
+        })
+
+######################## CALLBACK DROPDOWN
+@callback(
+    Output('my-dpdn', 'options'),
+    Output('my-dpdn', 'value'),
+    Input('current-node-data', 'data')
+)
+def update_dropdown(data):
+    if data is None:
+        return [], None
+
+    person_dir = dirc+"//repo//asset/"+str(data['personneid'])
+
+    if not os.path.exists(person_dir):
+       return [], None
+    files = os.listdir(person_dir)
+
+    options = [{'label': f, 'value': os.path.join(person_dir, f)} for f in files]
+
+    #print(files)
+    return options, None
+
+@gen.callback(
+    Output('output-container', 'children'),
+    Input('my-dpdn', 'value')
+)
+def update_output(value):
+    if not value == None:
+        #webbrowser.open(value,new=1,autoraise=True)
+        webbrowser.open_new(value)
+        return ''
 
 if __name__ == '__main__':
-    #ctypes.windll.user32.MessageBoxW(0,"Continuer ?", "Your title", 1)
     webbrowser.open_new(url='http://127.0.0.1:8050')
     gen.run(debug=False)
