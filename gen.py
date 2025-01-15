@@ -11,7 +11,7 @@
 # Copyright:   (c) ylalo 2024
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
-import subprocess
+#import subprocess
 import dash_core_components as dcc
 from dash import Dash, html, Input, Output, callback, dash_table
 from dash.dependencies import Input, Output, State
