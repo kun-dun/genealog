@@ -13522,7 +13522,7 @@ repo_url = 'https://github.com/kun-dun/kungen.git'
 local_repo_path = 'repo'
 #specific_directory = 'asset\\63'  # Remplacez par le chemin du répertoire spécifique
 #target_directory = ''  #'C:\\Users\\Public\\Downloads\\'+ specific_directory
-repodir=dirc+'\'+local_repo_path
+repodir=  'C:\Users\Public\Downloads\repo' #  dirc+'\'+local_repo_path
 # Clone the repository if it doesn't exist
 
 
