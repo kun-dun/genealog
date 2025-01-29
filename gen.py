@@ -13515,14 +13515,14 @@ aNodes = [{"data":{"id":"32","personneid":32,
 
 ###############################################GITHUB
 
-dirc = 'C:\\Users\\Public\\Downloads'
+dirc = 'C:/Users/Public/Downloads'
 os.chdir(dirc)
 # GitHub repository details
-repo_url = 'https:/github.com/kun-dun/kungen.git'
+repo_url = 'https://github.com/kun-dun/kungen.git'
 local_repo_path = 'repo'
 #specific_directory = 'asset\\63'  # Remplacez par le chemin du répertoire spécifique
-target_directory = ''  #'C:\\Users\\Public\\Downloads\\'+ specific_directory
-repodir=dirc+'\\'+local_repo_path
+#target_directory = ''  #'C:\\Users\\Public\\Downloads\\'+ specific_directory
+repodir=dirc+'/'+local_repo_path
 # Clone the repository if it doesn't exist
 
 
