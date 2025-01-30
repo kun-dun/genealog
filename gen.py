@@ -13774,7 +13774,7 @@ def update_dropdown(data):
     filedir ='asset/'+str(data['personneid'])
     person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
     response = requests.get(person_dir)
-
+    files=[]
 # Vérifier si la requête a réussi
     if response.status_code == 200:
     # Parser la réponse JSON
