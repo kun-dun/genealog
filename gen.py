@@ -13779,7 +13779,7 @@ def update_dropdown(data):
     if response.status_code == 200:
     # Parser la réponse JSON
         files = response.json()
-
+    print(files)
     options = [{'label': file['name'], 'value': file['name']} for file in files]
     return options, None
 
