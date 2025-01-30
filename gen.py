@@ -18,13 +18,10 @@ from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 import dash_cytoscape as cyto
 import os
-#import git
-#from git import Repo
+import requests
 import webbrowser
 import base64
-#import platform
-#from github import Github
-#import shutil
+
 
 
 adir = os.getcwd()
@@ -13515,43 +13512,21 @@ aNodes = [{"data":{"id":"32","personneid":32,
 
 ###############################################GITHUB
 
-dirc = 'C:/Users/Public/Downloads'
+#dirc = 'C:/Users/Public/Downloads'
 # Vérifier si le répertoire existe, sinon le créer
-if not os.path.exists(dirc):
-    os.makedirs(dirc)
-
-#os.chdir(dirc)
-# GitHub repository details
-repo_url = 'https://github.com/kun-dun/kungen.git'
-local_repo_path = 'repo'
-#specific_directory = 'asset\\63'  # Remplacez par le chemin du répertoire spécifique
-#target_directory = ''  #'C:\\Users\\Public\\Downloads\\'+ specific_directory
-repodir='C:/Users/Public/Downloads/repo'  #'dirc+'/'+local_repo_path
-# Clone the repository if it doesn't exist
-
-
-
-
-# Remplacez 'username' par le nom d'utilisateur GitHub et 'repo_name' par le nom du dépôt
-username ='kun-dun'
-repo_name = 'kungen'
-
+#if not os.path.exists(dirc):
+#    os.makedirs(dirc)
+local_path = 'C:/Users/Public/Downloads'
+#file_url = 'https://raw.githubusercontent.com/kun-dun/genealog/main'
 
 ##############################################
-
 
 gen = Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP],
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}])
 server = gen.server
 
-######################### LOG
-# Initialize logger
-#logger = setup_logger()
-
-
-###################################
-
+##############################################################################
 styles = {
     'pre': {
         'border': 'thin lightgrey solid',
@@ -13609,7 +13584,24 @@ my_stylesheet = [
 def _from_rgb(rgb):
     return "#%02x%02x%02x" % rgb
 
-aphoto = dirc+'//repo//photos//homme.jpg'
+
+def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx
+    file_url = 'https://raw.githubusercontent.com/kun-dun/genealog/main'+'/'+pdir+'/'+pfile
+    response = requests.get(file_url)
+
+    # Vérifier si la requête a réussi
+    if response.status_code == 200:
+    # Chemin local où enregistrer le fichier JPG
+       file_path = local_path + '/'+pfile #os.path.join(local_path, pfile)
+
+    # Enregistrer le fichier JPG localement
+       with open(file_path, 'wb') as file:
+           file.write(response.content)
+       return file_path
+    else:
+        return ''
+
+aphoto =  getfilegithub('photos','homme.jpg')
 
 def bimage(image_filename):
     with open(image_filename, 'rb') as f:
@@ -13711,8 +13703,9 @@ def update_stored_node_data(data):
 def update_image(data):
     if data is None:
         return bimage(aphoto)
-
-    photo_path = dirc + '//repo//photos//'+str(data['personneid'])+'.jpg' #   f"photos/{data['personneid']}.jpg"
+    apath ='photos'
+    aimg = str(data['personneid'])+'.jpg'
+    photo_path = getfilegithub(apath,aimg ) #dirc + '//repo//photos//'+str(data['personneid'])+'.jpg' #   f"photos/{data['personneid']}.jpg"
     #print(photo_path)
     if os.path.exists(photo_path):
         return bimage(photo_path)
@@ -13793,8 +13786,8 @@ def display_tap_node_data(data):
 def update_dropdown(data):
     if data is None:
         return [], None
-
-    person_dir = dirc+"//repo//asset/"+str(data['personneid'])
+    person_dir = 'asset/'+str(data['personneid'])
+   # person_dir = dirc+"//repo//asset/"+str(data['personneid'])
 
     if not os.path.exists(person_dir):
        return [], None
