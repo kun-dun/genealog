@@ -13601,7 +13601,7 @@ def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx
     else:
         return ''
 
-aphoto =  getfilegithub('photos','homme.jpg')
+#aphoto =  getfilegithub('photos','homme.jpg')
 
 def bimage(image_filename):
     with open(image_filename, 'rb') as f:
@@ -13609,12 +13609,7 @@ def bimage(image_filename):
     return 'data:image/png;base64,' + base64.b64encode(image).decode('utf-8')
 
 gen.layout = dbc.Container([
-    dbc.Row([
-        dbc.Col([ html.Img(id='imagem-dinamica', src=bimage(aphoto), style={
-            'position': 'absolute',
-            'top': '30px',
-            'left': '10px'})])
-           ]),
+
     dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE",className='text-center fs-1'),width=12)]),
 
     dbc.Row([dbc.Col(html.H1("(Zoom :Rouler la souris)",className='text-center fs-6'),width=12)]),   # fs-6 = font size : maior o numero, menor a font
@@ -13687,29 +13682,7 @@ def update_search(search_text, stylesheet):
 
 
 
-#######################  CALLBACK PHOTO
-@gen.callback(
-    Output('current-node-data', 'data'),
-    [Input('cytoscape-event-callbacks-1', 'tapNodeData')]
-)
-def update_stored_node_data(data):
-    return data
 
-@gen.callback(
-    Output('imagem-dinamica', 'src'),
-    [Input('current-node-data', 'data')]
-)
-
-def update_image(data):
-    if data is None:
-        return bimage(aphoto)
-    apath ='photos'
-    aimg = str(data['personneid'])+'.jpg'
-    photo_path = getfilegithub(apath,aimg ) #dirc + '//repo//photos//'+str(data['personneid'])+'.jpg' #   f"photos/{data['personneid']}.jpg"
-    #print(photo_path)
-    if os.path.exists(photo_path):
-        return bimage(photo_path)
-    return bimage(aphoto)
 
 #######################################
 @gen.callback(
@@ -13776,6 +13749,21 @@ def display_tap_node_data(data):
             'line-height': '1',
             "text-max-width": 40
         })
+#######################  CALLBACK PHOTO
+@gen.callback(
+    Output('current-node-data', 'data'),
+    [Input('cytoscape-event-callbacks-1', 'tapNodeData')]
+)
+def update_stored_node_data(data):
+    return data
+
+@gen.callback(
+    Output('imagem-dinamica', 'src'),
+    [Input('current-node-data', 'data')]
+)
+
+
+
 
 ######################## CALLBACK DROPDOWN
 @callback(
