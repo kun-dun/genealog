@@ -13611,7 +13611,7 @@ def bimage(image_filename):
 
 gen.layout = dbc.Container([
 
-    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE",className='text-center fs-1'),width=12)]),
+    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.0",className='text-center fs-1'),width=12)]),
 
     dbc.Row([dbc.Col(html.H1("(Zoom :Rouler la souris)",className='text-center fs-6'),width=12)]),   # fs-6 = font size : maior o numero, menor a font
     dbc.Row(dbc.Col(html.H1("Cliquer sur la Personne pour voir les Détails",className='text-center fs-6'),width=12) ),
