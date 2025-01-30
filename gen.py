@@ -23,6 +23,7 @@ import webbrowser
 import base64
 
 
+filedir = ''
 
 adir = os.getcwd()
 afile = adir + '\\js.txt'
@@ -13681,9 +13682,6 @@ def update_search(search_text, stylesheet):
     return stylesheet
 
 
-
-
-
 #######################################
 @gen.callback(
     Output('cytoscape-event-callbacks-1', 'viewport'),
@@ -13716,6 +13714,8 @@ def display_tap_node_data(data):
         f"Né le : {data['naissance']}",
         f"à {data['villenaiss']} {data['paysnaiss']}"
     ]
+    global fileid
+    fileid = str(data['personneid'])
 
     if data['baptise']:
         details.append(f"Baptisé le {data['baptise']}")
@@ -13762,9 +13762,6 @@ def update_stored_node_data(data):
     [Input('current-node-data', 'data')]
 )
 
-
-
-
 ######################## CALLBACK DROPDOWN
 @callback(
     Output('my-dpdn', 'options'),
@@ -13774,16 +13771,16 @@ def update_stored_node_data(data):
 def update_dropdown(data):
     if data is None:
         return [], None
-    person_dir = 'asset/'+str(data['personneid'])
-   # person_dir = dirc+"//repo//asset/"+str(data['personneid'])
+    filedir ='asset/'+str(data['personneid'])
+    person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
+    response = requests.get(person_dir)
 
-    if not os.path.exists(person_dir):
-       return [], None
-    files = os.listdir(person_dir)
+# Vérifier si la requête a réussi
+    if response.status_code == 200:
+    # Parser la réponse JSON
+        files = response.json()
 
-    options = [{'label': f, 'value': os.path.join(person_dir, f)} for f in files]
-
-    #print(files)
+    options = [{'label': file['name'], 'value': file['name']} for file in files]
     return options, None
 
 @gen.callback(
@@ -13793,7 +13790,8 @@ def update_dropdown(data):
 def update_output(value):
     if not value == None:
         #webbrowser.open(value,new=1,autoraise=True)
-        webbrowser.open_new(value)
+        showfile = 'asset/'+fileid
+        webbrowser.open_new( getfilegithub(showfile,value))
         return ''
 
 if __name__ == '__main__':
