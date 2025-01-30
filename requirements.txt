@@ -1,6 +1,5 @@
-estsdash==2.18.2
+dash==2.18.2
 dash_cytoscape==1.0.2
 dash_bootstrap_components==0.12.0
 gunicorn
-aiohttp==3.9.0b0
 requests
