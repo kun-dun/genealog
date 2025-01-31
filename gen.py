@@ -13775,12 +13775,16 @@ def update_dropdown(data):
     person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
     response = requests.get(person_dir)
     files=[]
+    options = [{'label': 'Pas de Doc!', 'value': ''} ]
+
 # Vérifier si la requête a réussi
+
     if response.status_code == 200:
-    # Parser la réponse JSON
-        files = response.json()
-    print(files)
-    options = [{'label': file['name'], 'value': file['name']} for file in files]
+       files = response.json()
+       if not files==[]:
+          options = [{'label': file['name'], 'value': file['name']} for file in files]
+    else:
+       options = [{'label': 'Erreur Request!', 'value': ''} ]
     return options, None
 
 @gen.callback(
