@@ -13773,7 +13773,11 @@ def update_dropdown(data):
         return [], None
     filedir ='asset/'+str(data['personneid'])
     person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
-    response = requests.get(person_dir)
+    # Token d'accès personnel
+    #access_token = 'votre_token_d_acces'
+    # En-têtes de la requête
+    headers = { 'Accept': 'application/vnd.github.v3+json'}
+    response = requests.get(person_dir, headers=headers)
     files=[]
     options = [{'label': 'Pas de Doc!', 'value': ''} ]
 
