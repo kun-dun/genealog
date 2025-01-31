@@ -13611,7 +13611,7 @@ def bimage(image_filename):
 
 gen.layout = dbc.Container([
 
-    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.0",className='text-center fs-1'),width=12)]),
+    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.1",className='text-center fs-1'),width=12)]),
 
     dbc.Row([dbc.Col(html.H1("(Zoom :Rouler la souris)",className='text-center fs-6'),width=12)]),   # fs-6 = font size : maior o numero, menor a font
     dbc.Row(dbc.Col(html.H1("Cliquer sur la Personne pour voir les Détails",className='text-center fs-6'),width=12) ),
@@ -13774,9 +13774,9 @@ def update_dropdown(data):
     filedir ='asset/'+str(data['personneid'])
     person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
     # Token d'accès personnel
-    #access_token = 'votre_token_d_acces'
+    access_token = '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'
     # En-têtes de la requête
-    headers = { 'Accept': 'application/vnd.github.v3+json'}
+    headers = { 'Accept': 'application/vnd.github.v3+json','Authorization': f'token {access_token}'}
     response = requests.get(person_dir, headers=headers)
     files=[]
     options = [{'label': 'Pas de Doc!', 'value': ''} ]
@@ -13788,7 +13788,7 @@ def update_dropdown(data):
        if not files==[]:
           options = [{'label': file['name'], 'value': file['name']} for file in files]
     else:
-       options = [{'label': 'Erreur Request!', 'value': ''} ]
+       options = [{'label': 'Erreur Request!'+filedir, 'value': ''} ]
     return options, None
 
 @gen.callback(
