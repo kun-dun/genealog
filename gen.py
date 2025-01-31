@@ -13611,7 +13611,7 @@ def bimage(image_filename):
 
 gen.layout = dbc.Container([
 
-    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.1",className='text-center fs-1'),width=12)]),
+    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.0",className='text-center fs-1'),width=12)]),
 
     dbc.Row([dbc.Col(html.H1("(Zoom :Rouler la souris)",className='text-center fs-6'),width=12)]),   # fs-6 = font size : maior o numero, menor a font
     dbc.Row(dbc.Col(html.H1("Cliquer sur la Personne pour voir les Détails",className='text-center fs-6'),width=12) ),
@@ -13772,11 +13772,13 @@ def update_dropdown(data):
     if data is None:
         return [], None
     filedir ='asset/'+str(data['personneid'])
+    filedir ='photos'
     person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
     # Token d'accès personnel
-    access_token = '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'
+    #access_token = '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'
     # En-têtes de la requête
-    headers = { 'Accept': 'application/vnd.github.v3+json','Authorization': f'token {access_token}'}
+    #headers = { 'Accept': 'application/vnd.github.v3+json','Authorization': f'token {access_token}'}
+    headers = { 'Accept': 'application/vnd.github.v3+json'}
     response = requests.get(person_dir, headers=headers)
     files=[]
     options = [{'label': 'Pas de Doc!', 'value': ''} ]
@@ -13804,4 +13806,4 @@ def update_output(value):
 
 if __name__ == '__main__':
     #webbrowser.open_new(url='http://127.0.0.1:8050')
-    gen.run(debug=False)
+    gen.run(debug=True)
