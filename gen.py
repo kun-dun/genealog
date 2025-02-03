@@ -25,7 +25,8 @@ import base64
 
 local_path = 'C:/Users/Public/Downloads'
 
-def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx
+
+def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx  devolve o nome do arquvo
     if pdir =='':
         file_url = 'https://raw.githubusercontent.com/kun-dun/genealog/main'+'/'+pfile
     else:
@@ -35,21 +36,41 @@ def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx
     # Vérifier si la requête a réussi
     if response.status_code == 200:
     # Chemin local où enregistrer le fichier JPG
-       file_path = local_path + '/'+pfile
+       #file_path = local_path + '/'+pfile
 
     # Enregistrer le fichier JPG localement
-       with open(file_path, 'wb') as file:
-           file.write(response.content)
-       return file_path
+      # with open(file_path, 'wb') as file:
+      #     file.write(response.content)
+       return file_url #file_path
     else:
         return ''
-filedir = ''
 
-adir = os.getcwd()
-afile =getfilegithub('','js.txt')
+def gettree(pdir,pfile):     #informar /75/xxxx.xx  devolve o conteudo do arquivo
+    if pdir =='':
+        file_url = 'https://raw.githubusercontent.com/kun-dun/genealog/main'+'/'+pfile
+    else:
+        file_url = 'https://raw.githubusercontent.com/kun-dun/genealog/main'+'/'+pdir+'/'+pfile
+    response = requests.get(file_url)
+    if response.status_code == 200:
+        return response.text  # Retourne le contenu du fichier en tant que texte
+    else:
+        print(f"Erreur lors du téléchargement : {response.status_code}")
+        return None
+
+
+
 aNodes = []
-with open(afile, "r") as meu_json:
-    aNodes = json.load(meu_json)
+adir = os.getcwd()
+afile =gettree('','js.txt')
+# Convertir le contenu en une structure Python
+if afile:
+    try:
+        aNodes = json.loads(afile)  # Convertit le JSON en liste/dictionnaire Python
+
+    except json.JSONDecodeError as e:
+        print("Erreur de décodage JSON :", e)
+else:
+    print("Impossible de charger le fichier.")
 
 ############################################################################
 gen = Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP],
@@ -124,7 +145,7 @@ def bimage(image_filename):
 
 gen.layout = dbc.Container([
     dbc.Row([
-        dbc.Col([ html.Img(id='imagem-dinamica', src=bimage(aphoto), style={
+        dbc.Col([ html.Img(id='imagem-dinamica', src=aphoto, style={
             'position': 'absolute',
             'top': '30px',
             'left': '10px'})])
@@ -294,15 +315,15 @@ def update_stored_node_data(data):
     [Input('current-node-data', 'data')]
 )
 def update_image(data):
-    if data is None:
-        return bimage(aphoto)
+   # if data is None:
+       # return bimage(aphoto)
     apath ='photos'
-    aimg = str(data['personneid'])+'.jpg'
+    aimg = str(fileid)+'.jpg'
     photo_path = getfilegithub(apath,aimg ) #dirc + '//repo//photos//'+str(data['personneid'])+'.jpg' #   f"photos/{data['personneid']}.jpg"
     #print(photo_path)
-    if os.path.exists(photo_path):
-        return bimage(photo_path)
-    return bimage(aphoto)
+  # if os.path.exists(photo_path):
+    return photo_path
+    #return bimage(aphoto)
 
 ######################## CALLBACK DROPDOWN
 @callback(
@@ -317,13 +338,12 @@ def update_dropdown(data):
 
     person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
     # Token d'accès personnel
-    access_token = os.getenv('GITHUB_TOKEN')
+    #access_token = os.getenv('GITHUB_TOKEN')
     # En-têtes de la requête
+
     headers = {
-    'Accept': 'application/vnd.github.v3+json',
-    'Authorization': f'token {access_token}'
-}
-    headers = { 'Accept': 'application/vnd.github.v3+json'}
+    'Accept': 'application/vnd.github.v3+json'}
+
     response = requests.get(person_dir, headers=headers)
     files=[]
     options = [{'label': 'Pas de Doc!', 'value': ''} ]
