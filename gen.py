@@ -3,6 +3,7 @@
 # Purpose:     ARVORE GENEALOGICA COM DASH - FUNCIONANDO
 #              Usadso dashboard.render4.com para expor na WB
 #              Vide video YOUTUBE : https://www.youtube.com/watch?v=H16dZMYmvqo
+#              Usar com dados in github/genealog e RENDER DASHBOARD
 #
 # Author:      ylalo
 # Version      1.6
@@ -21,7 +22,7 @@ import os
 import json
 import requests
 import webbrowser
-import base64
+
 
 local_path = 'C:/Users/Public/Downloads'
 
@@ -133,15 +134,10 @@ my_stylesheet = [
         }
     }
 ]
-def _from_rgb(rgb):
-    return "#%02x%02x%02x" % rgb
+
 
 aphoto =  getfilegithub('photos','homme.jpg')
 
-def bimage(image_filename):
-    with open(image_filename, 'rb') as f:
-        image = f.read()
-    return 'data:image/png;base64,' + base64.b64encode(image).decode('utf-8')
 
 gen.layout = dbc.Container([
     dbc.Row([
@@ -150,7 +146,7 @@ gen.layout = dbc.Container([
             'top': '30px',
             'left': '10px'})])
            ]),
-    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.1",className='text-center fs-1'),width=12)]),
+    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.2",className='text-center fs-1'),width=12)]),
 
     dbc.Row([dbc.Col(html.H1("(Zoom :Rouler la souris)",className='text-center fs-6'),width=12)]),   # fs-6 = font size : maior o numero, menor a font
     dbc.Row(dbc.Col(html.H1("Cliquer sur la Personne pour voir les Détails",className='text-center fs-6'),width=12) ),
@@ -338,13 +334,11 @@ def update_dropdown(data):
 
     person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
     # Token d'accès personnel
-    #access_token = os.getenv('GITHUB_TOKEN')
+   # access_token = os.getenv('GITLALO')
+    #print (access_token)
     # En-têtes de la requête
 
-    headers = {
-    'Accept': 'application/vnd.github.v3+json'}
-
-    response = requests.get(person_dir, headers=headers)
+    response = requests.get(person_dir)
     files=[]
     options = [{'label': 'Pas de Doc!', 'value': ''} ]
 
