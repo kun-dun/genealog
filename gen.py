@@ -364,5 +364,5 @@ def update_output(value):
         return ''
 
 if __name__ == '__main__':
-    webbrowser.open_new(url='http://127.0.0.1:8050')
+   #webbrowser.open_new(url='http://127.0.0.1:8050')
     gen.run(debug=False)
