@@ -6,7 +6,7 @@
 #              Usar com dados in github/genealog e RENDER DASHBOARD
 #
 # Author:      ylalo
-# Version      1.6
+# Version      1.7
 #
 # Created:     27-11-2024
 # Copyright:   (c) ylalo 2024
@@ -23,8 +23,10 @@ import json
 import requests
 import webbrowser
 
+global fileid
+fileid=''
 
-local_path = 'C:/Users/Public/Downloads'
+#local_path = 'C:/Users/Public/Downloads'
 
 
 def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx  devolve o nome do arquvo
@@ -67,7 +69,6 @@ afile =gettree('','js.txt')
 if afile:
     try:
         aNodes = json.loads(afile)  # Convertit le JSON en liste/dictionnaire Python
-
     except json.JSONDecodeError as e:
         print("Erreur de décodage JSON :", e)
 else:
@@ -88,9 +89,7 @@ styles = {
     'cab': {
         "font-size": "6",
         'line-height': '2'
-
     }
-
 }
 
 my_stylesheet = [
@@ -140,12 +139,13 @@ aphoto =  getfilegithub('photos','homme.jpg')
 
 
 gen.layout = dbc.Container([
-    dbc.Row([
+        dbc.Row([
         dbc.Col([ html.Img(id='imagem-dinamica', src=aphoto, style={
             'position': 'absolute',
-            'top': '30px',
+            'top': '10px',
             'left': '10px'})])
            ]),
+
     dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.2",className='text-center fs-1'),width=12)]),
 
     dbc.Row([dbc.Col(html.H1("(Zoom :Rouler la souris)",className='text-center fs-6'),width=12)]),   # fs-6 = font size : maior o numero, menor a font
@@ -154,10 +154,26 @@ gen.layout = dbc.Container([
     dbc.Row([html.H1()]),
     dbc.Row([html.H1()]),
     dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+    dbc.Row([html.H1()]),
+
 
     dbc.Row([
-        dbc.Col(dcc.Dropdown(id='my-dpdn', multi=False, placeholder='Choisir un Document',className='text-center text-primary'),md=4),
-        dbc.Col(md=1),   #coluna em branco para dar espacejamento
+        dbc.Col(md=1),
+        dbc.Col(dcc.Dropdown(id='my-dpdn', multi=False, placeholder='Choisir un Document',className='text-center text-primary'),md=3),
+        #dbc.Col(md=1),   #coluna em branco para dar espacejamento
         dbc.Col( html.Div(dcc.Input(id='input-on-rech', type='text', placeholder='Rechercher um Nom',className='text-center ')),md=4),
                  html.H1("(Personnes Trouvées en Jaune)",className='text-center fs-6'),
                  html.Div(id='output-container'),
@@ -190,8 +206,9 @@ gen.layout = dbc.Container([
         elements=aNodes),# Componente para exibir os dados do nó clicado
         html.Div(id='cytoscape-tapNodeData-json')],width=12),
         dbc.Col([html.Div(id='container-button-func', children='resultat')])
-            ])  ###fim cytoscape
-
+            ]),  ###fim cytoscape
+ # Boîte pour afficher les informations du nœud
+        html.Div(id='node-info-box', style={'position': 'absolute', 'display': 'none'})
 ],fluid= True)  #fim container
 
 
@@ -235,56 +252,66 @@ def center_on_node(node_data):
 
 
 ######################## CALLBACK INFO PESSOA
-@gen.callback(
-    Output('cytoscape-tapNodeData-json', 'children'),
-    [Input('current-node-data', 'data')]
+# Callback pour afficher les informations du nœud sélectionné
+@callback(
+    Output('node-info-box', 'children'),  # Output: box content
+    Output('node-info-box', 'style'),     # Output: box style
+    Input('cytoscape-event-callbacks-1', 'tapNodeData')  # Input: clicked node data
 )
-def display_tap_node_data(data):
-    if data is None:
-        return ''
+def display_node_info(node_data):
+    if node_data:
+        # Construct a more robust info display
 
 
-    details = [
-        f"{data['nom']},{data['prenoms']},{data['personneid']}",
-        f"Né le : {data['naissance']}",
-        f"à {data['villenaiss']} {data['paysnaiss']}"
-    ]
-    global fileid
-    fileid = str(data['personneid'])
+        adeces =f"Décédé le  : {node_data.get('deces', 'N/A')} à {node_data.get('lieudeces', 'N/A')}"
+        ainhume =f"Inhumé le  : {node_data.get('inhume', 'N/A')} "
 
-    if data['baptise']:
-        details.append(f"Baptisé le {data['baptise']}")
+        content = html.Div([
+            html.H4(f"Informations sur la Personne", style={'marginBottom': '5px'}),
 
-    if data['sexe'] == 'F' and data['nomjeunefille']:
-        details.append(data['nomjeunefille'])
 
-    details.extend([
-        f"Marié le : {data['marie']}",
-        f"Profession {data['profession']}"
-    ])
+            html.P(f"ID : {node_data.get('id', 'N/A')}"),
+            html.P(f"Nom : {node_data.get('label', 'N/A')}"),
+            html.P(f"Sexe : {node_data.get('sexe', 'N/A')}"),
+            html.P(f"Né le   {node_data.get('naissance', 'N/A')} à {node_data.get('villenaiss', 'N/A')} - {node_data.get('paysnaiss', 'N/A')}"),
+            html.P(f"Baptise le {node_data.get('baptise', 'N/A')}"),
+            html.P(f"Marié le {node_data.get('marie', 'N/A')}"),
+            html.P(f"Profession {node_data.get('profession', 'N/A')}"),
+            html.P(adeces),
+            html.P(ainhume)],
 
-    if data['deces']:
-        details.append(f"Décédé le {data['deces']}")
+            style={
+            'backgroundColor': '#f9f9f9',
+            'padding': '5px',
+            'borderRadius': '5px'})
 
-    details.append(f"à {data['lieudeces']}")
-
-    if data['inhume']:
-        details.append(f"Inhumé le {data['inhume']}")
-
-    return html.Pre(
-        '\n'.join(details),
-        style={
+        # Update the global fileid
+        global fileid
+        fileid = str(node_data.get('personneid', ''))
+        ax = int(node_data["x"])
+        ay = int(node_data["y"])
+        print('x', str(ax))
+        print('y',str(ay))
+        # Style for positioning the info box
+        style = {
             'position': 'absolute',
-            'border': '1px solid',
-            'top': '25px',
-            'left': '100px',
-            'background-color': '#F57F17',
-            'line-color': 'yellow',
-            "font-size": "6",
-            'line-height': '1',
-            "text-max-width": 40
-        })
+            #'top': str(ay),  # Ajustez la position verticale
+             # 'left': str(ax),  # Ajustez la position horizontale
+            'top': '10px',  # Fixed position near the top
+            'left': '120px',  # Fixed position on the right
+            'width': '340px',
+            'border': '1px solid #ddd',
+            'backgroundColor': 'white',
+            'boxShadow': '0 4px 6px rgba(0,0,0,0.1)',
+            "font-size": "4",
+            'line-height': '0.3',  # Réduire l'interligne ici
+            'zIndex': 1000,
+            'display': 'block'
+        }
+        return content, style
 
+    # If no node is selected, hide the box
+    return None, {'display': 'none'}
 #######################ACESSO GITHUB
 @gen.callback(
     Output('test-output', 'children'),
@@ -298,6 +325,7 @@ def test_github_connection(n_clicks):
         except Exception as e:
             return f"Error: {str(e)}"
     return "Click to test GitHub connection"
+
 #######################  CALLBACK PHOTO
 @gen.callback(
     Output('current-node-data', 'data'),
@@ -364,5 +392,5 @@ def update_output(value):
         return ''
 
 if __name__ == '__main__':
-   #webbrowser.open_new(url='http://127.0.0.1:8050')
+    webbrowser.open_new(url='http://127.0.0.1:8050')
     gen.run(debug=False)
