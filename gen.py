@@ -361,12 +361,13 @@ def update_dropdown(data):
     filedir ='asset/'+str(fileid)
 
     person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
+    headers = {"Authorization": f"token GITHUB_TOKEN"}
     # Token d'accès personnel
    # access_token = os.getenv('GITLALO')
     #print (access_token)
     # En-têtes de la requête
 
-    response = requests.get(person_dir)
+    response = requests.get(person_dir,headers)
     files=[]
     options = [{'label': 'Pas de Doc!', 'value': ''} ]
 
