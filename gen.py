@@ -320,7 +320,7 @@ def display_node_info(node_data):
 def test_github_connection(n_clicks):
     if n_clicks:
         try:
-            response = requests.get('https://api.github.com/repos/kun-dun/genealog/contents/asset', headers=headers)
+            response = requests.get('https://api.github.com/repos/kun-dun/genealog/contents', headers=headers)
             return f"Status Code: {response.status_code}"
         except Exception as e:
             return f"Error: {str(e)}"
