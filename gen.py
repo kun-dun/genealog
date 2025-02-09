@@ -320,7 +320,7 @@ def display_node_info(node_data):
 def test_github_connection(n_clicks):
     if n_clicks:
         try:
-            response = requests.get('https://api.github.com/repos/kun-dun/genealog/contents', headers=headers)
+            response = requests.get('https://api.github.com/repos/kun-dun/genealog/contents/asset', headers=headers)
             return f"Status Code: {response.status_code}"
         except Exception as e:
             return f"Error: {str(e)}"
@@ -360,13 +360,14 @@ def update_dropdown(data):
         #return [], None
     filedir ='asset/'+str(fileid)
 
-    person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents/'+filedir
+    person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents' #'/'+filedir
     headers = {"Authorization": f"token GITHUB_TOKEN"}
+    #print(f"token GITHUB_TOKEN")
     # Token d'accès personnel
    # access_token = os.getenv('GITLALO')
     #print (access_token)
     # En-têtes de la requête
-
+    #response = requests.get(person_dir)
     response = requests.get(person_dir,headers)
     files=[]
     options = [{'label': 'Pas de Doc!', 'value': ''} ]
