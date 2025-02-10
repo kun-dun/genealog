@@ -36,4 +36,7 @@ jobs:
       # Étape 5 : Lancer l'application
       - name: Lancer l'application
         run: |
+         # Récupérer la clé API GitHub depuis les variables d'environnement
+          export GITHUB_API_KEY=$GITTHUB
+          
           python gen.py
