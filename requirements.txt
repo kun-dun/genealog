@@ -2,5 +2,6 @@ dash==2.18.2
 dash_cytoscape==1.0.2
 dash_bootstrap_components==0.12.0
 gunicorn
+github
 requests==2.32.3
 
