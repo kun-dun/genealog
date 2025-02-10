@@ -6,7 +6,7 @@
 #              Usar com dados in github/genealog e RENDER DASHBOARD
 #
 # Author:      ylalo
-# Version      1.7
+# Version      1.8
 #
 # Created:     27-11-2024
 # Copyright:   (c) ylalo 2024
@@ -22,6 +22,8 @@ import os
 import json
 import requests
 import webbrowser
+from github import Github
+from dotenv import load_dotenv
 
 global fileid
 fileid=''
@@ -146,7 +148,7 @@ gen.layout = dbc.Container([
             'left': '10px'})])
            ]),
 
-    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.2",className='text-center fs-1'),width=12)]),
+    dbc.Row([dbc.Col(html.H1("GÉNÉALOGIE V1.8",className='text-center fs-1'),width=12)]),
 
     dbc.Row([dbc.Col(html.H1("(Zoom :Rouler la souris)",className='text-center fs-6'),width=12)]),   # fs-6 = font size : maior o numero, menor a font
     dbc.Row(dbc.Col(html.H1("Cliquer sur la Personne pour voir les Détails",className='text-center fs-6'),width=12) ),
@@ -172,7 +174,7 @@ gen.layout = dbc.Container([
 
     dbc.Row([
         dbc.Col(md=1),
-        dbc.Col(dcc.Dropdown(id='my-dpdn', multi=False, placeholder='Choisir un Document',className='text-center text-primary'),md=3),
+        dbc.Col(dcc.Dropdown(id='my-dpdn',options=[], multi=False, placeholder='Choisir un Document',className='text-center text-primary'),md=3),
         #dbc.Col(md=1),   #coluna em branco para dar espacejamento
         dbc.Col( html.Div(dcc.Input(id='input-on-rech', type='text', placeholder='Rechercher um Nom',className='text-center ')),md=4),
                  html.H1("(Personnes Trouvées en Jaune)",className='text-center fs-6'),
@@ -312,7 +314,7 @@ def display_node_info(node_data):
 
     # If no node is selected, hide the box
     return None, {'display': 'none'}
-#######################ACESSO GITHUB
+####################### ACESSO GITHUB
 @gen.callback(
     Output('test-output', 'children'),
     Input('test-button', 'n_clicks')
@@ -356,31 +358,34 @@ def update_image(data):
     Input('current-node-data', 'data')
 )
 def update_dropdown(data):
-    #if data == None:
-        #return [], None
+    options = []  # Liste vide pour le dropdown
+    value = None  # Aucune valeur sélectionnée
+    if data == None:
+        return [], None
+    if str(fileid) =="":
+        return
     filedir ='asset/'+str(fileid)
+    #Charger les variables d'environnement depuis le fichier .env
+    load_dotenv()
 
-    person_dir = 'https://api.github.com/repos/kun-dun/genealog/contents' #'/'+filedir
-    headers = {"Authorization": f"token GITHUB_TOKEN"}
-    #print(f"token GITHUB_TOKEN")
-    # Token d'accès personnel
-   # access_token = os.getenv('GITLALO')
-    #print (access_token)
-    # En-têtes de la requête
-    #response = requests.get(person_dir)
-    response = requests.get(person_dir,headers)
-    files=[]
-    options = [{'label': 'Pas de Doc!', 'value': ''} ]
+    # Récupérer le token GitHub depuis les variables d'environnement
+    github_token = os.getenv("GIT")
 
-# Vérifier si la requête a réussi
-
-    if response.status_code == 200:
-       files = response.json()
-       if not files==[]:
-          options = [{'label': file['name'], 'value': file['name']} for file in files]
+    if not github_token:
+        raise ValueError("Le token GitHub n'est pas défini dans le fichier .env")
+    g = Github(github_token)  # Remplacez par votre token GitHub
+    # Accéder au dépôt
+    repo = g.get_repo("kun-dun/genealog")  # acces au repositorio
+    contents = repo.get_contents(filedir)  # acces aux sous-repértoires
+    # Liste des fichiers dans le répertoire racine
+    files = [item.name.strip() for item in contents if item.type == "file" and item.name.strip()]
+    # Vérifier si des fichiers ont été trouvés
+    if files:
+       options = [{'label': file, 'value': file} for file in files]
     else:
-       options = [{'label': 'Erreur Request!'+filedir, 'value': ''} ]
-    return options, None
+       error_message = f"Aucun fichier trouvé dans le répertoire : {filedir}"
+    return options, value
+############################################################ POPULA DROPDOWN
 
 @gen.callback(
     Output('output-container', 'children'),
