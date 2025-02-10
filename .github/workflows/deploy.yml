@@ -38,5 +38,7 @@ jobs:
         run: |
          # Récupérer la clé API GitHub depuis les variables d'environnement
           export GITHUB_API_KEY=$GITTHUB
-          
-          python gen.py
+          python gen.py &
+          sleep 10  # Attendre 10 secondes pour vérifier que l'application démarre
+          kill $!   # Arrêter le processus après le test
+         
