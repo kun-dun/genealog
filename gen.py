@@ -6,7 +6,7 @@
 #              Usar com dados in github/genealog e RENDER DASHBOARD
 #
 # Author:      ylalo
-# Version      1.8
+# Version      1.9   (sem GITHUB)
 #
 # Created:     27-11-2024
 # Copyright:   (c) ylalo 2024
@@ -22,8 +22,8 @@ import os
 import json
 import requests
 import webbrowser
-from github import Github
-from dotenv import load_dotenv
+#from github import Github
+#from dotenv import load_dotenv
 
 global fileid
 fileid=''
@@ -292,8 +292,8 @@ def display_node_info(node_data):
         fileid = str(node_data.get('personneid', ''))
         ax = int(node_data["x"])
         ay = int(node_data["y"])
-        print('x', str(ax))
-        print('y',str(ay))
+        #('x', str(ax))
+        #print('y',str(ay))
         # Style for positioning the info box
         style = {
             'position': 'absolute',
@@ -365,23 +365,12 @@ def update_dropdown(data):
     if str(fileid) =="":
         return
     filedir ='asset/'+str(fileid)
-    #Charger les variables d'environnement depuis le fichier .env
-    load_dotenv()
-
-    # Récupérer le token GitHub depuis les variables d'environnement
-    github_token = os.getenv("GIT")
-
-    if not github_token:
-        raise ValueError("Le token GitHub n'est pas défini dans le fichier .env")
-    g = Github(github_token)  # Remplacez par votre token GitHub
-    # Accéder au dépôt
-    repo = g.get_repo("kun-dun/genealog")  # acces au repositorio
-    contents = repo.get_contents(filedir)  # acces aux sous-repértoires
-    # Liste des fichiers dans le répertoire racine
-    files = [item.name.strip() for item in contents if item.type == "file" and item.name.strip()]
+    filepath = gettree(filedir,"index.txt" )
     # Vérifier si des fichiers ont été trouvés
+    files =[]
+    files = json.loads(filepath)  # Convertit le JSON en liste/dictionnaire Python
     if files:
-       options = [{'label': file, 'value': file} for file in files]
+       options = [{'label': file["nom"], 'value': file["nom"]} for file in files]
     else:
        error_message = f"Aucun fichier trouvé dans le répertoire : {filedir}"
     return options, value
