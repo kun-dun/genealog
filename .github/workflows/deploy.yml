@@ -18,7 +18,7 @@ jobs:
       - name: Installer Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.10.1'
 
       # Étape 3 : Installer les dépendances
       - name: Installer les dépendances
@@ -28,9 +28,9 @@ jobs:
 
       # Étape 4 : Configurer les variables d'environnement
       - name: Configurer le token GitHub
-        run: echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+        run: echo "GITHUB_TOKEN=${{ secrets.GITTHUB }}" >> $GITHUB_ENV
 
       # Étape 5 : Lancer l'application
       - name: Lancer l'application
         run: |
-          python app.py
+          python gen.py
