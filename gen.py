@@ -30,7 +30,7 @@ fileid=''
 
 #local_path = 'C:/Users/Public/Downloads'
 
-
+webbrowser.open("https://raw.githubusercontent.com/kun-dun/genealog/main/asset/75/GrandPere_Nadine.jpg")
 def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx  devolve o nome do arquvo
     if pdir =='':
         file_url = 'https://raw.githubusercontent.com/kun-dun/genealog/main'+'/'+pfile
