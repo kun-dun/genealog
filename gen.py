@@ -12,7 +12,7 @@
 # Copyright:   (c) ylalo 2024
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
-#import subprocess
+import subprocess
 import dash
 from dash import Dash, html, Input, Output, callback, dash_table,dcc
 from dash.dependencies import Input, Output, State
@@ -364,12 +364,12 @@ def update_dropdown(data):
         return [], None
     if str(fileid) =="":
         return
-    filedir = '' #'asset/'+str(fileid)
+    filedir = 'asset/'+str(fileid)
     filepath = gettree(filedir,"index.txt" )
     # Vérifier si des fichiers ont été trouvés
     files =[]
     files = json.loads(filepath)  # Convertit le JSON en liste/dictionnaire Python
-    print(files)
+    #print(files)
     if files:
        options = [{'label': file["nom"], 'value': file["nom"]} for file in files]
     else:
@@ -382,13 +382,16 @@ def update_dropdown(data):
     Input('my-dpdn', 'value')
 )
 def update_output(value):
-    if not value == None:
+    if value:
+        showfile = 'asset/'+fileid
+        fileurl = getfilegithub(showfile, value)
+        return html.A("Open File", href=fileurl, target="_blank")
         #webbrowser.open(value,new=1,autoraise=True)
-        showfile = '' #'asset/'+fileid
-        fileurl =getfilegithub(showfile,value)
+        #
+        #fileurl =getfilegithub(showfile,value)
         #print (fileurl)
-        webbrowser.open(fileurl,autoraise=True)
-        return ''
+        #webbrowser.open(fileurl,autoraise=True)
+        #return ''
 
 if __name__ == '__main__':
     webbrowser.open_new(url='http://127.0.0.1:8050')
