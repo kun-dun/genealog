@@ -81,7 +81,7 @@ gen = Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP], assets_folder='
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}])
 server = gen.server
-webbrowser.open("https://raw.githubusercontent.com//kun-dun//genealog//main/asset//75/GrandPere_Nadine.jpg")
+
 ##############################################################################
 styles = {
     'pre': {
@@ -209,7 +209,7 @@ gen.layout = dbc.Container([
         html.Div(id='cytoscape-tapNodeData-json')],width=12),
         dbc.Col([html.Div(id='container-button-func', children='resultat')])
             ]),  ###fim cytoscape
- # Boîte pour afficher les informations du nœud
+        # Boîte pour afficher les informations du nœud
         html.Div(id='node-info-box', style={'position': 'absolute', 'display': 'none'})
 ],fluid= True)  #fim container
 
@@ -346,8 +346,8 @@ def update_image(data):
     apath ='photos'
     aimg = str(fileid)+'.jpg'
     photo_path = getfilegithub(apath,aimg ) #dirc + '//repo//photos//'+str(data['personneid'])+'.jpg' #   f"photos/{data['personneid']}.jpg"
-    #print(photo_path)
-  # if os.path.exists(photo_path):
+   # print(photo_path)
+
     return photo_path
     #return bimage(aphoto)
 
@@ -364,11 +364,12 @@ def update_dropdown(data):
         return [], None
     if str(fileid) =="":
         return
-    filedir ='asset/'+str(fileid)
+    filedir = '' #'asset/'+str(fileid)
     filepath = gettree(filedir,"index.txt" )
     # Vérifier si des fichiers ont été trouvés
     files =[]
     files = json.loads(filepath)  # Convertit le JSON en liste/dictionnaire Python
+    print(files)
     if files:
        options = [{'label': file["nom"], 'value': file["nom"]} for file in files]
     else:
@@ -383,10 +384,12 @@ def update_dropdown(data):
 def update_output(value):
     if not value == None:
         #webbrowser.open(value,new=1,autoraise=True)
-        showfile = 'asset/'+fileid
+        showfile = '' #'asset/'+fileid
         fileurl =getfilegithub(showfile,value)
+        #print (fileurl)
         webbrowser.open(fileurl,autoraise=True)
         return ''
 
 if __name__ == '__main__':
-   gen.run(debug=False)
+    webbrowser.open_new(url='http://127.0.0.1:8050')
+    gen.run(debug=False)
