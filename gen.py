@@ -77,7 +77,7 @@ else:
     print("Impossible de charger le fichier.")
 
 ############################################################################
-gen = Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP],
+gen = Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP],, assets_folder='asset',
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}])
 server = gen.server
