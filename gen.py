@@ -81,7 +81,7 @@ gen = Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP],
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}])
 server = gen.server
-webbrowser.open("https://raw.githubusercontent.com/kun-dun/genealog/main/asset/75/GrandPere_Nadine.jpg")
+webbrowser.open("https://raw.githubusercontent.com//kun-dun//genealog//main/asset//75/GrandPere_Nadine.jpg")
 ##############################################################################
 styles = {
     'pre': {
