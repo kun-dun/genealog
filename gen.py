@@ -27,8 +27,8 @@ import webbrowser
 
 global fileid
 fileid=''
-
-#local_path = 'C:/Users/Public/Downloads'
+adir = os.getcwd()
+local_path = 'C:/Users/Public/Downloads'
 
 
 def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx  devolve o nome do arquvo
@@ -40,6 +40,8 @@ def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx  devolve o nome do arqu
 
     # Vérifier si la requête a réussi
     if response.status_code == 200:
+       with open(pfile, 'wb') as file:
+            file.write(response.content)
        return file_url #file_path
     else:
         return ''
@@ -380,8 +382,9 @@ def update_output(value):
         showfile = 'asset/'+fileid
         fileurl = getfilegithub(showfile, value)
         _, ext = os.path.splitext(fileurl)
-        print (fileurl)
-        webbrowser.open(fileurl,autoraise=True)
+        localfile = adir+'/'+value
+        print (localfile)
+        webbrowser.open(localfile,autoraise=True)  # le localmente
         return ''
 
 if __name__ == '__main__':
