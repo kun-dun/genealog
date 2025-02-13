@@ -40,12 +40,6 @@ def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx  devolve o nome do arqu
 
     # Vérifier si la requête a réussi
     if response.status_code == 200:
-    # Chemin local où enregistrer le fichier JPG
-       #file_path = local_path + '/'+pfile
-
-    # Enregistrer le fichier JPG localement
-      # with open(file_path, 'wb') as file:
-      #     file.write(response.content)
        return file_url #file_path
     else:
         return ''
@@ -176,9 +170,9 @@ gen.layout = dbc.Container([
         dbc.Col(md=1),
         dbc.Col(dcc.Dropdown(id='my-dpdn',options=[], multi=False, placeholder='Choisir un Document',className='text-center text-primary'),md=3),
         #dbc.Col(md=1),   #coluna em branco para dar espacejamento
-        dbc.Col( html.Div(dcc.Input(id='input-on-rech', type='text', placeholder='Rechercher um Nom',className='text-center ')),md=4),
+        dbc.Col(html.Div(id='output-container'), md=7),  # Container for the generated link
+        dbc.Col( html.Div(dcc.Input(id='input-on-rech', type='text', placeholder='Rechercher um Nom',className='text-center ')),md=8),
                  html.H1("(Personnes Trouvées en Jaune)",className='text-center fs-6'),
-                 html.Div(id='output-container'),
 
         # Content display
         html.Div(id='file-content'),
@@ -369,7 +363,7 @@ def update_dropdown(data):
     # Vérifier si des fichiers ont été trouvés
     files =[]
     files = json.loads(filepath)  # Convertit le JSON en liste/dictionnaire Python
-    #print(files)
+    print(files)
     if files:
        options = [{'label': file["nom"], 'value': file["nom"]} for file in files]
     else:
@@ -385,13 +379,10 @@ def update_output(value):
     if value:
         showfile = 'asset/'+fileid
         fileurl = getfilegithub(showfile, value)
-        return html.A("Open File", href=fileurl, target="_blank")
-        #webbrowser.open(value,new=1,autoraise=True)
-        #
-        #fileurl =getfilegithub(showfile,value)
-        #print (fileurl)
-        #webbrowser.open(fileurl,autoraise=True)
-        #return ''
+        _, ext = os.path.splitext(fileurl)
+        print (fileurl)
+        webbrowser.open(fileurl,autoraise=True)
+        return ''
 
 if __name__ == '__main__':
     webbrowser.open_new(url='http://127.0.0.1:8050')
