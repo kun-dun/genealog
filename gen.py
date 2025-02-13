@@ -22,14 +22,31 @@ import os
 import json
 import requests
 import webbrowser
+from docx2txt import process  # For extracting text from DOCX files
 #from github import Github
 #from dotenv import load_dotenv
 
 global fileid
 fileid=''
-adir = os.getcwd()
-local_path = 'C:/Users/Public/Downloads'
+#adir = os.getcwd()
+#local_path = 'C:/Users/Public/Downloads'
 
+
+def download_github_file(pdir,pfile):
+    # Construct the raw GitHub URL
+    raw_url = 'https://raw.githubusercontent.com/kun-dun/genealog/main'+'/'+pdir+'/'+pfile
+
+    # Send a GET request to fetch the file content
+    response = requests.get(raw_url)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Save the file locally
+        with open(pfile, 'wb') as file:
+            file.write(response.content)
+        #print(f"File downloaded successfully and saved to {save_path}")
+    else:
+        print(f"Failed to download file. Status code: {response.status_code}")
 
 def getfilegithub(pdir,pfile):     #informar /75/xxxx.xx  devolve o nome do arquvo
     if pdir =='':
@@ -176,6 +193,7 @@ gen.layout = dbc.Container([
         dbc.Col( html.Div(dcc.Input(id='input-on-rech', type='text', placeholder='Rechercher um Nom',className='text-center ')),md=8),
                  html.H1("(Personnes Trouvées en Jaune)",className='text-center fs-6'),
 
+        #dcc.Download(id="download-file"),  # Add the dcc.Download component
         # Content display
         html.Div(id='file-content'),
         dcc.Store(id='current-node-data')
@@ -348,44 +366,82 @@ def update_image(data):
     #return bimage(aphoto)
 
 ######################## CALLBACK DROPDOWN
+# Callback to populate the dropdown
 @callback(
-    Output('my-dpdn', 'options'),
-    Output('my-dpdn', 'value'),
-    Input('current-node-data', 'data')
+    Output("my-dpdn", "options"),
+    Output("my-dpdn", "value"),
+    Input("current-node-data", "data")
 )
 def update_dropdown(data):
-    options = []  # Liste vide pour le dropdown
-    value = None  # Aucune valeur sélectionnée
-    if data == None:
+    if data is None:
         return [], None
-    if str(fileid) =="":
-        return
     filedir = 'asset/'+str(fileid)
-    filepath = gettree(filedir,"index.txt" )
-    # Vérifier si des fichiers ont été trouvés
-    files =[]
-    files = json.loads(filepath)  # Convertit le JSON en liste/dictionnaire Python
-    print(files)
-    if files:
-       options = [{'label': file["nom"], 'value': file["nom"]} for file in files]
-    else:
-       error_message = f"Aucun fichier trouvé dans le répertoire : {filedir}"
-    return options, value
+    person_dir = f"https://api.github.com/repos/kun-dun/genealog/contents/{filedir}"
+    response = requests.get(person_dir)
+    if response.status_code == 200:
+        files = response.json()
+        if files:
+            options = [{"label": file["name"], "value": file["name"]} for file in files]
+            return options, None
+    return [{"label": "Pas de Doc!", "value": ""}], None
 ############################################################ POPULA DROPDOWN
+
 
 @gen.callback(
     Output('output-container', 'children'),
     Input('my-dpdn', 'value')
 )
+
 def update_output(value):
     if value:
-        showfile = 'asset/'+fileid
+        showfile = 'asset/'+str(fileid)
         fileurl = getfilegithub(showfile, value)
-        _, ext = os.path.splitext(fileurl)
-        localfile = adir+'/'+value
-        print (localfile)
-        webbrowser.open(localfile,autoraise=True)  # le localmente
-        return ''
+        if fileurl:
+            _, ext = os.path.splitext(value.lower())
+            if ext == ".pdf":
+                # Embed the PDF in an iframe
+                return html.Iframe(
+                    src=fileurl,
+                    style={'width': '100%', 'height': '600px', 'border': 'none'}
+                )
+            elif ext == ".docx":
+                # Extract text from the DOCX file and display it
+                response = requests.get(fileurl)
+                if response.status_code == 200:
+                    try:
+                        # Save the DOCX file locally temporarily
+                        temp_file = "temp.docx"
+                        with open(temp_file, "wb") as f:
+                            f.write(response.content)
+                        # Extract text from the DOCX file
+                        docx_text = process(temp_file)
+                        # Remove the temporary file
+                        os.remove(temp_file)
+                        return html.Pre(docx_text, style={'whiteSpace': 'pre-wrap'})
+                    except Exception as e:
+                        return html.Div(f"Error processing DOCX file: {str(e)}", style={'color': 'red'})
+                else:
+                    return html.Div("Error fetching DOCX file.", style={'color': 'red'})
+            elif ext in [".jpg", ".jpeg", ".png", ".gif"]:
+                # Display the image
+                return html.Img(src=fileurl, style={'width': '100%', 'height': 'auto'})
+            elif ext == ".txt":
+                # Fetch and display the text content
+                response = requests.get(fileurl)
+                if response.status_code == 200:
+                    return html.Pre(response.text, style={'whiteSpace': 'pre-wrap'})
+                else:
+                    return html.Div("Error fetching text file.", style={'color': 'red'})
+            else:
+                # For other file types, provide a download link
+                return html.Div([
+                    html.P("File type not supported for preview. Please download it:"),
+                    html.A("Download File", href=fileurl, target="_blank", style={'color': 'blue', 'textDecoration': 'underline'})
+                ])
+        else:
+            return html.Div("File not found or invalid URL.", style={'color': 'red'})
+    return ""
+
 
 if __name__ == '__main__':
     webbrowser.open_new(url='http://127.0.0.1:8050')
