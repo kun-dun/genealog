@@ -1,0 +1,467 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 500px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    
+    <body>
+        <h1 style='
+            text-align: center;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            color: #4CAF50;
+            font-size: 36px;
+        '>Arbre Généalogique Laloë</h1>,
+        <h1 style='
+            text-align: center;
+
+            font-family: Arial, sans-serif;
+            color: #4CAF50;
+            font-size: 16px;
+        '>(Zoom : Rouler la souris)</h1>
+    
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"baptise": "", "color": "lime", "conjoint": 620, "deces": "2022/12/10", "id": 67, "inhume": "", "label": "Patrick LaLo\u00eb", "marie": "", "naissance": "1944/04/16", "nom": "LaLo\u00eb", "paynaiss": "MAROC", "pere": 574, "photo": "photos/67.jpg", "physics": false, "prenoms": "Patrick", "profession": "Visiteur M\u00e9dical", "sexe": "M", "shape": "dot", "villenaiss": "RABAT", "x": 336, "y": 27}, {"baptise": "", "color": "yellow", "conjoint": 67, "deces": "", "id": 620, "inhume": "", "label": "Marie-Jeanne Goichon", "marie": "", "naissance": "1943/06/21", "nom": "Goichon", "paynaiss": "", "pere": 0, "photo": "photos/620.jpg", "physics": false, "prenoms": "Marie-Jeanne", "profession": "Professeur", "sexe": "F", "shape": "dot", "villenaiss": "", "x": 484, "y": 29}, {"baptise": "", "color": "lime", "conjoint": 477, "deces": "", "id": 122, "inhume": "", "label": "Pierre Lalo\u00eb", "marie": "", "naissance": "1971/03/07", "nom": "Lalo\u00eb", "paynaiss": "FRANCE", "pere": 67, "photo": "photos/122.jpg", "physics": false, "prenoms": "Pierre", "profession": "", "sexe": "M", "shape": "dot", "villenaiss": "NANTES", "x": 174, "y": 99}, {"baptise": "", "color": "yellow", "conjoint": 122, "deces": "", "id": 477, "inhume": "", "label": "Oana Calinescu", "marie": "", "naissance": "0000/00/00", "nom": "Calinescu", "paynaiss": "", "pere": 0, "photo": "photos/477.jpg", "physics": false, "prenoms": "Oana", "profession": "", "sexe": "F", "shape": "dot", "villenaiss": "", "x": 312, "y": 99}, {"baptise": "", "color": "pink", "conjoint": 0, "deces": "", "id": 126, "inhume": "", "label": "B\u00e9atrice Lalo\u00eb", "marie": "", "naissance": "1999/09/13", "nom": "Lalo\u00eb", "paynaiss": "FRANCE", "pere": 122, "photo": "photos/126.jpg", "physics": false, "prenoms": "B\u00e9atrice", "profession": "", "sexe": "F", "shape": "dot", "villenaiss": "NANTES", "x": 120, "y": 171}, {"baptise": "", "color": "lime", "conjoint": 0, "deces": "", "id": 125, "inhume": "", "label": "Sebastien Lalo\u00eb", "marie": "", "naissance": "2001/08/29", "nom": "Lalo\u00eb", "paynaiss": "FRANCE", "pere": 122, "photo": "photos/125.jpg", "physics": false, "prenoms": "Sebastien", "profession": "", "sexe": "M", "shape": "dot", "villenaiss": "NANTES", "x": 238, "y": 171}, {"baptise": "", "color": "pink", "conjoint": 713, "deces": "", "id": 123, "inhume": "", "label": "Ariane Lalo\u00eb", "marie": "", "naissance": "1975/05/21", "nom": "Lalo\u00eb", "paynaiss": "FRANCE", "pere": 67, "photo": "photos/123.jpg", "physics": false, "prenoms": "Ariane", "profession": "Pianiste", "sexe": "F", "shape": "dot", "villenaiss": "NANTES", "x": 464, "y": 99}, {"baptise": "", "color": "yellow", "conjoint": 123, "deces": "", "id": 713, "inhume": "", "label": "Christian Kingombe", "marie": "", "naissance": "0000/00/00", "nom": "Kingombe", "paynaiss": "", "pere": 0, "photo": "photos/713.jpg", "physics": false, "prenoms": "Christian", "profession": "", "sexe": "M", "shape": "dot", "villenaiss": "", "x": 601, "y": 99}, {"baptise": "", "color": "pink", "conjoint": 0, "deces": "", "id": 730, "inhume": "", "label": "Mathilde Kingombe", "marie": "", "naissance": "2013/09/17", "nom": "Kingombe", "paynaiss": "", "pere": 713, "photo": "photos/730.jpg", "physics": false, "prenoms": "Mathilde", "profession": "", "sexe": "F", "shape": "dot", "villenaiss": "", "x": 497, "y": 171}, {"baptise": "", "color": "lime", "conjoint": 0, "deces": "", "id": 715, "inhume": "", "label": "Robert Kingombe", "marie": "", "naissance": "2014/12/04", "nom": "Kingombe", "paynaiss": "", "pere": 713, "photo": "photos/715.jpg", "physics": false, "prenoms": "Robert", "profession": "", "sexe": "M", "shape": "dot", "villenaiss": "", "x": 615, "y": 171}]);
+                  edges = new vis.DataSet([{"from": 620, "to": 67}, {"from": 67, "to": 122}, {"from": 477, "to": 122}, {"from": 122, "to": 126}, {"from": 122, "to": 125}, {"from": 67, "to": 123}, {"from": 713, "to": 123}, {"from": 713, "to": 730}, {"from": 713, "to": 715}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+<script type="text/javascript">
+    // Wait for the network to load
+    document.addEventListener("DOMContentLoaded", function() {
+        var container = document.getElementById('mynetwork');
+        var data = {
+            nodes: [{"id": 67, "personneid": 67, "familleid": 1, "pere": 574, "mere": 0, "nom": "LaLo\u00eb", "prenoms": "Patrick", "naissance": "1944/04/16", "profession": "Visiteur M\u00e9dical", "nomjeunefille": "", "deces": "2022/12/10", "lieudeces": "NANTES", "adresse": "26 RUE MELLIER", "ville": "NANTES (44)", "pays": "FRANCE", "villenaiss": "RABAT", "paysnaiss": "MAROC", "baptise": "", "marie": "", "inhume": "", "sexe": "M", "observ": "", "observ1": "", "conjoint": 620, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/67.jpg", "photoextension": ".jpg", "label": "Patrick LaLo\u00eb", "x": 336, "y": 27, "color": "lime", "position": {"x": 336, "y": 27}, "classes": "lime", "locked": "True"}, {"id": 620, "personneid": 620, "familleid": 26, "pere": 0, "mere": 0, "nom": "Goichon", "prenoms": "Marie-Jeanne", "naissance": "1943/06/21", "profession": "Professeur", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "", "ville": "", "pays": "", "villenaiss": "", "paysnaiss": "", "baptise": "", "marie": "", "inhume": "", "sexe": "F", "observ": "", "observ1": "", "conjoint": 67, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/620.jpg", "photoextension": ".jpg", "label": "Marie-Jeanne Goichon", "x": 484, "y": 29, "color": "yellow", "position": {"x": 484, "y": 29}, "classes": "pink", "locked": "True"}, {"id": 122, "personneid": 122, "familleid": 1, "pere": 67, "mere": 0, "nom": "Lalo\u00eb", "prenoms": "Pierre", "naissance": "1971/03/07", "profession": "", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "RUE DE VIARME", "ville": "RENNES", "pays": "FRANCE", "villenaiss": "NANTES", "paysnaiss": "FRANCE", "baptise": "", "marie": "", "inhume": "", "sexe": "M", "observ": "", "observ1": "", "conjoint": 477, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/122.jpg", "photoextension": ".jpg", "label": "Pierre Lalo\u00eb", "x": 174, "y": 99, "color": "lime", "position": {"x": 174, "y": 99}, "classes": "lime", "locked": "True"}, {"id": 477, "personneid": 477, "familleid": 47, "pere": 0, "mere": 0, "nom": "Calinescu", "prenoms": "Oana", "naissance": "0000/00/00", "profession": "", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "", "ville": "", "pays": "", "villenaiss": "", "paysnaiss": "", "baptise": "", "marie": "", "inhume": "", "sexe": "F", "observ": "", "observ1": "", "conjoint": 122, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/477.jpg", "photoextension": ".jpg", "label": "Oana Calinescu", "x": 312, "y": 99, "color": "yellow", "position": {"x": 312, "y": 99}, "classes": "pink", "locked": "True"}, {"id": 126, "personneid": 126, "familleid": 1, "pere": 122, "mere": 0, "nom": "Lalo\u00eb", "prenoms": "B\u00e9atrice", "naissance": "1999/09/13", "profession": "", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "", "ville": "", "pays": "", "villenaiss": "NANTES", "paysnaiss": "FRANCE", "baptise": "", "marie": "", "inhume": "", "sexe": "F", "observ": "", "observ1": "", "conjoint": 0, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/126.jpg", "photoextension": ".jpg", "label": "B\u00e9atrice Lalo\u00eb", "x": 120, "y": 171, "color": "pink", "position": {"x": 120, "y": 171}, "classes": "pink", "locked": "True"}, {"id": 125, "personneid": 125, "familleid": 1, "pere": 122, "mere": 0, "nom": "Lalo\u00eb", "prenoms": "Sebastien", "naissance": "2001/08/29", "profession": "", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "", "ville": "", "pays": "", "villenaiss": "NANTES", "paysnaiss": "FRANCE", "baptise": "", "marie": "", "inhume": "", "sexe": "M", "observ": "", "observ1": "", "conjoint": 0, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/125.jpg", "photoextension": ".jpg", "label": "Sebastien Lalo\u00eb", "x": 238, "y": 171, "color": "lime", "position": {"x": 238, "y": 171}, "classes": "lime", "locked": "True"}, {"id": 123, "personneid": 123, "familleid": 1, "pere": 67, "mere": 0, "nom": "Lalo\u00eb", "prenoms": "Ariane", "naissance": "1975/05/21", "profession": "Pianiste", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "", "ville": "GEN\u00c8VE", "pays": "SUISSE", "villenaiss": "NANTES", "paysnaiss": "FRANCE", "baptise": "", "marie": "", "inhume": "", "sexe": "F", "observ": "", "observ1": "", "conjoint": 713, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/123.jpg", "photoextension": ".jpg", "label": "Ariane Lalo\u00eb", "x": 464, "y": 99, "color": "pink", "position": {"x": 464, "y": 99}, "classes": "pink", "locked": "True"}, {"id": 713, "personneid": 713, "familleid": 4, "pere": 0, "mere": 0, "nom": "Kingombe", "prenoms": "Christian", "naissance": "0000/00/00", "profession": "", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "", "ville": "", "pays": "", "villenaiss": "", "paysnaiss": "", "baptise": "", "marie": "", "inhume": "", "sexe": "M", "observ": "", "observ1": "", "conjoint": 123, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/713.jpg", "photoextension": ".jpg", "label": "Christian Kingombe", "x": 601, "y": 99, "color": "yellow", "position": {"x": 601, "y": 99}, "classes": "lime", "locked": "True"}, {"id": 730, "personneid": 730, "familleid": 4, "pere": 713, "mere": 0, "nom": "Kingombe", "prenoms": "Mathilde", "naissance": "2013/09/17", "profession": "", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "", "ville": "", "pays": "", "villenaiss": "", "paysnaiss": "", "baptise": "", "marie": "", "inhume": "", "sexe": "F", "observ": "", "observ1": "", "conjoint": 0, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/730.jpg", "photoextension": ".jpg", "label": "Mathilde Kingombe", "x": 497, "y": 171, "color": "pink", "position": {"x": 497, "y": 171}, "classes": "pink", "locked": "True"}, {"id": 715, "personneid": 715, "familleid": 4, "pere": 713, "mere": 0, "nom": "Kingombe", "prenoms": "Robert", "naissance": "2014/12/04", "profession": "", "nomjeunefille": "", "deces": "", "lieudeces": "", "adresse": "", "ville": "", "pays": "", "villenaiss": "", "paysnaiss": "", "baptise": "", "marie": "", "inhume": "", "sexe": "M", "observ": "", "observ1": "", "conjoint": 0, "tel1": "", "tel2": "", "tel3": "", "twitter": "", "mail": "", "cep": "", "skype": "", "photo": "photos/715.jpg", "photoextension": ".jpg", "label": "Robert Kingombe", "x": 615, "y": 171, "color": "lime", "position": {"x": 615, "y": 171}, "classes": "lime", "locked": "True"}],
+            edges: [{"from": 620, "to": 67, "color": "black"}, {"from": 67, "to": 620, "color": "black"}, {"from": 67, "to": 122}, {"from": 477, "to": 122, "color": "black"}, {"from": 122, "to": 477, "color": "black"}, {"from": 122, "to": 126}, {"from": 122, "to": 125}, {"from": 67, "to": 123}, {"from": 713, "to": 123, "color": "black"}, {"from": 123, "to": 713, "color": "black"}, {"from": 713, "to": 730}, {"from": 713, "to": 715}]
+        };
+        // Precomputed file options for each node
+        var nodeFileOptions = {"67": "", "620": "", "122": "", "477": "", "126": "", "125": "", "123": "", "713": "", "730": "", "715": ""};
+        // Add fixed positions to nodes
+        data.nodes.forEach(function(node) {
+            node.x = node.x || 0; // Ensure x is defined
+            node.y = node.y || 0; // Ensure y is defined
+            node.fixed = { x: true, y: true }; // Fix the position
+        });
+        var options = {
+            physics: false, // Disable physics to keep nodes at fixed positions
+            nodes: {
+                font: { size: 14 }, // Adjust font size for labels
+                shape: 'box' // Use a box shape for nodes
+            },
+            edges: {
+                color: { // Default edge color (if not specified in JSON)
+                    color: '#000000',
+                    highlight: '#FF0000', // Color when edge is highlighted
+                    hover: '#00FF00'      // Color when edge is hovered
+                },
+                width: 2
+
+            }
+        };
+        var network = new vis.Network(container, data, options);
+        // Create a div for displaying node details
+        var infoBox = document.createElement('div');
+        infoBox.id = 'info-box';
+        infoBox.style.position = 'absolute';
+        infoBox.style.padding = '10px';
+        infoBox.style.backgroundColor = '#f9f9f9';
+        infoBox.style.border = '1px solid #ccc';
+        infoBox.style.width = '250px';
+        infoBox.style.zIndex = '1000';
+        infoBox.style.display = 'none'; // Initially hidden
+        document.body.appendChild(infoBox);
+        // Add event listener for node click
+        network.on("click", function (params) {
+            if (params.nodes.length > 0) {
+                var nodeId = params.nodes[0];
+                var node = data.nodes.find(function(n) { return n.id === nodeId; });
+                // Handle missing images with a fallback
+                var imagePath = node.photo || 'photos/homme.jpg';
+                // Build the info box content dynamically
+                var infoContent = "";
+                infoContent += "<strong>Node ID:</strong> " + nodeId + "<br>";
+                infoContent += "<strong>Nom:</strong> " + node.nom + "<br>";
+                infoContent += "<strong>Prenom:</strong> " + node.prenoms + "<br>";
+                infoContent += "<strong>Né le:</strong> " + node.naissance + "<br>";
+                infoContent += "<strong>à:</strong> " + node.villenaiss + '-' + node.paynaiss + "<br>";
+                infoContent += "<strong>Profession :</strong> " + node.profession + "<br>";
+                // Conditionally add "Décédé le" only if node.deces exists
+                if (node.deces) {
+                    infoContent += "<strong>Décédé le :</strong> " + node.deces + "<br>";
+                }
+                // Conditionally add "Inhumé le" only if node.inhume exists
+                if (node.inhume) {
+                    infoContent += "<strong>Inhumé le :</strong> " + node.inhume + "<br>";
+                }
+                // Conditionally add "à" only if node.lieudeces exists
+                if (node.lieudeces) {
+                    infoContent += "<strong>à :</strong> " + node.lieudeces + "<br>";
+                }
+                // Add the image tag
+                infoContent += "<img id='node-image' src='" + imagePath + "' alt='Image of " + node.nom + "' style='width:100px; margin-top:10px;'>";
+                // Add dropdown menus populated with files from the directory
+                infoContent += "<hr><strong>Choisir un Document:</strong><br>";
+                infoContent += "<select id='file-dropdown' style='margin-bottom: 10px;'>";
+                infoContent += nodeFileOptions[nodeId] || "<option>No files available</option>";
+                infoContent += "</select>";
+                // Update the info box content
+                infoBox.innerHTML = infoContent;
+                // Add event listener to open the selected file
+                var dropdown = document.getElementById('file-dropdown');
+                dropdown.addEventListener('change', function() {
+                    var selectedFile = this.value;
+                    if (selectedFile) {
+                        var filePath = 'asset/' + nodeId + '/' + selectedFile; // Construct the file path
+                        window.open(filePath, '_blank'); // Open the file in a new tab
+                    }
+                });
+                // Position the info box near the clicked node
+                var position = network.getPositions([nodeId])[nodeId];
+                var canvasPosition = network.canvasToDOM({x: position.x, y: position.y});
+                infoBox.style.top = (canvasPosition.y + 50) + 'px'; // Offset below the node
+                infoBox.style.left = (canvasPosition.x + 50) + 'px'; // Offset to the right of the node
+                infoBox.style.display = 'block'; // Show the info box
+            } else {
+                infoBox.style.display = 'none'; // Hide the info box if no node is clicked
+            }
+        });
+    });
+</script>
+</body>
+</html>
