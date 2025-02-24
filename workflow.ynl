@@ -1,0 +1,22 @@
+name: Mon Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v3
+
+      - name: Afficher le secret
+        run: echo "Le mot de passe est ${{ secrets.MON_MOT_DE_PASSE }}"
+
+      - name: Utiliser le secret dans un script Python
+        run: |
+          echo "MOTDEPASSE=${{ secrets.MOTDEPASSE }}" >> $GITHUB_ENV
+          python mon_script.py
