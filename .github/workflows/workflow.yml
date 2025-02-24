@@ -17,4 +17,4 @@ jobs:
       - name: Utiliser le secret dans un script Python
         run: |
           echo "MOT_DE_PASSE=${{ secrets.MOTDEPASSE }}" >> $GITHUB_ENV
-          python mon_script.py
+          python VisGenealogLoc.py
