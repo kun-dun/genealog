@@ -1,5 +1,4 @@
 
-tkinter
 pyvis
 
 gunicorn
