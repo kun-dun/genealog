@@ -106,6 +106,8 @@ custom_js = f"""
 <script type="text/javascript">
     // Wait for the network to load
     document.addEventListener("DOMContentLoaded", function() {{
+         // Récupérer tous les nœuds
+
         var container = document.getElementById('mynetwork');
         var data = {{
             nodes: {nodes_js},
@@ -188,6 +190,12 @@ custom_js = f"""
         infoBox.style.display = 'none'; // Initialement caché
         document.body.appendChild(infoBox);
 
+        // Fonction pour ouvrir Google Maps
+        function openGoogleMaps(location) {{
+            var query = encodeURIComponent(location);
+            window.open('https://www.google.com/maps/search/?api=1&query=' + query, '_blank');
+        }}
+
         // Ajoute un gestionnaire d'événements pour afficher les informations du nœud
         network.on("click", function (params) {{
             if (params.nodes.length > 0) {{
@@ -199,7 +207,19 @@ custom_js = f"""
                 infoContent += "<strong>Nom:</strong> " + node.nom + "<br>";
                 infoContent += "<strong>Prenom:</strong> " + node.prenoms + "<br>";
                 infoContent += "<strong>Né le:</strong> " + node.naissance + "<br>";
-                infoContent += "<strong>à:</strong> " + node.villenaiss + '-' + node.paynaiss + "<br>";
+
+                // Ajouter l'icône de localisation cliquable
+                var locationInfo = "";
+                if (node.villenaiss) {{
+                    var location = node.villenaiss;
+                    if (node.paynaiss) {{
+                        location += ', ' + node.paynaiss;
+                    }}
+                    locationInfo = location + " ";
+                    locationInfo += "<span style='cursor:pointer; color:blue;' title='Voir sur Google Maps'><i class='fa fa-map-marker' aria-hidden='true'></i>📍</span>";
+                }}
+                infoContent += "<strong>à:</strong> " + locationInfo + "<br>";
+
                 infoContent += "<strong>Profession :</strong> " + node.profession + "<br>";
                 if (node.deces) {{
                     infoContent += "<strong>Décédé le :</strong> " + node.deces + "<br>";
@@ -227,6 +247,19 @@ custom_js = f"""
                     infoContent += "<span>No files available</span>";
                 }}
                 infoBox.innerHTML = infoContent;
+
+                // Ajouter l'écouteur d'événements pour l'icône de localisation
+                var mapMarker = infoBox.querySelector('.fa-map-marker');
+                if (mapMarker) {{
+                    mapMarker.addEventListener('click', function() {{
+                        var location = node.villenaiss;
+                        if (node.paynaiss) {{
+                            location += ', ' + node.paynaiss;
+                        }}
+                        openGoogleMaps(location);
+                    }});
+                }}
+
                 var dropdown = document.getElementById('file-dropdown');
                 if (dropdown) {{
                     dropdown.addEventListener('change', function() {{
@@ -250,11 +283,19 @@ custom_js = f"""
 </script>
 """
 
-# Step 9: Modify the HTML file to include the custom JavaScript
+# Step 9: Modify the HTML file to include the custom JavaScript and Font Awesome for icons
 with open(html_file_path, "r") as file:
     html_content = file.read()
 
 # Add a styled title to the page (visible on the page itself)
+html_content = html_content.replace(
+    "<head>",
+    """
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    """
+)
+
 html_content = html_content.replace(
     "<body>",
     """
