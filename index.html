@@ -251,7 +251,7 @@ function highlightFilter(filter) {
             font-family: Arial, sans-serif;
             color: #4CAF50;
             font-size: 36px;
-        '>Arbre Généalogique Laloë(1.0)</h1>
+        '>Arbre Généalogique Laloë(1.2)</h1>
 
         <h1 style='
             text-align: center;
@@ -311,7 +311,7 @@ function highlightFilter(filter) {
                   // adding nodes and edges to the graph
                   data = {nodes: nodes, edges: edges};
 
-                  var options = {"physics": {"enabled": false}, "interaction": {"zoomView": true, "dragView": true, "initialScale": 1.5, "hover": true}, "manipulation": {"enabled": false}, "edges": {"smooth": false}, "layout": {"randomSeed": 42}, "configure": {"enabled": false}};
+                  var options = {"physics": {"enabled": false}, "interaction": {"zoomView": true, "dragView": true, "initialScale": 0.8, "hover": true}, "manipulation": {"enabled": false}, "edges": {"smooth": false}, "layout": {"randomSeed": 42}, "configure": {"enabled": false}};
 
                   
 
@@ -396,7 +396,19 @@ function highlightFilter(filter) {
             }
         };
         var network = new vis.Network(container, data, options);
-        // Create a div for displaying node details
+
+        // Applique le zoom initial et se concentre sur un nœud spécifique au début
+        var nodeIdToFocusOn = 75;  // ID du nœud sur lequel se concentrer
+        var position = network.getPositions([nodeIdToFocusOn])[nodeIdToFocusOn];
+        network.moveTo({
+            position: {
+                x: position.x,
+                y: position.y
+            },
+                scale: 0.7  // Le niveau de zoom initial
+        });
+
+        // Crée une boîte d'information
         var infoBox = document.createElement('div');
         infoBox.id = 'info-box';
         infoBox.style.position = 'absolute';
@@ -405,16 +417,15 @@ function highlightFilter(filter) {
         infoBox.style.border = '1px solid #ccc';
         infoBox.style.width = '250px';
         infoBox.style.zIndex = '1000';
-        infoBox.style.display = 'none'; // Initially hidden
+        infoBox.style.display = 'none'; // Initialement caché
         document.body.appendChild(infoBox);
-        // Add event listener for node click
+
+        // Ajoute un gestionnaire d'événements pour afficher les informations du nœud
         network.on("click", function (params) {
             if (params.nodes.length > 0) {
                 var nodeId = params.nodes[0];
                 var node = data.nodes.find(function(n) { return n.id === nodeId; });
-                // Handle missing images with a fallback
                 var imagePath = node.photo || 'photos/homme.jpg';
-                // Build the info box content dynamically
                 var infoContent = "";
                 infoContent += "<strong>Node ID:</strong> " + nodeId + "<br>";
                 infoContent += "<strong>Nom:</strong> " + node.nom + "<br>";
@@ -422,29 +433,22 @@ function highlightFilter(filter) {
                 infoContent += "<strong>Né le:</strong> " + node.naissance + "<br>";
                 infoContent += "<strong>à:</strong> " + node.villenaiss + '-' + node.paynaiss + "<br>";
                 infoContent += "<strong>Profession :</strong> " + node.profession + "<br>";
-                // Conditionally add "Décédé le" only if node.deces exists
                 if (node.deces) {
                     infoContent += "<strong>Décédé le :</strong> " + node.deces + "<br>";
                 }
-                // Conditionally add "Inhumé le" only if node.inhume exists
                 if (node.inhume) {
                     infoContent += "<strong>Inhumé le :</strong> " + node.inhume + "<br>";
                 }
-                // Conditionally add "à" only if node.lieudeces exists
                 if (node.lieudeces) {
                     infoContent += "<strong>à :</strong> " + node.lieudeces + "<br>";
                 }
-                // Add the image tag
                 infoContent += "<img id='node-image' src='" + imagePath + "' alt='Image of " + node.nom + "' style='width:100px; margin-top:10px;'>";
-                // Add dropdown menus populated with files from the directory
                 infoContent += "<hr><strong>Choisir un Document:</strong><br>";
                 var files = nodeFileOptions[nodeId];
                 if (files && files.length > 0) {
                     if (files.length === 1) {
-                        // If only one file is available, create a direct link
                         infoContent += "<a href='asset/" + nodeId + "/" + files[0] + "' target='_blank'>" + files[0] + "</a>";
                     } else {
-                        // If multiple files are available, create a dropdown
                         infoContent += "<select id='file-dropdown' style='margin-bottom: 10px;'>";
                         files.forEach(function(file) {
                             infoContent += "<option value='" + file + "'>" + file + "</option>";
@@ -454,27 +458,24 @@ function highlightFilter(filter) {
                 } else {
                     infoContent += "<span>No files available</span>";
                 }
-                // Update the info box content
                 infoBox.innerHTML = infoContent;
-                // Add event listener to open the selected file
                 var dropdown = document.getElementById('file-dropdown');
                 if (dropdown) {
                     dropdown.addEventListener('change', function() {
                         var selectedFile = this.value;
                         if (selectedFile) {
-                            var filePath = 'asset/' + nodeId + '/' + selectedFile; // Construct the file path
-                            window.open(filePath, '_blank'); // Open the file in a new tab
+                            var filePath = 'asset/' + nodeId + '/' + selectedFile;
+                            window.open(filePath, '_blank');
                         }
                     });
                 }
-                // Position the info box near the clicked node
                 var position = network.getPositions([nodeId])[nodeId];
                 var canvasPosition = network.canvasToDOM({x: position.x, y: position.y});
-                infoBox.style.top = (canvasPosition.y + 50) + 'px'; // Offset below the node
-                infoBox.style.left = (canvasPosition.x + 50) + 'px'; // Offset to the right of the node
-                infoBox.style.display = 'block'; // Show the info box
+                infoBox.style.top = (canvasPosition.y + 50) + 'px';
+                infoBox.style.left = (canvasPosition.x + 50) + 'px';
+                infoBox.style.display = 'block';
             } else {
-                infoBox.style.display = 'none'; // Hide the info box if no node is clicked
+                infoBox.style.display = 'none';
             }
         });
     });
