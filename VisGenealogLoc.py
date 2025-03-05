@@ -232,7 +232,7 @@ custom_js = f"""
                     infoContent += "<strong>Inhumé le :</strong> " + node.inhume + "<br>";
                 }}
                 if (node.villeinhum) {{
-                    infoContent += "<strong>Ville Inhumation le :</strong> " + node.villeinhum + "<br>";
+                    infoContent += "<strong>Ville Inhumation :</strong> " + node.villeinhum + "<br>";
                 }}
 
                 infoContent += "<img id='node-image' src='" + imagePath + "' alt='Image of " + node.nom + "' style='width:100px; margin-top:10px;'>";
