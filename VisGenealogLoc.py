@@ -224,12 +224,17 @@ custom_js = f"""
                 if (node.deces) {{
                     infoContent += "<strong>Décédé le :</strong> " + node.deces + "<br>";
                 }}
-                if (node.inhume) {{
-                    infoContent += "<strong>Inhumé le :</strong> " + node.inhume + "<br>";
-                }}
                 if (node.lieudeces) {{
                     infoContent += "<strong>à :</strong> " + node.lieudeces + "<br>";
                 }}
+
+                if (node.inhume) {{
+                    infoContent += "<strong>Inhumé le :</strong> " + node.inhume + "<br>";
+                }}
+                if (node.villeinhum) {{
+                    infoContent += "<strong>Ville Inhumation le :</strong> " + node.villeinhum + "<br>";
+                }}
+
                 infoContent += "<img id='node-image' src='" + imagePath + "' alt='Image of " + node.nom + "' style='width:100px; margin-top:10px;'>";
                 infoContent += "<hr><strong>Choisir un Document:</strong><br>";
                 var files = nodeFileOptions[nodeId];
@@ -315,6 +320,10 @@ html_content = html_content.replace(
             color: #4CAF50;
             font-size: 16px;
         '>(Zoom: Rouler la souris)</h1>
+
+
+
+
     """
 )
 
