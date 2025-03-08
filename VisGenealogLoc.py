@@ -214,7 +214,7 @@ custom_js = """
 
             // Filter nodes matching the search term
             var matchingNodes = network.body.data.nodes.get().filter(function(node) {
-                return node.label.toLowerCase().includes(searchTerm);
+                return node.prenoms.toLowerCase().includes(searchTerm);
             });
 
             if (matchingNodes.length > 0) {
@@ -222,7 +222,7 @@ custom_js = """
                 var nodesToUpdate = matchingNodes.map(function(node) {
                     return {
                         id: node.id,
-                        color: "red", // Bright red
+                        color: "lime",
                         borderWidth: 3,
                         borderColor: '#000000'
                     };
@@ -265,6 +265,7 @@ custom_js = """
         nodes.forEach(node => {
             originalColors[node.id] = node.color;
         });
+
 
         // Function to reset colors
         function resetColors() {
@@ -441,7 +442,7 @@ html_content = html_content.replace(
             font-family: Arial, sans-serif;
             color: #4CAF50;
             font-size: 36px;
-        '>Arbre Généalogique Laloë(1.2)</h1>
+        '>Arbre Généalogique Laloë(1.3)</h1>
 
         <h1 style='
             text-align: center;
@@ -458,8 +459,6 @@ html_content = html_content.replace(
             color: #4CAF50;
             font-size: 16px;
         '></h1>
-
-
 
     """
 )
