@@ -260,7 +260,6 @@
 ,{"from":114,"to":225}
 ,{"from":480,"to":225,"color":"black"}
 ,{"from":225,"to":480,"color":"black"}
-,{"from":480,"to":484}
 ,{"from":480,"to":489}
 ,{"from":480,"to":735}
 ,{"from":138,"to":115}

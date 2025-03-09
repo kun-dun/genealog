@@ -172,7 +172,7 @@ custom_js = """
                     highlight: '#FF0000', // Color when edge is highlighted
                     hover: '#00FF00'      // Color when edge is hovered
                 },
-                width: 2
+                width: 0.5
             }
         };
         var network = new vis.Network(container, data, options);
@@ -452,9 +452,25 @@ html_content = html_content.replace(
             font-size: 16px;
         '>(Zoom: Rouler la souris)</h1>
 
+         <h1 style='
+            text-align: center;
+
+            font-family: Arial, sans-serif;
+            color: #4CAF50;
+            font-size: 16px;
+        '>(Pour déplacer tout l'arbre : Cliquer Bouton Gauche,maintenir appuyé et déplacer la souris)'</h1>
+
+         <h1 style='
+            text-align: center;
+
+            font-family: Arial, sans-serif;
+            color: #4CAF50;
+            font-size: 16px;
+        '>(Infos d'une Personne : Cliquer sur la Personne)'</h1>
+
         <h1 style='
             text-align: center;
-            margin-top: 40px;
+
             font-family: Arial, sans-serif;
             color: #4CAF50;
             font-size: 16px;
