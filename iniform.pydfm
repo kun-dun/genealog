@@ -1,0 +1,50 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Arbre G'#233'n'#233'alogique'
+  ClientHeight = 345
+  ClientWidth = 618
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Verdana'
+  Font.Style = []
+  Position = poScreenCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 18
+  object Label1: TLabel
+    Left = 208
+    Top = 8
+    Width = 272
+    Height = 25
+    Caption = 'ARBRE G'#201'N'#201'ALOGIQUE'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ListBox1: TListBox
+    Left = 208
+    Top = 96
+    Width = 225
+    Height = 89
+    ItemHeight = 18
+    Items.Strings = (
+      'Famille Lalo'#235
+      'Famille De Roulet'
+      'Famille Cruchet')
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 208
+    Top = 232
+    Width = 209
+    Height = 25
+    Caption = 'Afficher l'#39'Arbre'
+    TabOrder = 1
+  end
+end
