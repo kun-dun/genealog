@@ -359,7 +359,7 @@ custom_js = """
 
                 infoContent += "<strong>Profession :</strong> " + node.profession + "<br>";
                 if (node.deces) {
-                    infoContent += "<strong>Décédé le :</strong> " + node.deces + "<br>";
+                    infoContent += "<strong>Nous a quitté le :</strong> " + node.deces + "<br>";
                 }
                 if (node.lieudeces) {
                     infoContent += "<strong>à :</strong> " + node.lieudeces + "<br>";
