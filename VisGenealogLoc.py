@@ -2,17 +2,26 @@ from pyvis.network import Network
 import os
 import webbrowser
 import json
-
-import delphivcl
-#V1.3
+import hashlib  # For password hashing
+from flask import Flask, render_template
+#V1.4
 
 ################################################################################
 
 
 ###############################################################################
 
+# Function to generate simple password hash (for demonstration purposes)
+def hash_password(password):
+    return hashlib.sha256(password.encode()).hexdigest()
 
-
+# Sample credentials (in a real app, use a database or secure storage)
+'''
+VALID_CREDENTIALS = {
+    "admin": hash_password("genlaloe"),
+    "genlaloe": hash_password("user123")
+}
+'''
 html_file_path = "index.html"
 # Step 1: Create a Pyvis Network object
 net = Network(notebook=True, cdn_resources='remote', height="500px", width="100%")
@@ -56,12 +65,14 @@ net.show(html_file_path)
 with open('js.txt', 'r', encoding='utf-8') as file:
     nodes = json.load(file)
 
+
 # Step 3: Add nodes from the JSON data
 for node in nodes:
     net.add_node(
         node['id'],
         nom=node['nom'],
         prenoms=node['prenoms'],
+        nomjeunefille=node['nomjeunefille'],
         sexe=node['sexe'],
         label=node['label'],
         naissance=node['naissance'],
@@ -80,7 +91,11 @@ for node in nodes:
         x=node['x'],  # Pass x coordinate
         y=node['y']   # Pass y coordinate
     )
-
+node1 =net.get_node(61)
+node2 =net.get_node(459)
+global nd
+nd = node2["nomjeunefille"]+'-et-'+node1["nomjeunefille"]
+#print(nd)
 # Step 4: Read data from the external JSON file for edges
 with open('jsedges.txt', 'r', encoding='utf-8') as file:
     edges = json.load(file)
@@ -91,6 +106,7 @@ for edge in edges:
 
 # Step 6: Export the network graph to an HTML file
 net.show(html_file_path)
+
 
 # Step 7: Populate dropdown options or direct link with files from a specific directory
 def getfiles(pdir):
@@ -107,7 +123,9 @@ node_file_options = {}
 for node in nodes:
     node_id = str(node['id'])  # Ensure node ID is a string
     node_file_options[node_id] = getfiles(node_id)
-
+def index():
+    p1 = net.get_node(61)
+    return render_template('index.html', p1=p1)
 # Step 8: Inject custom JavaScript into the generated HTML file
 nodes_js = json.dumps(nodes)  # Convert nodes to JSON string
 edges_js = json.dumps(edges)  # Convert edges to JSON string
@@ -120,12 +138,99 @@ edges_js = json.dumps(edges)  # Convert edges to JSON string
 node_file_options_js = json.dumps(node_file_options)  # Convert file options to JSON string
 jscale_str = json.dumps(scale)  # Convert scale to JSON string
 
+# Add login system and authentication handling
+login_js = """
+<script type="text/javascript">
+
+    // Login credentials hash function (simple version for demonstration)
+    var data = {
+            nodes: """ + nodes_js + """,
+            edges: """ + edges_js + """
+        };
+
+
+var container = document.getElementById('mynetwork');
+var nodeFileOptions = """ + node_file_options_js + """;
+//console.log(data.nodes)
+
+var node1
+var node2
+var nd
+
+data.nodes.forEach(function(node) {
+            node.id = node.id;
+            if (node.id === 61){
+              node2 = node};
+            if (node.id ===459){
+              node1 = node};
+
+        });
+nd = node1['nomjeunefille']+'-et-'+node2['nomjeunefille']
+//console.log(nd)
+
+
+
+
+    function hashPassword(password) {
+        // Note: This is a simple hash function for demo purposes only
+        // In production, use more secure methods on the server side
+        var hash = 0;
+        for (var i = 0; i < password.length; i++) {
+            var char = password.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash = hash & hash; // Convert to 32bit integer
+        }
+        return hash;
+    }
+
+    // Valid credentials for demo (in real app, would be stored securely server-side)
+    const validCredentials = {
+        "admin": "genlaloe",
+        "user": "123"
+    };
+
+
+
+    function attemptLogin() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+       // console.log(validCredentials[username])
+     //   if (validCredentials[username] === password) {
+        if (nd === password) {
+            // Hide login form
+            document.getElementById('login-container').style.display = 'none';
+            // Show main content
+            document.getElementById('main-content').style.display = 'block';
+
+            // Initialize the network after successful login
+            initializeNetwork();
+
+            // Store login state in session storage
+            sessionStorage.setItem('authenticated', 'true');
+            return false; // Prevent form submission
+        } else {
+            document.getElementById('login-error').textContent = 'Identifiant ou mot de passe incorrect';
+            document.getElementById('login-error').style.display = 'block';
+            return false; // Prevent form submission
+        }
+    }
+
+    // Check if user is already authenticated when page loads
+    document.addEventListener("DOMContentLoaded", function() {
+        if (sessionStorage.getItem('authenticated') === 'true') {
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+            initializeNetwork();
+        }
+    });
+</script>
+"""
+
 custom_js = """
 <script type="text/javascript">
-    // Wait for the network to load
-    document.addEventListener("DOMContentLoaded", function() {
-         // Récupérer tous les nœuds
-
+    // Function to initialize network and all interactions
+    function initializeNetwork() {
+        // Wait for the network to load
         var container = document.getElementById('mynetwork');
         var data = {
             nodes: """ + nodes_js + """,
@@ -212,9 +317,7 @@ custom_js = """
             };
         });
 
-
-
-      // Improved search function
+        // Improved search function
         function searchNodes() {
             var searchTerm = document.getElementById('node-search-input').value.toLowerCase();
             var searchResults = document.getElementById('search-results');
@@ -422,10 +525,35 @@ custom_js = """
                 resetColors()
             }
         });
-    });
+
+        // Add logout functionality
+        var logoutButton = document.createElement('button');
+        logoutButton.innerHTML = 'Déconnexion';
+        logoutButton.style.position = 'absolute';
+        logoutButton.style.top = '10px';
+        logoutButton.style.right = '10px';
+        logoutButton.style.zIndex = '1000';
+        logoutButton.style.padding = '5px 10px';
+        logoutButton.style.backgroundColor = '#f44336';
+        logoutButton.style.color = 'white';
+        logoutButton.style.border = 'none';
+        logoutButton.style.borderRadius = '4px';
+        logoutButton.style.cursor = 'pointer';
+        document.body.appendChild(logoutButton);
+
+        logoutButton.addEventListener('click', function() {
+            // Clear authentication state
+            sessionStorage.removeItem('authenticated');
+            // Show login form
+            document.getElementById('login-container').style.display = 'flex';
+            // Hide main content
+            document.getElementById('main-content').style.display = 'none';
+            // Clear search and reset nodes
+            resetNodeStyles();
+        });
+    }
 </script>
 """
-
 
 # Step 9: Modify the HTML file to include the custom JavaScript and Font Awesome for icons
 with open(html_file_path, "r") as file:
@@ -437,6 +565,67 @@ html_content = html_content.replace(
     """
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            /* Login form styles */
+            .login-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f9f9f9;
+            }
+            .login-form {
+                background-color: white;
+                padding: 30px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 350px;
+            }
+            .login-form h2 {
+                text-align: center;
+                color: #4CAF50;
+                margin-bottom: 20px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .login-btn {
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            .login-btn:hover {
+                background-color: #45a049;
+            }
+            .login-error {
+                color: red;
+                margin-top: 10px;
+                text-align: center;
+                display: none;
+            }
+            /* Main content initially hidden */
+            #main-content {
+                display: none;
+            }
+        </style>
     """
 )
 
@@ -444,51 +633,66 @@ html_content = html_content.replace(
     "<body>",
     """
     <body>
-        <h1 style='
-            text-align: center;
-            margin-top: 20px;
-            font-family: Arial, sans-serif;
-            color: #4CAF50;
-            font-size: 36px;
-        '>Arbre Généalogique Laloë(1.3)</h1>
+        <!-- Login Container -->
+        <div id="login-container" class="login-container">
+            <div class="login-form">
+                <h2>Arbre Généalogique Laloë (v1.5)</h2>
+                <form onsubmit="return attemptLogin()">
+                    <div class="form-group">
+                        <label for="username">Identifiant:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="login-btn">Connexion</button>
+                    <div id="login-error" class="login-error"></div>
+                </form>
+            </div>
+        </div>
 
-        <h1 style='
-            text-align: center;
-            margin-top: 20px;
-            font-family: Arial, sans-serif;
-            color: #4CAF50;
-            font-size: 16px;
-        '>(Zoom: Rouler la souris)</h1>
+        <!-- Main Content Container (initially hidden) -->
+        <div id="main-content">
+            <h1 style='
+                text-align: center;
+                margin-top: 20px;
+                font-family: Arial, sans-serif;
+                color: #4CAF50;
+                font-size: 36px;
+            '>Arbre Généalogique Laloë (v1.4)</h1>
 
-         <h1 style='
-            text-align: center;
+            <h1 style='
+                text-align: center;
+                margin-top: 20px;
+                font-family: Arial, sans-serif;
+                color: #4CAF50;
+                font-size: 16px;
+            '>(Zoom: Rouler la souris)</h1>
 
-            font-family: Arial, sans-serif;
-            color: #4CAF50;
-            font-size: 16px;
-        '>(Pour déplacer tout l'arbre : Cliquer Bouton Gauche,maintenir appuyé et déplacer la souris)'</h1>
+             <h1 style='
+                text-align: center;
+                font-family: Arial, sans-serif;
+                color: #4CAF50;
+                font-size: 16px;
+            '>(Pour déplacer tout l'arbre : Cliquer Bouton Gauche, maintenir appuyé et déplacer la souris)'</h1>
 
-         <h1 style='
-            text-align: center;
-
-            font-family: Arial, sans-serif;
-            color: #4CAF50;
-            font-size: 16px;
-        '>(Infos d'une Personne : Cliquer sur la Personne)'</h1>
-
-        <h1 style='
-            text-align: center;
-
-            font-family: Arial, sans-serif;
-            color: #4CAF50;
-            font-size: 16px;
-        '></h1>
+             <h1 style='
+                text-align: center;
+                font-family: Arial, sans-serif;
+                color: #4CAF50;
+                font-size: 16px;
+            '>(Infos d'une Personne : Cliquer sur la Personne)'</h1>
 
     """
 )
+html_content_with_variable = html_content.replace(
+    "</body>",
+    f"<script>console.log('{nd}');</script></body>"
+)
 
-# Inject the custom JavaScript before the closing </body> tag
-html_content = html_content.replace("</body>", custom_js + "</body>")
+# Inject the login JavaScript first, then the main network code, before the closing </body> tag
+html_content = html_content.replace("</body>", login_js + custom_js + "</body>")
 
 # Write the modified HTML content back to the file
 with open(html_file_path, "w") as file:
