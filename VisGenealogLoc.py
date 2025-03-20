@@ -660,11 +660,18 @@ html_content = html_content.replace(
                 font-family: Arial, sans-serif;
                 color: #4CAF50;
                 font-size: 36px;
-            '>Arbre Généalogique Laloë (v1.4)</h1>
+            '>Arbre Généalogique Laloë (v1.5)</h1>
+            <h1 style='
+                text-align: center;
+                //margin-top: 20px;
+                font-family: Arial, sans-serif;
+                color: #4CAF50;
+                font-size: 10px;
+            '>(Original Minh Duc)</h1>
 
             <h1 style='
                 text-align: center;
-                margin-top: 20px;
+              // margin-top: 20px;
                 font-family: Arial, sans-serif;
                 color: #4CAF50;
                 font-size: 16px;
