@@ -693,10 +693,7 @@ html_content = html_content.replace(
 
     """
 )
-html_content_with_variable = html_content.replace(
-    "</body>",
-    f"<script>console.log('{nd}');</script></body>"
-)
+
 
 # Inject the login JavaScript first, then the main network code, before the closing </body> tag
 html_content = html_content.replace("</body>", login_js + custom_js + "</body>")
