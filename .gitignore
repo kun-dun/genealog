@@ -5,3 +5,6 @@ jsedges.txt
 index.html
 github.bat
 dockerfile
+
+# Local Netlify folder
+.netlify
