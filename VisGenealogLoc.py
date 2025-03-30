@@ -62,7 +62,7 @@ net.set_options(options)
 net.show(html_file_path)
 
 # Step 2: Read data from the external JSON file for nodes
-with open('js.txt', 'r', encoding='utf-8') as file:
+with open('js.json', 'r', encoding='utf-8') as file:
     nodes = json.load(file)
 
 
@@ -97,7 +97,7 @@ global nd
 nd = node2["nomjeunefille"]+'-et-'+node1["nomjeunefille"]
 #print(nd)
 # Step 4: Read data from the external JSON file for edges
-with open('jsedges.txt', 'r', encoding='utf-8') as file:
+with open('jsedges.json', 'r', encoding='utf-8') as file:
     edges = json.load(file)
 
 # Step 5: Add edges between nodes
@@ -110,7 +110,7 @@ net.show(html_file_path)
 
 # Step 7: Populate dropdown options or direct link with files from a specific directory
 def getfiles(pdir):
-    directory_path = f"asset/{pdir}"  # Specify the directory containing the files
+    directory_path = f"assets/{pdir}"  # Specify the directory containing the files
     file_options = []
     if os.path.exists(directory_path):
         for file_name in os.listdir(directory_path):
@@ -443,7 +443,7 @@ custom_js = """
             if (params.nodes.length > 0) {
                 var nodeId = params.nodes[0];
                 var node = data.nodes.find(function(n) { return n.id === nodeId; });
-                var imagePath = node.photo || 'photos/homme.jpg';
+                var imagePath = node.photo || 'photo/homme.jpg';
                 var infoContent = "";
                 infoContent += "<strong>Node ID:</strong> " + nodeId + "<br>";
                 infoContent += "<strong>Nom:</strong> " + node.nom + "<br>";
@@ -482,7 +482,7 @@ custom_js = """
                 var files = nodeFileOptions[nodeId];
                 if (files && files.length > 0) {
                     if (files.length === 1) {
-                        infoContent += "<a href='asset/" + nodeId + "/" + files[0] + "' target='_blank'>" + files[0] + "</a>";
+                        infoContent += "<a href='assets/" + nodeId + "/" + files[0] + "' target='_blank'>" + files[0] + "</a>";
                     } else {
                         infoContent += "<select id='file-dropdown' style='margin-bottom: 10px;'>";
                         files.forEach(function(file) {
@@ -495,7 +495,7 @@ custom_js = """
                 }
                 infoBox.innerHTML = infoContent;
 
-                // Ajouter lécouteur dévénements pour licône de localisation
+                // Ajouter l écouteur dévénements pour licône de localisation
                 var mapMarker = infoBox.querySelector('.fa-map-marker');
                 if (mapMarker) {
                     mapMarker.addEventListener('click', function() {
@@ -512,7 +512,7 @@ custom_js = """
                     dropdown.addEventListener('change', function() {
                         var selectedFile = this.value;
                         if (selectedFile) {
-                            var filePath = 'asset/' + nodeId + '/' + selectedFile;
+                            var filePath = 'assets/' + nodeId + '/' + selectedFile;
                             window.open(filePath, '_blank');
                         }
                     });

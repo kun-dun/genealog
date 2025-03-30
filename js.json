@@ -27,7 +27,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/32.jpg",
+"skype":"","photo":"photo/32.jpg",
 "photoextension":""
 ,"label":"Robert La Loé","x":8669,"y":126,"color":"skyblue","position":{"x":8669,"y":126},"classes":"lime","locked":"True"},
 {"id":693,"personneid":693,
@@ -59,7 +59,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/693.jpg",
+"skype":"","photo":"photo/693.jpg",
 "photoextension":""
 ,"label":"?? La Loë","x":8176,"y":198,"color":"skyblue","position":{"x":8176,"y":198},"classes":"lime","locked":"True"},
 {"id":151,"personneid":151,
@@ -91,7 +91,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/151.jpg",
+"skype":"","photo":"photo/151.jpg",
 "photoextension":""
 ,"label":"Jacques La Loë","x":8124,"y":270,"color":"skyblue","position":{"x":8124,"y":270},"classes":"lime","locked":"True"},
 {"id":4,"personneid":4,
@@ -123,7 +123,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/4.jpg",
+"skype":"","photo":"photo/4.jpg",
 "photoextension":""
 ,"label":"Marguerite ???","x":8241,"y":270,"color":"yellow","position":{"x":8241,"y":270},"classes":"pink","locked":"True"},
 {"id":280,"personneid":280,
@@ -155,7 +155,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/280.jpg",
+"skype":"","photo":"photo/280.jpg",
 "photoextension":""
 ,"label":"Gulette La Loë","x":8124,"y":342,"color":"pink","position":{"x":8124,"y":342},"classes":"pink","locked":"True"},
 {"id":694,"personneid":694,
@@ -187,7 +187,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/694.jpg",
+"skype":"","photo":"photo/694.jpg",
 "photoextension":""
 ,"label":"?? La Loë","x":8401,"y":198,"color":"skyblue","position":{"x":8401,"y":198},"classes":"lime","locked":"True"},
 {"id":281,"personneid":281,
@@ -219,7 +219,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/281.jpg",
+"skype":"","photo":"photo/281.jpg",
 "photoextension":""
 ,"label":"Guillaume La Loë","x":8401,"y":270,"color":"skyblue","position":{"x":8401,"y":270},"classes":"lime","locked":"True"},
 {"id":695,"personneid":695,
@@ -251,7 +251,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/695.jpg",
+"skype":"","photo":"photo/695.jpg",
 "photoextension":""
 ,"label":"Françoise La Loë","x":8542,"y":198,"color":"pink","position":{"x":8542,"y":198},"classes":"pink","locked":"True"},
 {"id":155,"personneid":155,
@@ -283,7 +283,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/155.jpg",
+"skype":"","photo":"photo/155.jpg",
 "photoextension":""
 ,"label":"Jeanne La Loë","x":8972,"y":193,"color":"pink","position":{"x":8972,"y":193},"classes":"pink","locked":"True"},
 {"id":287,"personneid":287,
@@ -315,7 +315,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/287.jpg",
+"skype":"","photo":"photo/287.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":9265,"y":200,"color":"skyblue","position":{"x":9265,"y":200},"classes":"lime","locked":"True"},
 {"id":283,"personneid":283,
@@ -347,7 +347,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/283.jpg",
+"skype":"","photo":"photo/283.jpg",
 "photoextension":""
 ,"label":"????? La Loé","x":9265,"y":272,"color":"skyblue","position":{"x":9265,"y":272},"classes":"lime","locked":"True"},
 {"id":284,"personneid":284,
@@ -379,7 +379,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/284.jpg",
+"skype":"","photo":"photo/284.jpg",
 "photoextension":""
 ,"label":"Nicolas La Loé","x":9213,"y":344,"color":"skyblue","position":{"x":9213,"y":344},"classes":"lime","locked":"True"},
 {"id":671,"personneid":671,
@@ -411,7 +411,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/671.jpg",
+"skype":"","photo":"photo/671.jpg",
 "photoextension":""
 ,"label":"Jacqueline ???","x":9330,"y":344,"color":"yellow","position":{"x":9330,"y":344},"classes":"pink","locked":"True"},
 {"id":285,"personneid":285,
@@ -443,7 +443,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/285.jpg",
+"skype":"","photo":"photo/285.jpg",
 "photoextension":""
 ,"label":"Bernard La Loé","x":9093,"y":416,"color":"skyblue","position":{"x":9093,"y":416},"classes":"lime","locked":"True"},
 {"id":286,"personneid":286,
@@ -475,7 +475,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/286.jpg",
+"skype":"","photo":"photo/286.jpg",
 "photoextension":""
 ,"label":"Pierre La Loé","x":9213,"y":416,"color":"skyblue","position":{"x":9213,"y":416},"classes":"lime","locked":"True"},
 {"id":300,"personneid":300,
@@ -507,7 +507,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/300.jpg",
+"skype":"","photo":"photo/300.jpg",
 "photoextension":""
 ,"label":"Guillaume La Loé","x":9333,"y":416,"color":"skyblue","position":{"x":9333,"y":416},"classes":"lime","locked":"True"},
 {"id":35,"personneid":35,
@@ -539,7 +539,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/35.jpg",
+"skype":"","photo":"photo/35.jpg",
 "photoextension":""
 ,"label":"Jacques La Loé","x":8666,"y":198,"color":"skyblue","position":{"x":8666,"y":198},"classes":"lime","locked":"True"},
 {"id":7,"personneid":7,
@@ -571,7 +571,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/7.jpg",
+"skype":"","photo":"photo/7.jpg",
 "photoextension":""
 ,"label":"Jaqueline ???","x":8784,"y":198,"color":"yellow","position":{"x":8784,"y":198},"classes":"pink","locked":"True"},
 {"id":37,"personneid":37,
@@ -603,7 +603,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/37.jpg",
+"skype":"","photo":"photo/37.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":8666,"y":265,"color":"skyblue","position":{"x":8666,"y":265},"classes":"lime","locked":"True"},
 {"id":1,"personneid":1,
@@ -635,7 +635,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/1.jpg",
+"skype":"","photo":"photo/1.jpg",
 "photoextension":""
 ,"label":"Jeanne-Irma ???","x":8784,"y":265,"color":"yellow","position":{"x":8784,"y":265},"classes":"pink","locked":"True"},
 {"id":834,"personneid":834,
@@ -667,7 +667,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/834.jpg",
+"skype":"","photo":"photo/834.jpg",
 "photoextension":""
 ,"label":"François Laloë","x":8546,"y":337,"color":"skyblue","position":{"x":8546,"y":337},"classes":"lime","locked":"True"},
 {"id":39,"personneid":39,
@@ -699,7 +699,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/39.jpg",
+"skype":"","photo":"photo/39.jpg",
 "photoextension":""
 ,"label":"Richard La Loé","x":8666,"y":337,"color":"skyblue","position":{"x":8666,"y":337},"classes":"lime","locked":"True"},
 {"id":2,"personneid":2,
@@ -731,7 +731,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/2.jpg",
+"skype":"","photo":"photo/2.jpg",
 "photoextension":""
 ,"label":"Mathurine ???","x":8784,"y":337,"color":"yellow","position":{"x":8784,"y":337},"classes":"pink","locked":"True"},
 {"id":79,"personneid":79,
@@ -763,7 +763,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/79.jpg",
+"skype":"","photo":"photo/79.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":6312,"y":411,"color":"skyblue","position":{"x":6312,"y":411},"classes":"lime","locked":"True"},
 {"id":8,"personneid":8,
@@ -795,7 +795,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/8.jpg",
+"skype":"","photo":"photo/8.jpg",
 "photoextension":""
 ,"label":"Blanche ???","x":6429,"y":411,"color":"yellow","position":{"x":6429,"y":411},"classes":"pink","locked":"True"},
 {"id":301,"personneid":301,
@@ -827,7 +827,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/301.jpg",
+"skype":"","photo":"photo/301.jpg",
 "photoextension":""
 ,"label":"Jacques La Loé","x":6104,"y":483,"color":"skyblue","position":{"x":6104,"y":483},"classes":"lime","locked":"True"},
 {"id":178,"personneid":178,
@@ -859,7 +859,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/178.jpg",
+"skype":"","photo":"photo/178.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":6224,"y":483,"color":"skyblue","position":{"x":6224,"y":483},"classes":"lime","locked":"True"},
 {"id":302,"personneid":302,
@@ -891,7 +891,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/302.jpg",
+"skype":"","photo":"photo/302.jpg",
 "photoextension":""
 ,"label":"Jacques La Loé","x":6344,"y":483,"color":"skyblue","position":{"x":6344,"y":483},"classes":"lime","locked":"True"},
 {"id":179,"personneid":179,
@@ -923,7 +923,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/179.jpg",
+"skype":"","photo":"photo/179.jpg",
 "photoextension":""
 ,"label":"Charlotte La Loé","x":6453,"y":483,"color":"pink","position":{"x":6453,"y":483},"classes":"pink","locked":"True"},
 {"id":236,"personneid":236,
@@ -955,7 +955,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/236.jpg",
+"skype":"","photo":"photo/236.jpg",
 "photoextension":""
 ,"label":"Bernard La Loé","x":5975,"y":483,"color":"skyblue","position":{"x":5975,"y":483},"classes":"lime","locked":"True"},
 {"id":181,"personneid":181,
@@ -987,7 +987,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/181.jpg",
+"skype":"","photo":"photo/181.jpg",
 "photoextension":""
 ,"label":"Guillaume La Loé","x":5855,"y":555,"color":"skyblue","position":{"x":5855,"y":555},"classes":"lime","locked":"True"},
 {"id":237,"personneid":237,
@@ -1019,7 +1019,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/237.jpg",
+"skype":"","photo":"photo/237.jpg",
 "photoextension":""
 ,"label":"Louis La Loé","x":5975,"y":555,"color":"skyblue","position":{"x":5975,"y":555},"classes":"lime","locked":"True"},
 {"id":619,"personneid":619,
@@ -1051,7 +1051,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/619.jpg",
+"skype":"","photo":"photo/619.jpg",
 "photoextension":""
 ,"label":"Marie Gosselin","x":6093,"y":555,"color":"yellow","position":{"x":6093,"y":555},"classes":"pink","locked":"True"},
 {"id":239,"personneid":239,
@@ -1083,7 +1083,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/239.jpg",
+"skype":"","photo":"photo/239.jpg",
 "photoextension":""
 ,"label":"Joseph La Loé","x":5855,"y":627,"color":"skyblue","position":{"x":5855,"y":627},"classes":"lime","locked":"True"},
 {"id":240,"personneid":240,
@@ -1115,7 +1115,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/240.jpg",
+"skype":"","photo":"photo/240.jpg",
 "photoextension":""
 ,"label":"Bernard La Loé","x":5975,"y":627,"color":"skyblue","position":{"x":5975,"y":627},"classes":"lime","locked":"True"},
 {"id":390,"personneid":390,
@@ -1147,7 +1147,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/390.jpg",
+"skype":"","photo":"photo/390.jpg",
 "photoextension":""
 ,"label":"Jeanne Obey","x":6093,"y":627,"color":"yellow","position":{"x":6093,"y":627},"classes":"pink","locked":"True"},
 {"id":241,"personneid":241,
@@ -1179,7 +1179,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/241.jpg",
+"skype":"","photo":"photo/241.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":5922,"y":699,"color":"skyblue","position":{"x":5922,"y":699},"classes":"lime","locked":"True"},
 {"id":243,"personneid":243,
@@ -1211,7 +1211,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/243.jpg",
+"skype":"","photo":"photo/243.jpg",
 "photoextension":""
 ,"label":"Louis La Loé","x":5802,"y":771,"color":"skyblue","position":{"x":5802,"y":771},"classes":"lime","locked":"True"},
 {"id":244,"personneid":244,
@@ -1243,7 +1243,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/244.jpg",
+"skype":"","photo":"photo/244.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":5922,"y":771,"color":"skyblue","position":{"x":5922,"y":771},"classes":"lime","locked":"True"},
 {"id":246,"personneid":246,
@@ -1275,7 +1275,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/246.jpg",
+"skype":"","photo":"photo/246.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":5922,"y":843,"color":"skyblue","position":{"x":5922,"y":843},"classes":"lime","locked":"True"},
 {"id":245,"personneid":245,
@@ -1307,7 +1307,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/245.jpg",
+"skype":"","photo":"photo/245.jpg",
 "photoextension":""
 ,"label":"Marie La Loé","x":6042,"y":771,"color":"pink","position":{"x":6042,"y":771},"classes":"pink","locked":"True"},
 {"id":242,"personneid":242,
@@ -1339,7 +1339,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/242.jpg",
+"skype":"","photo":"photo/242.jpg",
 "photoextension":""
 ,"label":"Thomas La Loé","x":6042,"y":699,"color":"skyblue","position":{"x":6042,"y":699},"classes":"lime","locked":"True"},
 {"id":80,"personneid":80,
@@ -1371,7 +1371,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/80.jpg",
+"skype":"","photo":"photo/80.jpg",
 "photoextension":""
 ,"label":"Pierrette La Loé","x":8464,"y":407,"color":"pink","position":{"x":8464,"y":407},"classes":"pink","locked":"True"},
 {"id":81,"personneid":81,
@@ -1403,7 +1403,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/81.jpg",
+"skype":"","photo":"photo/81.jpg",
 "photoextension":""
 ,"label":"Marguerite La Loé","x":8962,"y":411,"color":"pink","position":{"x":8962,"y":411},"classes":"pink","locked":"True"},
 {"id":43,"personneid":43,
@@ -1435,7 +1435,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/43.jpg",
+"skype":"","photo":"photo/43.jpg",
 "photoextension":""
 ,"label":"Richard-Martin La Loé","x":8662,"y":414,"color":"skyblue","position":{"x":8662,"y":414},"classes":"lime","locked":"True"},
 {"id":3,"personneid":3,
@@ -1467,7 +1467,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/3.jpg",
+"skype":"","photo":"photo/3.jpg",
 "photoextension":""
 ,"label":"Gillette Esnouf","x":8785,"y":411,"color":"yellow","position":{"x":8785,"y":411},"classes":"pink","locked":"True"},
 {"id":82,"personneid":82,
@@ -1499,7 +1499,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/82.jpg",
+"skype":"","photo":"photo/82.jpg",
 "photoextension":""
 ,"label":"Jaqueline La Loé","x":8470,"y":483,"color":"pink","position":{"x":8470,"y":483},"classes":"pink","locked":"True"},
 {"id":83,"personneid":83,
@@ -1531,7 +1531,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/83.jpg",
+"skype":"","photo":"photo/83.jpg",
 "photoextension":""
 ,"label":"Jacques La Loé","x":6940,"y":483,"color":"skyblue","position":{"x":6940,"y":483},"classes":"lime","locked":"True"},
 {"id":364,"personneid":364,
@@ -1563,7 +1563,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/364.jpg",
+"skype":"","photo":"photo/364.jpg",
 "photoextension":""
 ,"label":"Marie Le Tellier","x":7057,"y":483,"color":"yellow","position":{"x":7057,"y":483},"classes":"pink","locked":"True"},
 {"id":142,"personneid":142,
@@ -1595,7 +1595,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/142.jpg",
+"skype":"","photo":"photo/142.jpg",
 "photoextension":""
 ,"label":"Jacqueline La Loé","x":6459,"y":555,"color":"pink","position":{"x":6459,"y":555},"classes":"pink","locked":"True"},
 {"id":143,"personneid":143,
@@ -1627,7 +1627,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/143.jpg",
+"skype":"","photo":"photo/143.jpg",
 "photoextension":""
 ,"label":"Louise La Loé","x":6580,"y":555,"color":"pink","position":{"x":6580,"y":555},"classes":"pink","locked":"True"},
 {"id":144,"personneid":144,
@@ -1659,7 +1659,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/144.jpg",
+"skype":"","photo":"photo/144.jpg",
 "photoextension":""
 ,"label":"Josette La Loé","x":6700,"y":555,"color":"pink","position":{"x":6700,"y":555},"classes":"pink","locked":"True"},
 {"id":145,"personneid":145,
@@ -1691,7 +1691,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/145.jpg",
+"skype":"","photo":"photo/145.jpg",
 "photoextension":""
 ,"label":"Richard La Loé","x":6820,"y":555,"color":"skyblue","position":{"x":6820,"y":555},"classes":"lime","locked":"True"},
 {"id":146,"personneid":146,
@@ -1723,7 +1723,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/146.jpg",
+"skype":"","photo":"photo/146.jpg",
 "photoextension":""
 ,"label":"Jacques La Loé","x":6940,"y":555,"color":"skyblue","position":{"x":6940,"y":555},"classes":"lime","locked":"True"},
 {"id":147,"personneid":147,
@@ -1755,7 +1755,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/147.jpg",
+"skype":"","photo":"photo/147.jpg",
 "photoextension":""
 ,"label":"Michelle La Loé","x":7060,"y":555,"color":"pink","position":{"x":7060,"y":555},"classes":"pink","locked":"True"},
 {"id":148,"personneid":148,
@@ -1787,7 +1787,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/148.jpg",
+"skype":"","photo":"photo/148.jpg",
 "photoextension":""
 ,"label":"Marie La Loé","x":7180,"y":555,"color":"pink","position":{"x":7180,"y":555},"classes":"pink","locked":"True"},
 {"id":149,"personneid":149,
@@ -1819,7 +1819,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/149.jpg",
+"skype":"","photo":"photo/149.jpg",
 "photoextension":""
 ,"label":"Jeanne La Loé","x":7300,"y":555,"color":"pink","position":{"x":7300,"y":555},"classes":"pink","locked":"True"},
 {"id":150,"personneid":150,
@@ -1851,7 +1851,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/150.jpg",
+"skype":"","photo":"photo/150.jpg",
 "photoextension":""
 ,"label":"Robert La Loé","x":7421,"y":555,"color":"skyblue","position":{"x":7421,"y":555},"classes":"lime","locked":"True"},
 {"id":85,"personneid":85,
@@ -1883,7 +1883,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/85.jpg",
+"skype":"","photo":"photo/85.jpg",
 "photoextension":""
 ,"label":"Marguerite La Loé","x":9218,"y":486,"color":"pink","position":{"x":9218,"y":486},"classes":"pink","locked":"True"},
 {"id":277,"personneid":277,
@@ -1915,7 +1915,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/277.jpg",
+"skype":"","photo":"photo/277.jpg",
 "photoextension":""
 ,"label":"Jeanne La Loé","x":9091,"y":483,"color":"pink","position":{"x":9091,"y":483},"classes":"pink","locked":"True"},
 {"id":42,"personneid":42,
@@ -1947,7 +1947,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/42.jpg",
+"skype":"","photo":"photo/42.jpg",
 "photoextension":""
 ,"label":"Martin-Michiel La Loé","x":8660,"y":483,"color":"skyblue","position":{"x":8660,"y":483},"classes":"lime","locked":"True"},
 {"id":20,"personneid":20,
@@ -1979,7 +1979,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/20.jpg",
+"skype":"","photo":"photo/20.jpg",
 "photoextension":""
 ,"label":"Jacqueline Alexandre de Troulocville","x":8819,"y":483,"color":"yellow","position":{"x":8819,"y":483},"classes":"pink","locked":"True"},
 {"id":48,"personneid":48,
@@ -2011,7 +2011,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/48.jpg",
+"skype":"","photo":"photo/48.jpg",
 "photoextension":""
 ,"label":"Guillaume La Loé","x":9738,"y":555,"color":"skyblue","position":{"x":9738,"y":555},"classes":"lime","locked":"True"},
 {"id":351,"personneid":351,
@@ -2043,7 +2043,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/351.jpg",
+"skype":"","photo":"photo/351.jpg",
 "photoextension":""
 ,"label":"Jeanne Lemarois","x":9855,"y":555,"color":"yellow","position":{"x":9855,"y":555},"classes":"pink","locked":"True"},
 {"id":249,"personneid":249,
@@ -2075,7 +2075,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/249.jpg",
+"skype":"","photo":"photo/249.jpg",
 "photoextension":""
 ,"label":"? La Loé","x":9394,"y":627,"color":"skyblue","position":{"x":9394,"y":627},"classes":"lime","locked":"True"},
 {"id":304,"personneid":304,
@@ -2107,7 +2107,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/304.jpg",
+"skype":"","photo":"photo/304.jpg",
 "photoextension":""
 ,"label":"Guillaume La Loé","x":9394,"y":699,"color":"skyblue","position":{"x":9394,"y":699},"classes":"lime","locked":"True"},
 {"id":305,"personneid":305,
@@ -2139,7 +2139,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/305.jpg",
+"skype":"","photo":"photo/305.jpg",
 "photoextension":""
 ,"label":"F. La Loé","x":9342,"y":771,"color":"skyblue","position":{"x":9342,"y":771},"classes":"lime","locked":"True"},
 {"id":248,"personneid":248,
@@ -2171,7 +2171,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/248.jpg",
+"skype":"","photo":"photo/248.jpg",
 "photoextension":""
 ,"label":"François La Loé","x":9498,"y":627,"color":"skyblue","position":{"x":9498,"y":627},"classes":"lime","locked":"True"},
 {"id":309,"personneid":309,
@@ -2203,7 +2203,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/309.jpg",
+"skype":"","photo":"photo/309.jpg",
 "photoextension":""
 ,"label":"Jaqueline La Loé","x":9618,"y":627,"color":"pink","position":{"x":9618,"y":627},"classes":"pink","locked":"True"},
 {"id":250,"personneid":250,
@@ -2235,7 +2235,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/250.jpg",
+"skype":"","photo":"photo/250.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":9738,"y":627,"color":"skyblue","position":{"x":9738,"y":627},"classes":"lime","locked":"True"},
 {"id":303,"personneid":303,
@@ -2267,7 +2267,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/303.jpg",
+"skype":"","photo":"photo/303.jpg",
 "photoextension":""
 ,"label":"Jacques La Loé","x":9858,"y":627,"color":"skyblue","position":{"x":9858,"y":627},"classes":"lime","locked":"True"},
 {"id":251,"personneid":251,
@@ -2299,7 +2299,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/251.jpg",
+"skype":"","photo":"photo/251.jpg",
 "photoextension":""
 ,"label":"Marc La Loé","x":9978,"y":627,"color":"skyblue","position":{"x":9978,"y":627},"classes":"lime","locked":"True"},
 {"id":371,"personneid":371,
@@ -2331,7 +2331,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/371.jpg",
+"skype":"","photo":"photo/371.jpg",
 "photoextension":""
 ,"label":"Marie Mauger","x":10096,"y":627,"color":"yellow","position":{"x":10096,"y":627},"classes":"pink","locked":"True"},
 {"id":235,"personneid":235,
@@ -2363,7 +2363,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/235.jpg",
+"skype":"","photo":"photo/235.jpg",
 "photoextension":""
 ,"label":"Nicolas La Loé","x":9738,"y":699,"color":"skyblue","position":{"x":9738,"y":699},"classes":"lime","locked":"True"},
 {"id":332,"personneid":332,
@@ -2395,7 +2395,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/332.jpg",
+"skype":"","photo":"photo/332.jpg",
 "photoextension":""
 ,"label":"B.? La Loé","x":9858,"y":699,"color":"pink","position":{"x":9858,"y":699},"classes":"pink","locked":"True"},
 {"id":330,"personneid":330,
@@ -2427,7 +2427,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/330.jpg",
+"skype":"","photo":"photo/330.jpg",
 "photoextension":""
 ,"label":"Victoire La Loé","x":9978,"y":699,"color":"pink","position":{"x":9978,"y":699},"classes":"pink","locked":"True"},
 {"id":328,"personneid":328,
@@ -2459,7 +2459,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/328.jpg",
+"skype":"","photo":"photo/328.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":10098,"y":699,"color":"skyblue","position":{"x":10098,"y":699},"classes":"lime","locked":"True"},
 {"id":329,"personneid":329,
@@ -2491,7 +2491,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/329.jpg",
+"skype":"","photo":"photo/329.jpg",
 "photoextension":""
 ,"label":"Jeanne La Loé","x":10218,"y":699,"color":"pink","position":{"x":10218,"y":699},"classes":"pink","locked":"True"},
 {"id":47,"personneid":47,
@@ -2523,7 +2523,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/47.jpg",
+"skype":"","photo":"photo/47.jpg",
 "photoextension":""
 ,"label":"Gislette La Loé","x":8265,"y":555,"color":"pink","position":{"x":8265,"y":555},"classes":"pink","locked":"True"},
 {"id":135,"personneid":135,
@@ -2555,7 +2555,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/135.jpg",
+"skype":"","photo":"photo/135.jpg",
 "photoextension":""
 ,"label":"François La Loë","x":7593,"y":560,"color":"skyblue","position":{"x":7593,"y":560},"classes":"lime","locked":"True"},
 {"id":355,"personneid":355,
@@ -2587,7 +2587,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/355.jpg",
+"skype":"","photo":"photo/355.jpg",
 "photoextension":""
 ,"label":"Jeanne Le Monoy","x":7721,"y":558,"color":"yellow","position":{"x":7721,"y":558},"classes":"pink","locked":"True"},
 {"id":322,"personneid":322,
@@ -2619,7 +2619,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/322.jpg",
+"skype":"","photo":"photo/322.jpg",
 "photoextension":""
 ,"label":"Martin La Loë","x":7541,"y":632,"color":"skyblue","position":{"x":7541,"y":632},"classes":"lime","locked":"True"},
 {"id":323,"personneid":323,
@@ -2651,7 +2651,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/323.jpg",
+"skype":"","photo":"photo/323.jpg",
 "photoextension":""
 ,"label":"Jacques La Loë","x":7661,"y":632,"color":"skyblue","position":{"x":7661,"y":632},"classes":"lime","locked":"True"},
 {"id":45,"personneid":45,
@@ -2683,7 +2683,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/45.jpg",
+"skype":"","photo":"photo/45.jpg",
 "photoextension":""
 ,"label":"Nicolas La Loé","x":8661,"y":555,"color":"skyblue","position":{"x":8661,"y":555},"classes":"lime","locked":"True"},
 {"id":358,"personneid":358,
@@ -2715,7 +2715,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/358.jpg",
+"skype":"","photo":"photo/358.jpg",
 "photoextension":""
 ,"label":"Anne Le Mieux","x":8779,"y":555,"color":"yellow","position":{"x":8779,"y":555},"classes":"pink","locked":"True"},
 {"id":90,"personneid":90,
@@ -2747,7 +2747,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/90.jpg",
+"skype":"","photo":"photo/90.jpg",
 "photoextension":""
 ,"label":"Charles La Loé","x":8541,"y":627,"color":"skyblue","position":{"x":8541,"y":627},"classes":"lime","locked":"True"},
 {"id":50,"personneid":50,
@@ -2779,7 +2779,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/50.jpg",
+"skype":"","photo":"photo/50.jpg",
 "photoextension":""
 ,"label":"Bon-Thomas La Loé","x":8661,"y":632,"color":"skyblue","position":{"x":8661,"y":632},"classes":"lime","locked":"True"},
 {"id":631,"personneid":631,
@@ -2811,7 +2811,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/631.jpg",
+"skype":"","photo":"photo/631.jpg",
 "photoextension":""
 ,"label":"Jeanne Imbert","x":8778,"y":632,"color":"yellow","position":{"x":8778,"y":632},"classes":"pink","locked":"True"},
 {"id":54,"personneid":54,
@@ -2843,7 +2843,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/54.jpg",
+"skype":"","photo":"photo/54.jpg",
 "photoextension":""
 ,"label":"Pierre La Loé","x":8661,"y":706,"color":"skyblue","position":{"x":8661,"y":706},"classes":"lime","locked":"True"},
 {"id":449,"personneid":449,
@@ -2875,7 +2875,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/449.jpg",
+"skype":"","photo":"photo/449.jpg",
 "photoextension":""
 ,"label":"Catherine Tison","x":8816,"y":706,"color":"yellow","position":{"x":8816,"y":706},"classes":"pink","locked":"True"},
 {"id":621,"personneid":621,
@@ -2907,7 +2907,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/621.jpg",
+"skype":"","photo":"photo/621.jpg",
 "photoextension":""
 ,"label":"Louise Guérandel","x":8790,"y":778,"color":"yellow","position":{"x":8790,"y":778},"classes":"pink","locked":"True"},
 {"id":56,"personneid":56,
@@ -2939,7 +2939,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/56.jpg",
+"skype":"","photo":"photo/56.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":8661,"y":778,"color":"skyblue","position":{"x":8661,"y":778},"classes":"lime","locked":"True"},
 {"id":59,"personneid":59,
@@ -2971,7 +2971,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/59.jpg",
+"skype":"","photo":"photo/59.jpg",
 "photoextension":".jpg"
 ,"label":"Guillaume-Auguste La Loé","x":8661,"y":848,"color":"skyblue","position":{"x":8661,"y":848},"classes":"lime","locked":"True"},
 {"id":399,"personneid":399,
@@ -3003,7 +3003,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/399.jpg",
+"skype":"","photo":"photo/399.jpg",
 "photoextension":""
 ,"label":"Germaine Poincheval","x":8811,"y":850,"color":"yellow","position":{"x":8811,"y":850},"classes":"pink","locked":"True"},
 {"id":92,"personneid":92,
@@ -3035,7 +3035,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/92.jpg",
+"skype":"","photo":"photo/92.jpg",
 "photoextension":""
 ,"label":"Marie Laloé","x":9266,"y":922,"color":"pink","position":{"x":9266,"y":922},"classes":"pink","locked":"True"},
 {"id":94,"personneid":94,
@@ -3067,7 +3067,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/94.jpg",
+"skype":"","photo":"photo/94.jpg",
 "photoextension":""
 ,"label":"Mathilde Laloë","x":8289,"y":920,"color":"pink","position":{"x":8289,"y":920},"classes":"pink","locked":"True"},
 {"id":93,"personneid":93,
@@ -3099,7 +3099,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/93.jpg",
+"skype":"","photo":"photo/93.jpg",
 "photoextension":""
 ,"label":"Louis Laloé","x":8409,"y":920,"color":"skyblue","position":{"x":8409,"y":920},"classes":"lime","locked":"True"},
 {"id":95,"personneid":95,
@@ -3131,7 +3131,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/95.jpg",
+"skype":"","photo":"photo/95.jpg",
 "photoextension":""
 ,"label":"Gustave Laloë","x":8529,"y":920,"color":"skyblue","position":{"x":8529,"y":920},"classes":"lime","locked":"True"},
 {"id":96,"personneid":96,
@@ -3163,7 +3163,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/96.jpg",
+"skype":"","photo":"photo/96.jpg",
 "photoextension":""
 ,"label":"Felix Laloë","x":3075,"y":1012,"color":"skyblue","position":{"x":3075,"y":1012},"classes":"lime","locked":"True"},
 {"id":445,"personneid":445,
@@ -3195,7 +3195,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/445.jpg",
+"skype":"","photo":"photo/445.jpg",
 "photoextension":""
 ,"label":"Elisa Seamann","x":3192,"y":1012,"color":"yellow","position":{"x":3192,"y":1012},"classes":"pink","locked":"True"},
 {"id":774,"personneid":774,
@@ -3227,7 +3227,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/774.jpg",
+"skype":"","photo":"photo/774.jpg",
 "photoextension":""
 ,"label":"Jack Laloë","x":3543,"y":1084,"color":"skyblue","position":{"x":3543,"y":1084},"classes":"lime","locked":"True"},
 {"id":103,"personneid":103,
@@ -3259,7 +3259,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/103.jpg",
+"skype":"","photo":"photo/103.jpg",
 "photoextension":""
 ,"label":"Blanche Laloë","x":2975,"y":1084,"color":"pink","position":{"x":2975,"y":1084},"classes":"pink","locked":"True"},
 {"id":391,"personneid":391,
@@ -3291,7 +3291,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/391.jpg",
+"skype":"","photo":"photo/391.jpg",
 "photoextension":""
 ,"label":"??? Parkins","x":3092,"y":1084,"color":"yellow","position":{"x":3092,"y":1084},"classes":"lime","locked":"True"},
 {"id":392,"personneid":392,
@@ -3323,7 +3323,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/392.jpg",
+"skype":"","photo":"photo/392.jpg",
 "photoextension":""
 ,"label":"Jaëk Parkins","x":3009,"y":1156,"color":"skyblue","position":{"x":3009,"y":1156},"classes":"lime","locked":"True"},
 {"id":393,"personneid":393,
@@ -3355,7 +3355,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/393.jpg",
+"skype":"","photo":"photo/393.jpg",
 "photoextension":""
 ,"label":"Kenork Parkins","x":3129,"y":1156,"color":"skyblue","position":{"x":3129,"y":1156},"classes":"lime","locked":"True"},
 {"id":102,"personneid":102,
@@ -3387,7 +3387,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/102.jpg",
+"skype":"","photo":"photo/102.jpg",
 "photoextension":""
 ,"label":"John Laloë","x":3183,"y":1084,"color":"skyblue","position":{"x":3183,"y":1084},"classes":"lime","locked":"True"},
 {"id":775,"personneid":775,
@@ -3419,7 +3419,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/775.jpg",
+"skype":"","photo":"photo/775.jpg",
 "photoextension":""
 ,"label":"Laura Laloë","x":3423,"y":1084,"color":"pink","position":{"x":3423,"y":1084},"classes":"pink","locked":"True"},
 {"id":104,"personneid":104,
@@ -3451,7 +3451,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/104.jpg",
+"skype":"","photo":"photo/104.jpg",
 "photoextension":""
 ,"label":"Frank Laloë","x":2519,"y":1082,"color":"skyblue","position":{"x":2519,"y":1082},"classes":"lime","locked":"True"},
 {"id":769,"personneid":769,
@@ -3483,7 +3483,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/769.jpg",
+"skype":"","photo":"photo/769.jpg",
 "photoextension":""
 ,"label":"Caroline Jenkin-Butler","x":2637,"y":1082,"color":"yellow","position":{"x":2637,"y":1082},"classes":"pink","locked":"True"},
 {"id":105,"personneid":105,
@@ -3515,7 +3515,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/105.jpg",
+"skype":"","photo":"photo/105.jpg",
 "photoextension":""
 ,"label":"Bertie Laloë","x":2361,"y":1154,"color":"pink","position":{"x":2361,"y":1154},"classes":"pink","locked":"True"},
 {"id":311,"personneid":311,
@@ -3547,7 +3547,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/311.jpg",
+"skype":"","photo":"photo/311.jpg",
 "photoextension":""
 ,"label":"Michael Laloë","x":2481,"y":1154,"color":"skyblue","position":{"x":2481,"y":1154},"classes":"lime","locked":"True"},
 {"id":386,"personneid":386,
@@ -3579,7 +3579,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/386.jpg",
+"skype":"","photo":"photo/386.jpg",
 "photoextension":""
 ,"label":"Elizabeth Kyffin","x":2599,"y":1154,"color":"yellow","position":{"x":2599,"y":1154},"classes":"pink","locked":"True"},
 {"id":110,"personneid":110,
@@ -3611,7 +3611,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/110.jpg",
+"skype":"","photo":"photo/110.jpg",
 "photoextension":""
 ,"label":"Tobias Laloë","x":2241,"y":1226,"color":"skyblue","position":{"x":2241,"y":1226},"classes":"lime","locked":"True"},
 {"id":448,"personneid":448,
@@ -3643,7 +3643,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/448.jpg",
+"skype":"","photo":"photo/448.jpg",
 "photoextension":""
 ,"label":"Charlie ???","x":2358,"y":1226,"color":"yellow","position":{"x":2358,"y":1226},"classes":"pink","locked":"True"},
 {"id":171,"personneid":171,
@@ -3675,7 +3675,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/171.jpg",
+"skype":"","photo":"photo/171.jpg",
 "photoextension":""
 ,"label":"Arthur Laloë","x":2084,"y":1298,"color":"skyblue","position":{"x":2084,"y":1298},"classes":"lime","locked":"True"},
 {"id":172,"personneid":172,
@@ -3707,7 +3707,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/172.jpg",
+"skype":"","photo":"photo/172.jpg",
 "photoextension":""
 ,"label":"George Laloë","x":2204,"y":1298,"color":"skyblue","position":{"x":2204,"y":1298},"classes":"lime","locked":"True"},
 {"id":314,"personneid":314,
@@ -3739,7 +3739,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/314.jpg",
+"skype":"","photo":"photo/314.jpg",
 "photoextension":""
 ,"label":"Henry Laloë","x":2325,"y":1298,"color":"skyblue","position":{"x":2325,"y":1298},"classes":"lime","locked":"True"},
 {"id":382,"personneid":382,
@@ -3771,7 +3771,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/382.jpg",
+"skype":"","photo":"photo/382.jpg",
 "photoextension":""
 ,"label":"Sally NICK WIFE","x":2442,"y":1298,"color":"yellow","position":{"x":2442,"y":1298},"classes":"pink","locked":"True"},
 {"id":263,"personneid":263,
@@ -3803,7 +3803,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/263.jpg",
+"skype":"","photo":"photo/263.jpg",
 "photoextension":""
 ,"label":"Denis Laloë","x":2167,"y":1370,"color":"pink","position":{"x":2167,"y":1370},"classes":"pink","locked":"True"},
 {"id":175,"personneid":175,
@@ -3835,7 +3835,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/175.jpg",
+"skype":"","photo":"photo/175.jpg",
 "photoextension":""
 ,"label":"Michael Laloë","x":2287,"y":1370,"color":"skyblue","position":{"x":2287,"y":1370},"classes":"lime","locked":"True"},
 {"id":174,"personneid":174,
@@ -3867,7 +3867,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/174.jpg",
+"skype":"","photo":"photo/174.jpg",
 "photoextension":""
 ,"label":"Patricia Laloë","x":2408,"y":1370,"color":"pink","position":{"x":2408,"y":1370},"classes":"pink","locked":"True"},
 {"id":318,"personneid":318,
@@ -3899,7 +3899,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/318.jpg",
+"skype":"","photo":"photo/318.jpg",
 "photoextension":""
 ,"label":"Gwendolyn Laloë","x":2528,"y":1370,"color":"pink","position":{"x":2528,"y":1370},"classes":"pink","locked":"True"},
 {"id":111,"personneid":111,
@@ -3931,7 +3931,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/111.jpg",
+"skype":"","photo":"photo/111.jpg",
 "photoextension":""
 ,"label":"Nicholas Laloë","x":2785,"y":1224,"color":"skyblue","position":{"x":2785,"y":1224},"classes":"lime","locked":"True"},
 {"id":315,"personneid":315,
@@ -3963,7 +3963,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/315.jpg",
+"skype":"","photo":"photo/315.jpg",
 "photoextension":""
 ,"label":"Patricia Laloë","x":2628,"y":1296,"color":"pink","position":{"x":2628,"y":1296},"classes":"pink","locked":"True"},
 {"id":707,"personneid":707,
@@ -3995,7 +3995,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/707.jpg",
+"skype":"","photo":"photo/707.jpg",
 "photoextension":""
 ,"label":"Michael Laloë","x":2748,"y":1296,"color":"skyblue","position":{"x":2748,"y":1296},"classes":"lime","locked":"True"},
 {"id":317,"personneid":317,
@@ -4027,7 +4027,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/317.jpg",
+"skype":"","photo":"photo/317.jpg",
 "photoextension":""
 ,"label":"Clare Laloë","x":2868,"y":1296,"color":"pink","position":{"x":2868,"y":1296},"classes":"pink","locked":"True"},
 {"id":706,"personneid":706,
@@ -4059,7 +4059,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/706.jpg",
+"skype":"","photo":"photo/706.jpg",
 "photoextension":""
 ,"label":"Gwnedolyn Laloë","x":2988,"y":1296,"color":"pink","position":{"x":2988,"y":1296},"classes":"pink","locked":"True"},
 {"id":109,"personneid":109,
@@ -4091,7 +4091,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/109.jpg",
+"skype":"","photo":"photo/109.jpg",
 "photoextension":""
 ,"label":"Victoria Laloë","x":3199,"y":1220,"color":"pink","position":{"x":3199,"y":1220},"classes":"pink","locked":"True"},
 {"id":461,"personneid":461,
@@ -4123,7 +4123,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/461.jpg",
+"skype":"","photo":"photo/461.jpg",
 "photoextension":""
 ,"label":"??? Vicky Husband","x":3316,"y":1220,"color":"yellow","position":{"x":3316,"y":1220},"classes":"lime","locked":"True"},
 {"id":462,"personneid":462,
@@ -4155,7 +4155,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/462.jpg",
+"skype":"","photo":"photo/462.jpg",
 "photoextension":""
 ,"label":"Phillip Vicky Husband","x":3129,"y":1292,"color":"skyblue","position":{"x":3129,"y":1292},"classes":"lime","locked":"True"},
 {"id":463,"personneid":463,
@@ -4187,7 +4187,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/463.jpg",
+"skype":"","photo":"photo/463.jpg",
 "photoextension":""
 ,"label":"Douglas Vicky Husband","x":3249,"y":1292,"color":"skyblue","position":{"x":3249,"y":1292},"classes":"lime","locked":"True"},
 {"id":464,"personneid":464,
@@ -4219,7 +4219,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/464.jpg",
+"skype":"","photo":"photo/464.jpg",
 "photoextension":""
 ,"label":"Simon Vicky Husband","x":3369,"y":1292,"color":"skyblue","position":{"x":3369,"y":1292},"classes":"lime","locked":"True"},
 {"id":465,"personneid":465,
@@ -4251,7 +4251,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/465.jpg",
+"skype":"","photo":"photo/465.jpg",
 "photoextension":""
 ,"label":"Suzie Vicky Husband","x":3489,"y":1292,"color":"pink","position":{"x":3489,"y":1292},"classes":"pink","locked":"True"},
 {"id":106,"personneid":106,
@@ -4283,7 +4283,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/106.jpg",
+"skype":"","photo":"photo/106.jpg",
 "photoextension":""
 ,"label":"Bill laloë","x":2689,"y":1154,"color":"skyblue","position":{"x":2689,"y":1154},"classes":"lime","locked":"True"},
 {"id":98,"personneid":98,
@@ -4315,7 +4315,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/98.jpg",
+"skype":"","photo":"photo/98.jpg",
 "photoextension":""
 ,"label":"Adeline Laloë","x":9124,"y":922,"color":"pink","position":{"x":9124,"y":922},"classes":"pink","locked":"True"},
 {"id":99,"personneid":99,
@@ -4347,7 +4347,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/99.jpg",
+"skype":"","photo":"photo/99.jpg",
 "photoextension":""
 ,"label":"Alice Laloë","x":8987,"y":920,"color":"pink","position":{"x":8987,"y":920},"classes":"pink","locked":"True"},
 {"id":61,"personneid":61,
@@ -4379,7 +4379,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/61.jpg",
+"skype":"","photo":"photo/61.jpg",
 "photoextension":".jpg"
 ,"label":"Francis Laloë","x":8666,"y":924,"color":"skyblue","position":{"x":8666,"y":924},"classes":"lime","locked":"True"},
 {"id":459,"personneid":459,
@@ -4411,7 +4411,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/459.jpg",
+"skype":"","photo":"photo/459.jpg",
 "photoextension":""
 ,"label":"Suzanne VING","x":8811,"y":922,"color":"yellow","position":{"x":8811,"y":922},"classes":"pink","locked":"True"},
 {"id":63,"personneid":63,
@@ -4443,7 +4443,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/63.jpg",
+"skype":"","photo":"photo/63.jpg",
 "photoextension":""
 ,"label":"Germaine Laloë","x":4047,"y":1090,"color":"pink","position":{"x":4047,"y":1090},"classes":"pink","locked":"True"},
 {"id":614,"personneid":614,
@@ -4475,7 +4475,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/614.jpg",
+"skype":"","photo":"photo/614.jpg",
 "photoextension":""
 ,"label":"José Ferrer-Laloë","x":3927,"y":1162,"color":"skyblue","position":{"x":3927,"y":1162},"classes":"lime","locked":"True"},
 {"id":222,"personneid":222,
@@ -4507,7 +4507,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/222.jpg",
+"skype":"","photo":"photo/222.jpg",
 "photoextension":""
 ,"label":"François Ferrer","x":4047,"y":1162,"color":"skyblue","position":{"x":4047,"y":1162},"classes":"lime","locked":"True"},
 {"id":176,"personneid":176,
@@ -4539,7 +4539,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/176.jpg",
+"skype":"","photo":"photo/176.jpg",
 "photoextension":""
 ,"label":"André Ferrer-Laloë","x":4355,"y":1162,"color":"skyblue","position":{"x":4355,"y":1162},"classes":"lime","locked":"True"},
 {"id":615,"personneid":615,
@@ -4571,7 +4571,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/615.jpg",
+"skype":"","photo":"photo/615.jpg",
 "photoextension":""
 ,"label":"Elisabeth Ferrer-Laloë","x":4010,"y":1234,"color":"pink","position":{"x":4010,"y":1234},"classes":"pink","locked":"True"},
 {"id":757,"personneid":757,
@@ -4603,7 +4603,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/757.jpg",
+"skype":"","photo":"photo/757.jpg",
 "photoextension":""
 ,"label":"Serge Caillat","x":4128,"y":1234,"color":"yellow","position":{"x":4128,"y":1234},"classes":"lime","locked":"True"},
 {"id":758,"personneid":758,
@@ -4635,7 +4635,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/758.jpg",
+"skype":"","photo":"photo/758.jpg",
 "photoextension":""
 ,"label":"Stéphane Caillat","x":3940,"y":1306,"color":"skyblue","position":{"x":3940,"y":1306},"classes":"lime","locked":"True"},
 {"id":760,"personneid":760,
@@ -4667,7 +4667,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/760.jpg",
+"skype":"","photo":"photo/760.jpg",
 "photoextension":""
 ,"label":"Katie Mc Vey","x":4058,"y":1306,"color":"yellow","position":{"x":4058,"y":1306},"classes":"pink","locked":"True"},
 {"id":761,"personneid":761,
@@ -4699,7 +4699,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/761.jpg",
+"skype":"","photo":"photo/761.jpg",
 "photoextension":""
 ,"label":"Spencer Ferrer-Laloe","x":3820,"y":1378,"color":"skyblue","position":{"x":3820,"y":1378},"classes":"lime","locked":"True"},
 {"id":762,"personneid":762,
@@ -4731,7 +4731,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/762.jpg",
+"skype":"","photo":"photo/762.jpg",
 "photoextension":""
 ,"label":"Eva-Rose Ferrer-Laloe","x":3940,"y":1378,"color":"pink","position":{"x":3940,"y":1378},"classes":"pink","locked":"True"},
 {"id":763,"personneid":763,
@@ -4763,7 +4763,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/763.jpg",
+"skype":"","photo":"photo/763.jpg",
 "photoextension":""
 ,"label":"Parker Ferrer-Laloe","x":4060,"y":1378,"color":"skyblue","position":{"x":4060,"y":1378},"classes":"lime","locked":"True"},
 {"id":759,"personneid":759,
@@ -4795,7 +4795,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/759.jpg",
+"skype":"","photo":"photo/759.jpg",
 "photoextension":""
 ,"label":"Guillaume Caillat","x":4258,"y":1308,"color":"skyblue","position":{"x":4258,"y":1308},"classes":"lime","locked":"True"},
 {"id":866,"personneid":866,
@@ -4827,7 +4827,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/866.jpg",
+"skype":"","photo":"photo/866.jpg",
 "photoextension":""
 ,"label":"Emilie Bonnal","x":4376,"y":1308,"color":"yellow","position":{"x":4376,"y":1308},"classes":"pink","locked":"True"},
 {"id":764,"personneid":764,
@@ -4859,7 +4859,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/764.jpg",
+"skype":"","photo":"photo/764.jpg",
 "photoextension":""
 ,"label":"Daphnée Ferrer-Laloe","x":4206,"y":1380,"color":"pink","position":{"x":4206,"y":1380},"classes":"pink","locked":"True"},
 {"id":765,"personneid":765,
@@ -4891,7 +4891,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/765.jpg",
+"skype":"","photo":"photo/765.jpg",
 "photoextension":""
 ,"label":"Audrina Ferrer-Laloe","x":4326,"y":1380,"color":"pink","position":{"x":4326,"y":1380},"classes":"pink","locked":"True"},
 {"id":177,"personneid":177,
@@ -4923,7 +4923,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/177.jpg",
+"skype":"","photo":"photo/177.jpg",
 "photoextension":""
 ,"label":"François Ferrer-Laloë","x":4218,"y":1234,"color":"skyblue","position":{"x":4218,"y":1234},"classes":"lime","locked":"True"},
 {"id":616,"personneid":616,
@@ -4955,7 +4955,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/616.jpg",
+"skype":"","photo":"photo/616.jpg",
 "photoextension":""
 ,"label":"Lionel Ferrer-Laloë","x":4700,"y":1239,"color":"skyblue","position":{"x":4700,"y":1239},"classes":"lime","locked":"True"},
 {"id":753,"personneid":753,
@@ -4987,7 +4987,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/753.jpg",
+"skype":"","photo":"photo/753.jpg",
 "photoextension":""
 ,"label":"Nicolas Ferrer-Laloe","x":4580,"y":1311,"color":"skyblue","position":{"x":4580,"y":1311},"classes":"lime","locked":"True"},
 {"id":863,"personneid":863,
@@ -5019,7 +5019,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/863.jpg",
+"skype":"","photo":"photo/863.jpg",
 "photoextension":""
 ,"label":"Emmanuelle Galindo","x":4698,"y":1311,"color":"yellow","position":{"x":4698,"y":1311},"classes":"pink","locked":"True"},
 {"id":864,"personneid":864,
@@ -5051,7 +5051,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/864.jpg",
+"skype":"","photo":"photo/864.jpg",
 "photoextension":""
 ,"label":"Camille Ferrer-Laloë","x":4422,"y":1383,"color":"pink","position":{"x":4422,"y":1383},"classes":"pink","locked":"True"},
 {"id":865,"personneid":865,
@@ -5083,7 +5083,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/865.jpg",
+"skype":"","photo":"photo/865.jpg",
 "photoextension":""
 ,"label":"Ruddy Ferrer-Laloë","x":4542,"y":1383,"color":"skyblue","position":{"x":4542,"y":1383},"classes":"lime","locked":"True"},
 {"id":755,"personneid":755,
@@ -5115,7 +5115,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/755.jpg",
+"skype":"","photo":"photo/755.jpg",
 "photoextension":""
 ,"label":"Camille Ferrer-Laloe","x":4663,"y":1383,"color":"pink","position":{"x":4663,"y":1383},"classes":"pink","locked":"True"},
 {"id":756,"personneid":756,
@@ -5147,7 +5147,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/756.jpg",
+"skype":"","photo":"photo/756.jpg",
 "photoextension":""
 ,"label":"Rudy Ferrer-Laloe","x":4783,"y":1383,"color":"skyblue","position":{"x":4783,"y":1383},"classes":"lime","locked":"True"},
 {"id":754,"personneid":754,
@@ -5179,7 +5179,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/754.jpg",
+"skype":"","photo":"photo/754.jpg",
 "photoextension":""
 ,"label":"Geoffrey Ferrer-Laloe","x":4788,"y":1311,"color":"skyblue","position":{"x":4788,"y":1311},"classes":"lime","locked":"True"},
 {"id":64,"personneid":64,
@@ -5211,7 +5211,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/64.jpg",
+"skype":"","photo":"photo/64.jpg",
 "photoextension":""
 ,"label":"Marcelle Laloë","x":5181,"y":1092,"color":"pink","position":{"x":5181,"y":1092},"classes":"pink","locked":"True"},
 {"id":471,"personneid":471,
@@ -5243,7 +5243,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/471.jpg",
+"skype":"","photo":"photo/471.jpg",
 "photoextension":""
 ,"label":"x Ham-Nghi","x":5298,"y":1092,"color":"yellow","position":{"x":5298,"y":1092},"classes":"lime","locked":"True"},
 {"id":473,"personneid":473,
@@ -5275,7 +5275,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/473.jpg",
+"skype":"","photo":"photo/473.jpg",
 "photoextension":""
 ,"label":"Nhu-Ly Ham-Nghi","x":5252,"y":1164,"color":"pink","position":{"x":5252,"y":1164},"classes":"pink","locked":"True"},
 {"id":508,"personneid":508,
@@ -5307,7 +5307,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/508.jpg",
+"skype":"","photo":"photo/508.jpg",
 "photoextension":""
 ,"label":"François De Labesse","x":5369,"y":1164,"color":"yellow","position":{"x":5369,"y":1164},"classes":"lime","locked":"True"},
 {"id":510,"personneid":510,
@@ -5339,7 +5339,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/510.jpg",
+"skype":"","photo":"photo/510.jpg",
 "photoextension":""
 ,"label":"Philippe De Labesse","x":4938,"y":1236,"color":"skyblue","position":{"x":4938,"y":1236},"classes":"lime","locked":"True"},
 {"id":509,"personneid":509,
@@ -5371,7 +5371,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/509.jpg",
+"skype":"","photo":"photo/509.jpg",
 "photoextension":""
 ,"label":"Françoise De Labesse","x":5058,"y":1236,"color":"pink","position":{"x":5058,"y":1236},"classes":"pink","locked":"True"},
 {"id":586,"personneid":586,
@@ -5403,7 +5403,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/586.jpg",
+"skype":"","photo":"photo/586.jpg",
 "photoextension":""
 ,"label":"Jacques De Bishop","x":5176,"y":1236,"color":"yellow","position":{"x":5176,"y":1236},"classes":"lime","locked":"True"},
 {"id":589,"personneid":589,
@@ -5435,7 +5435,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/589.jpg",
+"skype":"","photo":"photo/589.jpg",
 "photoextension":""
 ,"label":"Luc De Bishop","x":5026,"y":1308,"color":"skyblue","position":{"x":5026,"y":1308},"classes":"lime","locked":"True"},
 {"id":587,"personneid":587,
@@ -5467,7 +5467,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/587.jpg",
+"skype":"","photo":"photo/587.jpg",
 "photoextension":""
 ,"label":"Helène De Bishop","x":5146,"y":1308,"color":"pink","position":{"x":5146,"y":1308},"classes":"pink","locked":"True"},
 {"id":588,"personneid":588,
@@ -5499,7 +5499,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/588.jpg",
+"skype":"","photo":"photo/588.jpg",
 "photoextension":""
 ,"label":"Marc De Bishop","x":5266,"y":1308,"color":"skyblue","position":{"x":5266,"y":1308},"classes":"lime","locked":"True"},
 {"id":474,"personneid":474,
@@ -5531,7 +5531,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/474.jpg",
+"skype":"","photo":"photo/474.jpg",
 "photoextension":".jpg"
 ,"label":"Minh-Duc Ham-Nghi","x":5566,"y":1164,"color":"skyblue","position":{"x":5566,"y":1164},"classes":"lime","locked":"True"},
 {"id":712,"personneid":712,
@@ -5563,7 +5563,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/712.jpg",
+"skype":"","photo":"photo/712.jpg",
 "photoextension":""
 ,"label":"Renée BONNAUD","x":5683,"y":1164,"color":"yellow","position":{"x":5683,"y":1164},"classes":"pink","locked":"True"},
 {"id":75,"personneid":75,
@@ -5595,7 +5595,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/75.jpg",
+"skype":"","photo":"photo/75.jpg",
 "photoextension":".jpg"
 ,"label":"Jean LALOË","x":8666,"y":1006,"color":"skyblue","position":{"x":8666,"y":1006},"classes":"lime","locked":"True"},
 {"id":512,"personneid":512,
@@ -5627,7 +5627,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/512.jpg",
+"skype":"","photo":"photo/512.jpg",
 "photoextension":".jpg"
 ,"label":"Guillemette De Roulet","x":8815,"y":1006,"color":"yellow","position":{"x":8815,"y":1006},"classes":"pink","locked":"True"},
 {"id":138,"personneid":138,
@@ -5659,7 +5659,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/138.jpg",
+"skype":"","photo":"photo/138.jpg",
 "photoextension":".jpg"
 ,"label":"Michel Laloë","x":8666,"y":1091,"color":"skyblue","position":{"x":8666,"y":1091},"classes":"lime","locked":"True"},
 {"id":381,"personneid":381,
@@ -5691,7 +5691,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/381.jpg",
+"skype":"","photo":"photo/381.jpg",
 "photoextension":""
 ,"label":"Gratienne Mercier","x":8778,"y":1091,"color":"yellow","position":{"x":8778,"y":1091},"classes":"pink","locked":"True"},
 {"id":113,"personneid":113,
@@ -5723,7 +5723,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/113.jpg",
+"skype":"","photo":"photo/113.jpg",
 "photoextension":".jpg"
 ,"label":"Franck LALOË","x":6793,"y":1171,"color":"skyblue","position":{"x":6793,"y":1171},"classes":"lime","locked":"True"},
 {"id":441,"personneid":441,
@@ -5755,7 +5755,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/441.jpg",
+"skype":"","photo":"photo/441.jpg",
 "photoextension":".jpg"
 ,"label":"Suzanne Masse","x":6910,"y":1171,"color":"yellow","position":{"x":6910,"y":1171},"classes":"pink","locked":"True"},
 {"id":226,"personneid":226,
@@ -5787,7 +5787,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/226.jpg",
+"skype":"","photo":"photo/226.jpg",
 "photoextension":".jpg"
 ,"label":"Laurence Laloë","x":6305,"y":1243,"color":"pink","position":{"x":6305,"y":1243},"classes":"pink","locked":"True"},
 {"id":410,"personneid":410,
@@ -5819,7 +5819,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/410.jpg",
+"skype":"","photo":"photo/410.jpg",
 "photoextension":".jpg"
 ,"label":"Jean-Hugues Pierson","x":6423,"y":1243,"color":"yellow","position":{"x":6423,"y":1243},"classes":"lime","locked":"True"},
 {"id":411,"personneid":411,
@@ -5851,7 +5851,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/411.jpg",
+"skype":"","photo":"photo/411.jpg",
 "photoextension":".jpg"
 ,"label":"Olivier Pierson","x":6214,"y":1313,"color":"skyblue","position":{"x":6214,"y":1313},"classes":"lime","locked":"True"},
 {"id":747,"personneid":747,
@@ -5883,7 +5883,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/747.jpg",
+"skype":"","photo":"photo/747.jpg",
 "photoextension":""
 ,"label":"Leticia Doormann","x":6332,"y":1313,"color":"yellow","position":{"x":6332,"y":1313},"classes":"pink","locked":"True"},
 {"id":879,"personneid":879,
@@ -5915,7 +5915,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/879.jpg",
+"skype":"","photo":"photo/879.jpg",
 "photoextension":""
 ,"label":"Lucas Pierson-Dorrman","x":6162,"y":1385,"color":"skyblue","position":{"x":6162,"y":1385},"classes":"lime","locked":"True"},
 {"id":750,"personneid":750,
@@ -5947,7 +5947,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/750.jpg",
+"skype":"","photo":"photo/750.jpg",
 "photoextension":""
 ,"label":"Felix Pierson-Doorman","x":6282,"y":1385,"color":"skyblue","position":{"x":6282,"y":1385},"classes":"lime","locked":"True"},
 {"id":412,"personneid":412,
@@ -5979,7 +5979,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/412.jpg",
+"skype":"","photo":"photo/412.jpg",
 "photoextension":".jpg"
 ,"label":"Hélène Pierson","x":6443,"y":1315,"color":"pink","position":{"x":6443,"y":1315},"classes":"pink","locked":"True"},
 {"id":413,"personneid":413,
@@ -6011,7 +6011,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/413.jpg",
+"skype":"","photo":"photo/413.jpg",
 "photoextension":".jpg"
 ,"label":"Sibylle Pierson","x":6563,"y":1315,"color":"pink","position":{"x":6563,"y":1315},"classes":"pink","locked":"True"},
 {"id":211,"personneid":211,
@@ -6043,7 +6043,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/211.jpg",
+"skype":"","photo":"photo/211.jpg",
 "photoextension":".jpg"
 ,"label":"Eric Laloë","x":6791,"y":1243,"color":"skyblue","position":{"x":6791,"y":1243},"classes":"lime","locked":"True"},
 {"id":24,"personneid":24,
@@ -6075,7 +6075,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/24.jpg",
+"skype":"","photo":"photo/24.jpg",
 "photoextension":".jpg"
 ,"label":"Anne-Sophie Barbier","x":6909,"y":1243,"color":"yellow","position":{"x":6909,"y":1243},"classes":"pink","locked":"True"},
 {"id":335,"personneid":335,
@@ -6107,7 +6107,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/335.jpg",
+"skype":"","photo":"photo/335.jpg",
 "photoextension":".jpg"
 ,"label":"Héloise Laloë","x":6671,"y":1315,"color":"pink","position":{"x":6671,"y":1315},"classes":"pink","locked":"True"},
 {"id":336,"personneid":336,
@@ -6139,7 +6139,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/336.jpg",
+"skype":"","photo":"photo/336.jpg",
 "photoextension":".jpg"
 ,"label":"Bastien Laloë","x":6791,"y":1315,"color":"skyblue","position":{"x":6791,"y":1315},"classes":"lime","locked":"True"},
 {"id":337,"personneid":337,
@@ -6171,7 +6171,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/337.jpg",
+"skype":"","photo":"photo/337.jpg",
 "photoextension":".jpg"
 ,"label":"Simon Laloë","x":6911,"y":1315,"color":"skyblue","position":{"x":6911,"y":1315},"classes":"lime","locked":"True"},
 {"id":228,"personneid":228,
@@ -6203,7 +6203,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/228.jpg",
+"skype":"","photo":"photo/228.jpg",
 "photoextension":".jpg"
 ,"label":"Claire Laloë","x":7041,"y":1243,"color":"pink","position":{"x":7041,"y":1243},"classes":"pink","locked":"True"},
 {"id":375,"personneid":375,
@@ -6235,7 +6235,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/375.jpg",
+"skype":"","photo":"photo/375.jpg",
 "photoextension":".jpg"
 ,"label":"Philippe Mousset","x":7158,"y":1243,"color":"yellow","position":{"x":7158,"y":1243},"classes":"lime","locked":"True"},
 {"id":376,"personneid":376,
@@ -6267,7 +6267,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/376.jpg",
+"skype":"","photo":"photo/376.jpg",
 "photoextension":".jpg"
 ,"label":"Sarah Mousset","x":7076,"y":1315,"color":"skyblue","position":{"x":7076,"y":1315},"classes":"lime","locked":"True"},
 {"id":377,"personneid":377,
@@ -6299,7 +6299,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/377.jpg",
+"skype":"","photo":"photo/377.jpg",
 "photoextension":".jpg"
 ,"label":"Chloé Mousset","x":7196,"y":1315,"color":"pink","position":{"x":7196,"y":1315},"classes":"pink","locked":"True"},
 {"id":114,"personneid":114,
@@ -6331,7 +6331,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/114.jpg",
+"skype":"","photo":"photo/114.jpg",
 "photoextension":".jpg"
 ,"label":"Jacques Laloë","x":7494,"y":1161,"color":"skyblue","position":{"x":7494,"y":1161},"classes":"lime","locked":"True"},
 {"id":370,"personneid":370,
@@ -6363,7 +6363,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/370.jpg",
+"skype":"","photo":"photo/370.jpg",
 "photoextension":".jpg"
 ,"label":"MarieAnnick Roux","x":7612,"y":1159,"color":"yellow","position":{"x":7612,"y":1159},"classes":"pink","locked":"True"},
 {"id":223,"personneid":223,
@@ -6395,7 +6395,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/223.jpg",
+"skype":"","photo":"photo/223.jpg",
 "photoextension":".jpg"
 ,"label":"Sandrine Laloë","x":7286,"y":1237,"color":"pink","position":{"x":7286,"y":1237},"classes":"pink","locked":"True"},
 {"id":626,"personneid":626,
@@ -6427,7 +6427,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/626.jpg",
+"skype":"","photo":"photo/626.jpg",
 "photoextension":".bmp"
 ,"label":"Thomas Guinet","x":7403,"y":1237,"color":"yellow","position":{"x":7403,"y":1237},"classes":"lime","locked":"True"},
 {"id":224,"personneid":224,
@@ -6459,7 +6459,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/224.jpg",
+"skype":"","photo":"photo/224.jpg",
 "photoextension":".jpg"
 ,"label":"Carine Laloë","x":7499,"y":1233,"color":"pink","position":{"x":7499,"y":1233},"classes":"pink","locked":"True"},
 {"id":225,"personneid":225,
@@ -6491,7 +6491,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/225.jpg",
+"skype":"","photo":"photo/225.jpg",
 "photoextension":".jpg"
 ,"label":"Ondine Laloë","x":7605,"y":1231,"color":"pink","position":{"x":7605,"y":1231},"classes":"pink","locked":"True"},
 {"id":480,"personneid":480,
@@ -6523,7 +6523,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/480.jpg",
+"skype":"","photo":"photo/480.jpg",
 "photoextension":".jpg"
 ,"label":"Franck Colmez","x":7733,"y":1231,"color":"yellow","position":{"x":7733,"y":1231},"classes":"lime","locked":"True"},
 {"id":484,"personneid":484,
@@ -6555,7 +6555,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/484.jpg",
+"skype":"","photo":"photo/484.jpg",
 "photoextension":".jpg"
 ,"label":"Alexandre Colmez","x":7712,"y":1303,"color":"skyblue","position":{"x":7712,"y":1303},"classes":"lime","locked":"True"},
 {"id":489,"personneid":489,
@@ -6587,7 +6587,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/489.jpg",
+"skype":"","photo":"photo/489.jpg",
 "photoextension":".jpg"
 ,"label":"Océane Colmez","x":7832,"y":1303,"color":"pink","position":{"x":7832,"y":1303},"classes":"pink","locked":"True"},
 {"id":735,"personneid":735,
@@ -6619,7 +6619,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/735.jpg",
+"skype":"","photo":"photo/735.jpg",
 "photoextension":""
 ,"label":"Roxane Colmez","x":7574,"y":1303,"color":"pink","position":{"x":7574,"y":1303},"classes":"pink","locked":"True"},
 {"id":115,"personneid":115,
@@ -6651,7 +6651,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/115.jpg",
+"skype":"","photo":"photo/115.jpg",
 "photoextension":".jpg"
 ,"label":"Marc Laloë","x":8278,"y":1161,"color":"skyblue","position":{"x":8278,"y":1161},"classes":"lime","locked":"True"},
 {"id":369,"personneid":369,
@@ -6683,7 +6683,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/369.jpg",
+"skype":"","photo":"photo/369.jpg",
 "photoextension":".jpg"
 ,"label":"Patricia LeBouc","x":8395,"y":1161,"color":"yellow","position":{"x":8395,"y":1161},"classes":"pink","locked":"True"},
 {"id":273,"personneid":273,
@@ -6715,7 +6715,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/273.jpg",
+"skype":"","photo":"photo/273.jpg",
 "photoextension":".bmp"
 ,"label":"Airelle Laloë","x":7986,"y":1227,"color":"pink","position":{"x":7986,"y":1227},"classes":"pink","locked":"True"},
 {"id":633,"personneid":633,
@@ -6747,7 +6747,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/633.jpg",
+"skype":"","photo":"photo/633.jpg",
 "photoextension":".bmp"
 ,"label":"Florian Guyader","x":7934,"y":1299,"color":"skyblue","position":{"x":7934,"y":1299},"classes":"lime","locked":"True"},
 {"id":638,"personneid":638,
@@ -6779,7 +6779,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/638.jpg",
+"skype":"","photo":"photo/638.jpg",
 "photoextension":".bmp"
 ,"label":"Thibaut Guyader","x":8054,"y":1299,"color":"skyblue","position":{"x":8054,"y":1299},"classes":"lime","locked":"True"},
 {"id":339,"personneid":339,
@@ -6811,7 +6811,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/339.jpg",
+"skype":"","photo":"photo/339.jpg",
 "photoextension":""
 ,"label":"Stanislas Laloë","x":8227,"y":1229,"color":"skyblue","position":{"x":8227,"y":1229},"classes":"lime","locked":"True"},
 {"id":740,"personneid":740,
@@ -6843,7 +6843,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/740.jpg",
+"skype":"","photo":"photo/740.jpg",
 "photoextension":""
 ,"label":"Claire Kernanec","x":8350,"y":1229,"color":"yellow","position":{"x":8350,"y":1229},"classes":"pink","locked":"True"},
 {"id":736,"personneid":736,
@@ -6875,7 +6875,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/736.jpg",
+"skype":"","photo":"photo/736.jpg",
 "photoextension":""
 ,"label":"Léonard Laloë","x":8175,"y":1301,"color":"skyblue","position":{"x":8175,"y":1301},"classes":"lime","locked":"True"},
 {"id":737,"personneid":737,
@@ -6907,7 +6907,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/737.jpg",
+"skype":"","photo":"photo/737.jpg",
 "photoextension":""
 ,"label":"Charlotte Laloë","x":8295,"y":1301,"color":"pink","position":{"x":8295,"y":1301},"classes":"pink","locked":"True"},
 {"id":340,"personneid":340,
@@ -6939,7 +6939,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/340.jpg",
+"skype":"","photo":"photo/340.jpg",
 "photoextension":".bmp"
 ,"label":"Benjamin Laloë","x":8461,"y":1231,"color":"skyblue","position":{"x":8461,"y":1231},"classes":"lime","locked":"True"},
 {"id":354,"personneid":354,
@@ -6971,7 +6971,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/354.jpg",
+"skype":"","photo":"photo/354.jpg",
 "photoextension":".bmp"
 ,"label":"Laetitia Poiraud","x":8578,"y":1231,"color":"yellow","position":{"x":8578,"y":1231},"classes":"pink","locked":"True"},
 {"id":341,"personneid":341,
@@ -7003,7 +7003,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/341.jpg",
+"skype":"","photo":"photo/341.jpg",
 "photoextension":".bmp"
 ,"label":"Maud Laloë","x":8461,"y":1303,"color":"pink","position":{"x":8461,"y":1303},"classes":"pink","locked":"True"},
 {"id":127,"personneid":127,
@@ -7035,7 +7035,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/127.jpg",
+"skype":"","photo":"photo/127.jpg",
 "photoextension":".jpg"
 ,"label":"Christine Laloë","x":8896,"y":1163,"color":"pink","position":{"x":8896,"y":1163},"classes":"pink","locked":"True"},
 {"id":609,"personneid":609,
@@ -7067,7 +7067,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/609.jpg",
+"skype":"","photo":"photo/609.jpg",
 "photoextension":""
 ,"label":"Jean-Marc Fenoglio","x":9014,"y":1163,"color":"yellow","position":{"x":9014,"y":1163},"classes":"lime","locked":"True"},
 {"id":610,"personneid":610,
@@ -7099,7 +7099,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/610.jpg",
+"skype":"","photo":"photo/610.jpg",
 "photoextension":".jpg"
 ,"label":"Jean-Brice Fenoglio","x":8685,"y":1237,"color":"skyblue","position":{"x":8685,"y":1237},"classes":"lime","locked":"True"},
 {"id":439,"personneid":439,
@@ -7131,7 +7131,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/439.jpg",
+"skype":"","photo":"photo/439.jpg",
 "photoextension":".jpg"
 ,"label":"Steline Perrette","x":8802,"y":1237,"color":"yellow","position":{"x":8802,"y":1237},"classes":"pink","locked":"True"},
 {"id":733,"personneid":733,
@@ -7163,7 +7163,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/733.jpg",
+"skype":"","photo":"photo/733.jpg",
 "photoextension":""
 ,"label":"Thais Fenoglio","x":8685,"y":1309,"color":"pink","position":{"x":8685,"y":1309},"classes":"pink","locked":"True"},
 {"id":611,"personneid":611,
@@ -7195,7 +7195,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/611.jpg",
+"skype":"","photo":"photo/611.jpg",
 "photoextension":""
 ,"label":"Marina Fenoglio","x":8913,"y":1237,"color":"pink","position":{"x":8913,"y":1237},"classes":"pink","locked":"True"},
 {"id":442,"personneid":442,
@@ -7227,7 +7227,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/442.jpg",
+"skype":"","photo":"photo/442.jpg",
 "photoextension":""
 ,"label":"Joël Schaerer","x":9031,"y":1237,"color":"yellow","position":{"x":9031,"y":1237},"classes":"lime","locked":"True"},
 {"id":443,"personneid":443,
@@ -7259,7 +7259,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/443.jpg",
+"skype":"","photo":"photo/443.jpg",
 "photoextension":""
 ,"label":"Antonin Schaerer","x":8881,"y":1309,"color":"skyblue","position":{"x":8881,"y":1309},"classes":"lime","locked":"True"},
 {"id":444,"personneid":444,
@@ -7291,7 +7291,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/444.jpg",
+"skype":"","photo":"photo/444.jpg",
 "photoextension":""
 ,"label":"Lisa Schaerer","x":8985,"y":1309,"color":"pink","position":{"x":8985,"y":1309},"classes":"pink","locked":"True"},
 {"id":734,"personneid":734,
@@ -7323,7 +7323,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/734.jpg",
+"skype":"","photo":"photo/734.jpg",
 "photoextension":""
 ,"label":"Elouan Schaerer","x":9100,"y":1309,"color":"skyblue","position":{"x":9100,"y":1309},"classes":"lime","locked":"True"},
 {"id":612,"personneid":612,
@@ -7355,7 +7355,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/612.jpg",
+"skype":"","photo":"photo/612.jpg",
 "photoextension":""
 ,"label":"Claire-Marie Fenoglio","x":9184,"y":1237,"color":"pink","position":{"x":9184,"y":1237},"classes":"pink","locked":"True"},
 {"id":731,"personneid":731,
@@ -7387,7 +7387,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/731.jpg",
+"skype":"","photo":"photo/731.jpg",
 "photoextension":""
 ,"label":"Stéphane Vidal","x":9302,"y":1237,"color":"yellow","position":{"x":9302,"y":1237},"classes":"lime","locked":"True"},
 {"id":739,"personneid":739,
@@ -7419,7 +7419,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/739.jpg",
+"skype":"","photo":"photo/739.jpg",
 "photoextension":""
 ,"label":"Stella Vidal","x":9219,"y":1309,"color":"pink","position":{"x":9219,"y":1309},"classes":"pink","locked":"True"},
 {"id":732,"personneid":732,
@@ -7451,7 +7451,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/732.jpg",
+"skype":"","photo":"photo/732.jpg",
 "photoextension":""
 ,"label":"Eline Vidal","x":9339,"y":1309,"color":"pink","position":{"x":9339,"y":1309},"classes":"pink","locked":"True"},
 {"id":128,"personneid":128,
@@ -7483,7 +7483,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/128.jpg",
+"skype":"","photo":"photo/128.jpg",
 "photoextension":".jpg"
 ,"label":"Geneviève Laloë","x":9582,"y":1165,"color":"pink","position":{"x":9582,"y":1165},"classes":"pink","locked":"True"},
 {"id":10,"personneid":10,
@@ -7515,7 +7515,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/10.jpg",
+"skype":"","photo":"photo/10.jpg",
 "photoextension":".jpg"
 ,"label":"Jean-Marc Briatte","x":9699,"y":1165,"color":"yellow","position":{"x":9699,"y":1165},"classes":"lime","locked":"True"},
 {"id":13,"personneid":13,
@@ -7547,7 +7547,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/13.jpg",
+"skype":"","photo":"photo/13.jpg",
 "photoextension":""
 ,"label":"Florence Briatte","x":9429,"y":1237,"color":"pink","position":{"x":9429,"y":1237},"classes":"pink","locked":"True"},
 {"id":429,"personneid":429,
@@ -7579,7 +7579,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/429.jpg",
+"skype":"","photo":"photo/429.jpg",
 "photoextension":""
 ,"label":"Jean-Luc Raffin","x":9546,"y":1237,"color":"yellow","position":{"x":9546,"y":1237},"classes":"lime","locked":"True"},
 {"id":427,"personneid":427,
@@ -7611,7 +7611,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/427.jpg",
+"skype":"","photo":"photo/427.jpg",
 "photoextension":""
 ,"label":"Axelle Raffin","x":9464,"y":1309,"color":"pink","position":{"x":9464,"y":1309},"classes":"pink","locked":"True"},
 {"id":428,"personneid":428,
@@ -7643,7 +7643,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/428.jpg",
+"skype":"","photo":"photo/428.jpg",
 "photoextension":""
 ,"label":"Julie Raffin","x":9584,"y":1309,"color":"pink","position":{"x":9584,"y":1309},"classes":"pink","locked":"True"},
 {"id":11,"personneid":11,
@@ -7675,7 +7675,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/11.jpg",
+"skype":"","photo":"photo/11.jpg",
 "photoextension":".jpg"
 ,"label":"Sylvain Briatte","x":9653,"y":1235,"color":"skyblue","position":{"x":9653,"y":1235},"classes":"lime","locked":"True"},
 {"id":12,"personneid":12,
@@ -7707,7 +7707,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/12.jpg",
+"skype":"","photo":"photo/12.jpg",
 "photoextension":".jpg"
 ,"label":"Anne-Laure Briatte","x":9762,"y":1235,"color":"pink","position":{"x":9762,"y":1235},"classes":"pink","locked":"True"},
 {"id":885,"personneid":885,
@@ -7739,7 +7739,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/885.jpg",
+"skype":"","photo":"photo/885.jpg",
 "photoextension":""
 ,"label":"Gilles Lézé","x":9880,"y":1237,"color":"yellow","position":{"x":9880,"y":1237},"classes":"lime","locked":"True"},
 {"id":129,"personneid":129,
@@ -7771,7 +7771,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/129.jpg",
+"skype":"","photo":"photo/129.jpg",
 "photoextension":".jpg"
 ,"label":"jean-Luc Laloë","x":10330,"y":1163,"color":"skyblue","position":{"x":10330,"y":1163},"classes":"lime","locked":"True"},
 {"id":503,"personneid":503,
@@ -7803,7 +7803,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/503.jpg",
+"skype":"","photo":"photo/503.jpg",
 "photoextension":".jpg"
 ,"label":"Dominique Pillaud","x":10447,"y":1163,"color":"yellow","position":{"x":10447,"y":1163},"classes":"pink","locked":"True"},
 {"id":164,"personneid":164,
@@ -7835,7 +7835,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/164.jpg",
+"skype":"","photo":"photo/164.jpg",
 "photoextension":""
 ,"label":"Pierre-Antoine Laloë","x":9995,"y":1235,"color":"skyblue","position":{"x":9995,"y":1235},"classes":"lime","locked":"True"},
 {"id":342,"personneid":342,
@@ -7867,7 +7867,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/342.jpg",
+"skype":"","photo":"photo/342.jpg",
 "photoextension":".jpg"
 ,"label":"Jean-Baptiste Laloë","x":10170,"y":1235,"color":"skyblue","position":{"x":10170,"y":1235},"classes":"lime","locked":"True"},
 {"id":344,"personneid":344,
@@ -7899,7 +7899,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/344.jpg",
+"skype":"","photo":"photo/344.jpg",
 "photoextension":".bmp"
 ,"label":"Anne-Sophie Laloë","x":10118,"y":1307,"color":"pink","position":{"x":10118,"y":1307},"classes":"pink","locked":"True"},
 {"id":345,"personneid":345,
@@ -7931,7 +7931,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/345.jpg",
+"skype":"","photo":"photo/345.jpg",
 "photoextension":".bmp"
 ,"label":"Zoé Laloë","x":10238,"y":1307,"color":"pink","position":{"x":10238,"y":1307},"classes":"pink","locked":"True"},
 {"id":166,"personneid":166,
@@ -7963,7 +7963,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/166.jpg",
+"skype":"","photo":"photo/166.jpg",
 "photoextension":""
 ,"label":"Anne Laloë","x":10378,"y":1237,"color":"pink","position":{"x":10378,"y":1237},"classes":"pink","locked":"True"},
 {"id":741,"personneid":741,
@@ -7995,7 +7995,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/741.jpg",
+"skype":"","photo":"photo/741.jpg",
 "photoextension":""
 ,"label":"Steve Pewter","x":10496,"y":1237,"color":"yellow","position":{"x":10496,"y":1237},"classes":"lime","locked":"True"},
 {"id":877,"personneid":877,
@@ -8027,7 +8027,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/877.jpg",
+"skype":"","photo":"photo/877.jpg",
 "photoextension":""
 ,"label":"Leo Pewter","x":10466,"y":1309,"color":"skyblue","position":{"x":10466,"y":1309},"classes":"lime","locked":"True"},
 {"id":165,"personneid":165,
@@ -8059,7 +8059,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/165.jpg",
+"skype":"","photo":"photo/165.jpg",
 "photoextension":".jpg"
 ,"label":"Jacques-Olivier Laloë","x":10638,"y":1235,"color":"skyblue","position":{"x":10638,"y":1235},"classes":"lime","locked":"True"},
 {"id":718,"personneid":718,
@@ -8091,7 +8091,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/718.jpg",
+"skype":"","photo":"photo/718.jpg",
 "photoextension":".jpg"
 ,"label":"Mara Kuijpers","x":10756,"y":1235,"color":"yellow","position":{"x":10756,"y":1235},"classes":"pink","locked":"True"},
 {"id":878,"personneid":878,
@@ -8123,7 +8123,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/878.jpg",
+"skype":"","photo":"photo/878.jpg",
 "photoextension":""
 ,"label":"Menno Laloë","x":10586,"y":1307,"color":"skyblue","position":{"x":10586,"y":1307},"classes":"lime","locked":"True"},
 {"id":766,"personneid":766,
@@ -8155,7 +8155,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/766.jpg",
+"skype":"","photo":"photo/766.jpg",
 "photoextension":""
 ,"label":"Emiel. Laloë","x":10706,"y":1307,"color":"skyblue","position":{"x":10706,"y":1307},"classes":"lime","locked":"True"},
 {"id":139,"personneid":139,
@@ -8187,7 +8187,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/139.jpg",
+"skype":"","photo":"photo/139.jpg",
 "photoextension":""
 ,"label":"Jean Laloë","x":10947,"y":1089,"color":"skyblue","position":{"x":10947,"y":1089},"classes":"lime","locked":"True"},
 {"id":506,"personneid":506,
@@ -8219,7 +8219,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/506.jpg",
+"skype":"","photo":"photo/506.jpg",
 "photoextension":""
 ,"label":"Michelle Duburch","x":11065,"y":1089,"color":"yellow","position":{"x":11065,"y":1089},"classes":"pink","locked":"True"},
 {"id":117,"personneid":117,
@@ -8251,7 +8251,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/117.jpg",
+"skype":"","photo":"photo/117.jpg",
 "photoextension":".jpg"
 ,"label":"Anne Laloë","x":10790,"y":1161,"color":"pink","position":{"x":10790,"y":1161},"classes":"pink","locked":"True"},
 {"id":628,"personneid":628,
@@ -8283,7 +8283,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/628.jpg",
+"skype":"","photo":"photo/628.jpg",
 "photoextension":".jpg"
 ,"label":"Eric Hourdé","x":10908,"y":1161,"color":"yellow","position":{"x":10908,"y":1161},"classes":"lime","locked":"True"},
 {"id":634,"personneid":634,
@@ -8315,7 +8315,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/634.jpg",
+"skype":"","photo":"photo/634.jpg",
 "photoextension":".jpg"
 ,"label":"Benjamin Hourdé","x":10878,"y":1233,"color":"skyblue","position":{"x":10878,"y":1233},"classes":"lime","locked":"True"},
 {"id":118,"personneid":118,
@@ -8347,7 +8347,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/118.jpg",
+"skype":"","photo":"photo/118.jpg",
 "photoextension":""
 ,"label":"Claude Laloë","x":11092,"y":1161,"color":"pink","position":{"x":11092,"y":1161},"classes":"pink","locked":"True"},
 {"id":768,"personneid":768,
@@ -8379,7 +8379,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/768.jpg",
+"skype":"","photo":"photo/768.jpg",
 "photoextension":""
 ,"label":"Bernadette Idiategaray","x":11210,"y":1161,"color":"yellow","position":{"x":11210,"y":1161},"classes":"pink","locked":"True"},
 {"id":574,"personneid":574,
@@ -8411,7 +8411,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/574.jpg",
+"skype":"","photo":"photo/574.jpg",
 "photoextension":".jpg"
 ,"label":"Bernard LaLoë","x":12159,"y":1089,"color":"skyblue","position":{"x":12159,"y":1089},"classes":"lime","locked":"True"},
 {"id":493,"personneid":493,
@@ -8443,7 +8443,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/493.jpg",
+"skype":"","photo":"photo/493.jpg",
 "photoextension":".jpg"
 ,"label":"Jeanne Cruchet","x":12277,"y":1089,"color":"yellow","position":{"x":12277,"y":1089},"classes":"pink","locked":"True"},
 {"id":67,"personneid":67,
@@ -8475,7 +8475,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/67.jpg",
+"skype":"","photo":"photo/67.jpg",
 "photoextension":".jpg"
 ,"label":"Patrick LaLoë","x":11329,"y":1161,"color":"skyblue","position":{"x":11329,"y":1161},"classes":"lime","locked":"True"},
 {"id":620,"personneid":620,
@@ -8507,7 +8507,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/620.jpg",
+"skype":"","photo":"photo/620.jpg",
 "photoextension":".jpg"
 ,"label":"Marie-Jeanne Goichon","x":11446,"y":1161,"color":"yellow","position":{"x":11446,"y":1161},"classes":"pink","locked":"True"},
 {"id":122,"personneid":122,
@@ -8539,7 +8539,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/122.jpg",
+"skype":"","photo":"photo/122.jpg",
 "photoextension":".jpg"
 ,"label":"Pierre Laloë","x":11172,"y":1233,"color":"skyblue","position":{"x":11172,"y":1233},"classes":"lime","locked":"True"},
 {"id":477,"personneid":477,
@@ -8571,7 +8571,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/477.jpg",
+"skype":"","photo":"photo/477.jpg",
 "photoextension":".jpg"
 ,"label":"Oana Calinescu","x":11289,"y":1233,"color":"yellow","position":{"x":11289,"y":1233},"classes":"pink","locked":"True"},
 {"id":126,"personneid":126,
@@ -8603,7 +8603,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/126.jpg",
+"skype":"","photo":"photo/126.jpg",
 "photoextension":".jpg"
 ,"label":"Béatrice Laloë","x":11119,"y":1305,"color":"pink","position":{"x":11119,"y":1305},"classes":"pink","locked":"True"},
 {"id":125,"personneid":125,
@@ -8635,7 +8635,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/125.jpg",
+"skype":"","photo":"photo/125.jpg",
 "photoextension":".jpg"
 ,"label":"Sebastien Laloë","x":11239,"y":1305,"color":"skyblue","position":{"x":11239,"y":1305},"classes":"lime","locked":"True"},
 {"id":123,"personneid":123,
@@ -8667,7 +8667,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/123.jpg",
+"skype":"","photo":"photo/123.jpg",
 "photoextension":".jpg"
 ,"label":"Ariane Laloë","x":11427,"y":1233,"color":"pink","position":{"x":11427,"y":1233},"classes":"pink","locked":"True"},
 {"id":713,"personneid":713,
@@ -8699,7 +8699,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/713.jpg",
+"skype":"","photo":"photo/713.jpg",
 "photoextension":".jpg"
 ,"label":"Christian Kingombe","x":11544,"y":1233,"color":"yellow","position":{"x":11544,"y":1233},"classes":"lime","locked":"True"},
 {"id":730,"personneid":730,
@@ -8731,7 +8731,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/730.jpg",
+"skype":"","photo":"photo/730.jpg",
 "photoextension":".jpg"
 ,"label":"Mathilde Kingombe","x":11462,"y":1305,"color":"pink","position":{"x":11462,"y":1305},"classes":"pink","locked":"True"},
 {"id":715,"personneid":715,
@@ -8763,7 +8763,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/715.jpg",
+"skype":"","photo":"photo/715.jpg",
 "photoextension":".jpg"
 ,"label":"Robert Kingombe","x":11582,"y":1305,"color":"skyblue","position":{"x":11582,"y":1305},"classes":"lime","locked":"True"},
 {"id":68,"personneid":68,
@@ -8795,7 +8795,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/68.jpg",
+"skype":"","photo":"photo/68.jpg",
 "photoextension":".jpg"
 ,"label":"Bernadette LALOË","x":11641,"y":1163,"color":"pink","position":{"x":11641,"y":1163},"classes":"pink","locked":"True"},
 {"id":69,"personneid":69,
@@ -8827,7 +8827,7 @@
 "twitter":"",
 "mail":"yves@laloe.com.br",
 "cep":"062401-110",
-"skype":"yvesfm","photo":"photos/69.jpg",
+"skype":"yvesfm","photo":"photo/69.jpg",
 "photoextension":".jpg"
 ,"label":"Yves Laloë","x":11977,"y":1159,"color":"skyblue","position":{"x":11977,"y":1159},"classes":"lime","locked":"True"},
 {"id":635,"personneid":635,
@@ -8859,7 +8859,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/635.jpg",
+"skype":"","photo":"photo/635.jpg",
 "photoextension":".jpg"
 ,"label":"Margaret Hoe","x":12094,"y":1159,"color":"yellow","position":{"x":12094,"y":1159},"classes":"pink","locked":"True"},
 {"id":73,"personneid":73,
@@ -8891,7 +8891,7 @@
 "twitter":"",
 "mail":"",
 "cep":"SW66RH",
-"skype":"","photo":"photos/73.jpg",
+"skype":"","photo":"photo/73.jpg",
 "photoextension":".jpg"
 ,"label":"Christian Laloë","x":11737,"y":1231,"color":"skyblue","position":{"x":11737,"y":1231},"classes":"lime","locked":"True"},
 {"id":404,"personneid":404,
@@ -8923,7 +8923,7 @@
 "twitter":"",
 "mail":"",
 "cep":"sw66rh",
-"skype":"","photo":"photos/404.jpg",
+"skype":"","photo":"photo/404.jpg",
 "photoextension":".jpg"
 ,"label":"Ana Perroni","x":11854,"y":1231,"color":"yellow","position":{"x":11854,"y":1231},"classes":"pink","locked":"True"},
 {"id":141,"personneid":141,
@@ -8955,7 +8955,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/141.jpg",
+"skype":"","photo":"photo/141.jpg",
 "photoextension":".jpg"
 ,"label":"Marianne Laloë","x":11685,"y":1303,"color":"pink","position":{"x":11685,"y":1303},"classes":"pink","locked":"True"},
 {"id":163,"personneid":163,
@@ -8987,7 +8987,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/163.jpg",
+"skype":"","photo":"photo/163.jpg",
 "photoextension":".jpg"
 ,"label":"Eric Laloë","x":11805,"y":1303,"color":"skyblue","position":{"x":11805,"y":1303},"classes":"lime","locked":"True"},
 {"id":30,"personneid":30,
@@ -9019,7 +9019,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/30.jpg",
+"skype":"","photo":"photo/30.jpg",
 "photoextension":".jpg"
 ,"label":"Alain Laloë","x":11982,"y":1233,"color":"skyblue","position":{"x":11982,"y":1233},"classes":"lime","locked":"True"},
 {"id":74,"personneid":74,
@@ -9051,7 +9051,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/74.jpg",
+"skype":"","photo":"photo/74.jpg",
 "photoextension":".jpg"
 ,"label":"Florence Laloë","x":12102,"y":1233,"color":"pink","position":{"x":12102,"y":1233},"classes":"pink","locked":"True"},
 {"id":745,"personneid":745,
@@ -9083,7 +9083,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/745.jpg",
+"skype":"","photo":"photo/745.jpg",
 "photoextension":""
 ,"label":"Arlo Schweitzer","x":12219,"y":1233,"color":"yellow","position":{"x":12219,"y":1233},"classes":"lime","locked":"True"},
 {"id":749,"personneid":749,
@@ -9115,7 +9115,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/749.jpg",
+"skype":"","photo":"photo/749.jpg",
 "photoextension":""
 ,"label":"Gabriel Schweitzer","x":12189,"y":1305,"color":"skyblue","position":{"x":12189,"y":1305},"classes":"lime","locked":"True"},
 {"id":70,"personneid":70,
@@ -9147,7 +9147,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/70.jpg",
+"skype":"","photo":"photo/70.jpg",
 "photoextension":""
 ,"label":"Francis Laloë","x":12520,"y":1163,"color":"skyblue","position":{"x":12520,"y":1163},"classes":"lime","locked":"True"},
 {"id":475,"personneid":475,
@@ -9179,7 +9179,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/475.jpg",
+"skype":"","photo":"photo/475.jpg",
 "photoextension":""
 ,"label":"Bernadette Renaud","x":12638,"y":1163,"color":"yellow","position":{"x":12638,"y":1163},"classes":"pink","locked":"True"},
 {"id":219,"personneid":219,
@@ -9211,7 +9211,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/219.jpg",
+"skype":"","photo":"photo/219.jpg",
 "photoextension":".jpg"
 ,"label":"Renaud Laloë","x":12363,"y":1235,"color":"skyblue","position":{"x":12363,"y":1235},"classes":"lime","locked":"True"},
 {"id":627,"personneid":627,
@@ -9243,7 +9243,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/627.jpg",
+"skype":"","photo":"photo/627.jpg",
 "photoextension":".jpg"
 ,"label":"Prunelle Halajko","x":12480,"y":1235,"color":"yellow","position":{"x":12480,"y":1235},"classes":"pink","locked":"True"},
 {"id":221,"personneid":221,
@@ -9275,7 +9275,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/221.jpg",
+"skype":"","photo":"photo/221.jpg",
 "photoextension":".jpg"
 ,"label":"Théodore Laloë","x":12310,"y":1307,"color":"skyblue","position":{"x":12310,"y":1307},"classes":"lime","locked":"True"},
 {"id":716,"personneid":716,
@@ -9307,7 +9307,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/716.jpg",
+"skype":"","photo":"photo/716.jpg",
 "photoextension":""
 ,"label":"Luc Laloë","x":12430,"y":1307,"color":"skyblue","position":{"x":12430,"y":1307},"classes":"lime","locked":"True"},
 {"id":220,"personneid":220,
@@ -9339,7 +9339,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/220.jpg",
+"skype":"","photo":"photo/220.jpg",
 "photoextension":".jpg"
 ,"label":"Marie Laloë","x":12618,"y":1235,"color":"pink","position":{"x":12618,"y":1235},"classes":"pink","locked":"True"},
 {"id":468,"personneid":468,
@@ -9371,7 +9371,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/468.jpg",
+"skype":"","photo":"photo/468.jpg",
 "photoextension":".jpg"
 ,"label":"Michael Wipfler","x":12735,"y":1235,"color":"yellow","position":{"x":12735,"y":1235},"classes":"lime","locked":"True"},
 {"id":469,"personneid":469,
@@ -9403,7 +9403,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/469.jpg",
+"skype":"","photo":"photo/469.jpg",
 "photoextension":".jpg"
 ,"label":"Mateo Wipfler","x":12653,"y":1307,"color":"skyblue","position":{"x":12653,"y":1307},"classes":"lime","locked":"True"},
 {"id":470,"personneid":470,
@@ -9435,7 +9435,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/470.jpg",
+"skype":"","photo":"photo/470.jpg",
 "photoextension":".jpg"
 ,"label":"Mila Wipfler","x":12773,"y":1307,"color":"pink","position":{"x":12773,"y":1307},"classes":"pink","locked":"True"},
 {"id":71,"personneid":71,
@@ -9467,7 +9467,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/71.jpg",
+"skype":"","photo":"photo/71.jpg",
 "photoextension":".jpg"
 ,"label":"Véronique Laloë","x":12922,"y":1167,"color":"pink","position":{"x":12922,"y":1167},"classes":"pink","locked":"True"},
 {"id":229,"personneid":229,
@@ -9499,7 +9499,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/229.jpg",
+"skype":"","photo":"photo/229.jpg",
 "photoextension":".jpg"
 ,"label":"Sarah Laloë","x":12870,"y":1239,"color":"pink","position":{"x":12870,"y":1239},"classes":"pink","locked":"True"},
 {"id":217,"personneid":217,
@@ -9531,7 +9531,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/217.jpg",
+"skype":"","photo":"photo/217.jpg",
 "photoextension":""
 ,"label":"Camille Laloë","x":12990,"y":1239,"color":"pink","position":{"x":12990,"y":1239},"classes":"pink","locked":"True"},
 {"id":72,"personneid":72,
@@ -9563,7 +9563,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/72.jpg",
+"skype":"","photo":"photo/72.jpg",
 "photoextension":".jpg"
 ,"label":"Régis Laloë","x":13105,"y":1165,"color":"skyblue","position":{"x":13105,"y":1165},"classes":"lime","locked":"True"},
 {"id":719,"personneid":719,
@@ -9595,7 +9595,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/719.jpg",
+"skype":"","photo":"photo/719.jpg",
 "photoextension":".jpg"
 ,"label":"Jean-Noël Bernard","x":13223,"y":1165,"color":"yellow","position":{"x":13223,"y":1165},"classes":"lime","locked":"True"},
 {"id":333,"personneid":333,
@@ -9627,7 +9627,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/333.jpg",
+"skype":"","photo":"photo/333.jpg",
 "photoextension":""
 ,"label":"Jeanine Khoury","x":13479,"y":1091,"color":"pink","position":{"x":13479,"y":1091},"classes":"pink","locked":"True"},
 {"id":334,"personneid":334,
@@ -9659,7 +9659,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/334.jpg",
+"skype":"","photo":"photo/334.jpg",
 "photoextension":".bmp"
 ,"label":"Marie Khoury","x":13426,"y":1163,"color":"pink","position":{"x":13426,"y":1163},"classes":"pink","locked":"True"},
 {"id":423,"personneid":423,
@@ -9691,7 +9691,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/423.jpg",
+"skype":"","photo":"photo/423.jpg",
 "photoextension":".bmp"
 ,"label":"Roger Cazabon","x":13544,"y":1163,"color":"yellow","position":{"x":13544,"y":1163},"classes":"lime","locked":"True"},
 {"id":424,"personneid":424,
@@ -9723,7 +9723,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/424.jpg",
+"skype":"","photo":"photo/424.jpg",
 "photoextension":".bmp"
 ,"label":"Cécile Cazabon","x":13274,"y":1235,"color":"pink","position":{"x":13274,"y":1235},"classes":"pink","locked":"True"},
 {"id":366,"personneid":366,
@@ -9755,7 +9755,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/366.jpg",
+"skype":"","photo":"photo/366.jpg",
 "photoextension":".bmp"
 ,"label":"Gregory Manoha","x":13391,"y":1235,"color":"yellow","position":{"x":13391,"y":1235},"classes":"lime","locked":"True"},
 {"id":367,"personneid":367,
@@ -9787,7 +9787,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/367.jpg",
+"skype":"","photo":"photo/367.jpg",
 "photoextension":".bmp"
 ,"label":"Milliau Manoha","x":13308,"y":1307,"color":"pink","position":{"x":13308,"y":1307},"classes":"pink","locked":"True"},
 {"id":368,"personneid":368,
@@ -9819,7 +9819,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/368.jpg",
+"skype":"","photo":"photo/368.jpg",
 "photoextension":".bmp"
 ,"label":"Noélie Manoha","x":13428,"y":1307,"color":"pink","position":{"x":13428,"y":1307},"classes":"pink","locked":"True"},
 {"id":425,"personneid":425,
@@ -9851,7 +9851,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/425.jpg",
+"skype":"","photo":"photo/425.jpg",
 "photoextension":".bmp"
 ,"label":"Bastien Cazabon","x":13639,"y":1231,"color":"skyblue","position":{"x":13639,"y":1231},"classes":"lime","locked":"True"},
 {"id":426,"personneid":426,
@@ -9883,7 +9883,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/426.jpg",
+"skype":"","photo":"photo/426.jpg",
 "photoextension":".bmp"
 ,"label":"Marine Cazabon","x":13759,"y":1231,"color":"pink","position":{"x":13759,"y":1231},"classes":"pink","locked":"True"},
 {"id":9,"personneid":9,
@@ -9915,7 +9915,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/9.jpg",
+"skype":"","photo":"photo/9.jpg",
 "photoextension":""
 ,"label":"Nicolas Jouan","x":13876,"y":1231,"color":"yellow","position":{"x":13876,"y":1231},"classes":"lime","locked":"True"},
 {"id":743,"personneid":743,
@@ -9947,7 +9947,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/743.jpg",
+"skype":"","photo":"photo/743.jpg",
 "photoextension":""
 ,"label":"Arthur Jouan","x":13846,"y":1303,"color":"skyblue","position":{"x":13846,"y":1303},"classes":"lime","locked":"True"},
 {"id":100,"personneid":100,
@@ -9979,7 +9979,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/100.jpg",
+"skype":"","photo":"photo/100.jpg",
 "photoextension":""
 ,"label":"Leon Laloë","x":16191,"y":960,"color":"skyblue","position":{"x":16191,"y":960},"classes":"lime","locked":"True"},
 {"id":451,"personneid":451,
@@ -10011,7 +10011,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/451.jpg",
+"skype":"","photo":"photo/451.jpg",
 "photoextension":".jpg"
 ,"label":"Germaine Barbet","x":16349,"y":961,"color":"yellow","position":{"x":16349,"y":961},"classes":"pink","locked":"True"},
 {"id":160,"personneid":160,
@@ -10043,7 +10043,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/160.jpg",
+"skype":"","photo":"photo/160.jpg",
 "photoextension":""
 ,"label":"Georges Laloë","x":15033,"y":1032,"color":"skyblue","position":{"x":15033,"y":1032},"classes":"lime","locked":"True"},
 {"id":254,"personneid":254,
@@ -10075,7 +10075,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/254.jpg",
+"skype":"","photo":"photo/254.jpg",
 "photoextension":""
 ,"label":"jeanne Laloë","x":15153,"y":1032,"color":"pink","position":{"x":15153,"y":1032},"classes":"pink","locked":"True"},
 {"id":158,"personneid":158,
@@ -10107,7 +10107,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/158.jpg",
+"skype":"","photo":"photo/158.jpg",
 "photoextension":""
 ,"label":"Guy Laloë","x":15273,"y":1032,"color":"skyblue","position":{"x":15273,"y":1032},"classes":"lime","locked":"True"},
 {"id":595,"personneid":595,
@@ -10139,7 +10139,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/595.jpg",
+"skype":"","photo":"photo/595.jpg",
 "photoextension":""
 ,"label":"Anne-Marie Eon","x":15390,"y":1032,"color":"yellow","position":{"x":15390,"y":1032},"classes":"pink","locked":"True"},
 {"id":194,"personneid":194,
@@ -10171,7 +10171,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/194.jpg",
+"skype":"","photo":"photo/194.jpg",
 "photoextension":""
 ,"label":"Annette Laloë","x":14319,"y":1108,"color":"pink","position":{"x":14319,"y":1108},"classes":"pink","locked":"True"},
 {"id":319,"personneid":319,
@@ -10203,7 +10203,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/319.jpg",
+"skype":"","photo":"photo/319.jpg",
 "photoextension":""
 ,"label":"Marguerite Laloë","x":15069,"y":1104,"color":"pink","position":{"x":15069,"y":1104},"classes":"pink","locked":"True"},
 {"id":196,"personneid":196,
@@ -10235,7 +10235,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/196.jpg",
+"skype":"","photo":"photo/196.jpg",
 "photoextension":""
 ,"label":"Yvonne Laloë","x":15189,"y":1104,"color":"pink","position":{"x":15189,"y":1104},"classes":"pink","locked":"True"},
 {"id":199,"personneid":199,
@@ -10267,7 +10267,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/199.jpg",
+"skype":"","photo":"photo/199.jpg",
 "photoextension":""
 ,"label":"André Laloë","x":15308,"y":1104,"color":"skyblue","position":{"x":15308,"y":1104},"classes":"lime","locked":"True"},
 {"id":200,"personneid":200,
@@ -10299,7 +10299,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/200.jpg",
+"skype":"","photo":"photo/200.jpg",
 "photoextension":""
 ,"label":"Yves Laloë","x":15428,"y":1101,"color":"skyblue","position":{"x":15428,"y":1101},"classes":"lime","locked":"True"},
 {"id":903,"personneid":903,
@@ -10331,7 +10331,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/903.jpg",
+"skype":"","photo":"photo/903.jpg",
 "photoextension":""
 ,"label":"Kette N","x":15561,"y":1101,"color":"yellow","position":{"x":15561,"y":1101},"classes":"pink","locked":"True"},
 {"id":904,"personneid":904,
@@ -10363,7 +10363,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/904.jpg",
+"skype":"","photo":"photo/904.jpg",
 "photoextension":""
 ,"label":"Christian Laloë","x":15428,"y":1173,"color":"skyblue","position":{"x":15428,"y":1173},"classes":"lime","locked":"True"},
 {"id":905,"personneid":905,
@@ -10395,7 +10395,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/905.jpg",
+"skype":"","photo":"photo/905.jpg",
 "photoextension":""
 ,"label":"Nathalie Granhomme","x":15546,"y":1173,"color":"yellow","position":{"x":15546,"y":1173},"classes":"pink","locked":"True"},
 {"id":906,"personneid":906,
@@ -10427,7 +10427,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/906.jpg",
+"skype":"","photo":"photo/906.jpg",
 "photoextension":""
 ,"label":"Canelle Laloë","x":15495,"y":1245,"color":"pink","position":{"x":15495,"y":1245},"classes":"pink","locked":"True"},
 {"id":907,"personneid":907,
@@ -10459,7 +10459,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/907.jpg",
+"skype":"","photo":"photo/907.jpg",
 "photoextension":""
 ,"label":"Féline Laloë","x":15375,"y":1245,"color":"pink","position":{"x":15375,"y":1245},"classes":"pink","locked":"True"},
 {"id":201,"personneid":201,
@@ -10491,7 +10491,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/201.jpg",
+"skype":"","photo":"photo/201.jpg",
 "photoextension":""
 ,"label":"François Laloë","x":15711,"y":1101,"color":"skyblue","position":{"x":15711,"y":1101},"classes":"lime","locked":"True"},
 {"id":908,"personneid":908,
@@ -10523,7 +10523,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/908.jpg",
+"skype":"","photo":"photo/908.jpg",
 "photoextension":""
 ,"label":"Monique Renaud","x":15829,"y":1101,"color":"yellow","position":{"x":15829,"y":1101},"classes":"pink","locked":"True"},
 {"id":256,"personneid":256,
@@ -10555,7 +10555,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/256.jpg",
+"skype":"","photo":"photo/256.jpg",
 "photoextension":""
 ,"label":"Chantal Laloë","x":15633,"y":1176,"color":"pink","position":{"x":15633,"y":1176},"classes":"pink","locked":"True"},
 {"id":909,"personneid":909,
@@ -10587,7 +10587,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/909.jpg",
+"skype":"","photo":"photo/909.jpg",
 "photoextension":""
 ,"label":"Laurent Bip Mitri","x":15756,"y":1176,"color":"yellow","position":{"x":15756,"y":1176},"classes":"lime","locked":"True"},
 {"id":911,"personneid":911,
@@ -10619,7 +10619,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/911.jpg",
+"skype":"","photo":"photo/911.jpg",
 "photoextension":""
 ,"label":"Simon Laloë","x":15726,"y":1248,"color":"skyblue","position":{"x":15726,"y":1248},"classes":"lime","locked":"True"},
 {"id":910,"personneid":910,
@@ -10651,7 +10651,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/910.jpg",
+"skype":"","photo":"photo/910.jpg",
 "photoextension":""
 ,"label":"Flavien Laloë","x":15846,"y":1248,"color":"skyblue","position":{"x":15846,"y":1248},"classes":"lime","locked":"True"},
 {"id":912,"personneid":912,
@@ -10683,7 +10683,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/912.jpg",
+"skype":"","photo":"photo/912.jpg",
 "photoextension":""
 ,"label":"Clémence Laloë","x":15606,"y":1248,"color":"pink","position":{"x":15606,"y":1248},"classes":"pink","locked":"True"},
 {"id":257,"personneid":257,
@@ -10715,7 +10715,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/257.jpg",
+"skype":"","photo":"photo/257.jpg",
 "photoextension":""
 ,"label":"Anne Laloë","x":15847,"y":1173,"color":"pink","position":{"x":15847,"y":1173},"classes":"pink","locked":"True"},
 {"id":913,"personneid":913,
@@ -10747,7 +10747,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/913.jpg",
+"skype":"","photo":"photo/913.jpg",
 "photoextension":""
 ,"label":"Abdelmalek Kbibech","x":15981,"y":1173,"color":"yellow","position":{"x":15981,"y":1173},"classes":"lime","locked":"True"},
 {"id":195,"personneid":195,
@@ -10779,7 +10779,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/195.jpg",
+"skype":"","photo":"photo/195.jpg",
 "photoextension":""
 ,"label":"Henry Laloë","x":14440,"y":1108,"color":"skyblue","position":{"x":14440,"y":1108},"classes":"lime","locked":"True"},
 {"id":902,"personneid":902,
@@ -10811,7 +10811,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/902.jpg",
+"skype":"","photo":"photo/902.jpg",
 "photoextension":""
 ,"label":"Marguerite Villet","x":14579,"y":1108,"color":"yellow","position":{"x":14579,"y":1108},"classes":"pink","locked":"True"},
 {"id":205,"personneid":205,
@@ -10843,7 +10843,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/205.jpg",
+"skype":"","photo":"photo/205.jpg",
 "photoextension":""
 ,"label":"Marie-Christine Laloë","x":14200,"y":1180,"color":"pink","position":{"x":14200,"y":1180},"classes":"pink","locked":"True"},
 {"id":887,"personneid":887,
@@ -10875,7 +10875,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/887.jpg",
+"skype":"","photo":"photo/887.jpg",
 "photoextension":""
 ,"label":"Bechir Ben Hadj Yahya","x":14340,"y":1180,"color":"yellow","position":{"x":14340,"y":1180},"classes":"pink","locked":"True"},
 {"id":888,"personneid":888,
@@ -10907,7 +10907,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/888.jpg",
+"skype":"","photo":"photo/888.jpg",
 "photoextension":""
 ,"label":"Riad Ben Hadj Yahya","x":14461,"y":1252,"color":"skyblue","position":{"x":14461,"y":1252},"classes":"pink","locked":"True"},
 {"id":891,"personneid":891,
@@ -10939,7 +10939,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/891.jpg",
+"skype":"","photo":"photo/891.jpg",
 "photoextension":""
 ,"label":"Saphy Saula","x":14579,"y":1252,"color":"yellow","position":{"x":14579,"y":1252},"classes":"pink","locked":"True"},
 {"id":889,"personneid":889,
@@ -10971,7 +10971,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/889.jpg",
+"skype":"","photo":"photo/889.jpg",
 "photoextension":""
 ,"label":"Baziz Ben Hadj Yahya","x":14220,"y":1252,"color":"skyblue","position":{"x":14220,"y":1252},"classes":"pink","locked":"True"},
 {"id":892,"personneid":892,
@@ -11003,7 +11003,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/892.jpg",
+"skype":"","photo":"photo/892.jpg",
 "photoextension":""
 ,"label":"Douja Douja","x":14349,"y":1252,"color":"yellow","position":{"x":14349,"y":1252},"classes":"pink","locked":"True"},
 {"id":890,"personneid":890,
@@ -11035,7 +11035,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/890.jpg",
+"skype":"","photo":"photo/890.jpg",
 "photoextension":""
 ,"label":"Idriss Ben Hadj Yahya","x":13985,"y":1254,"color":"skyblue","position":{"x":13985,"y":1254},"classes":"pink","locked":"True"},
 {"id":893,"personneid":893,
@@ -11067,7 +11067,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/893.jpg",
+"skype":"","photo":"photo/893.jpg",
 "photoextension":""
 ,"label":"Ruth Cook","x":14113,"y":1254,"color":"yellow","position":{"x":14113,"y":1254},"classes":"pink","locked":"True"},
 {"id":894,"personneid":894,
@@ -11099,7 +11099,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/894.jpg",
+"skype":"","photo":"photo/894.jpg",
 "photoextension":""
 ,"label":"Leila Ben Hadj Yahia","x":13985,"y":1326,"color":"pink","position":{"x":13985,"y":1326},"classes":"pink","locked":"True"},
 {"id":206,"personneid":206,
@@ -11131,7 +11131,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/206.jpg",
+"skype":"","photo":"photo/206.jpg",
 "photoextension":""
 ,"label":"Francis Laloë","x":14802,"y":1180,"color":"skyblue","position":{"x":14802,"y":1180},"classes":"lime","locked":"True"},
 {"id":898,"personneid":898,
@@ -11163,7 +11163,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/898.jpg",
+"skype":"","photo":"photo/898.jpg",
 "photoextension":""
 ,"label":"Josiane Serré","x":14941,"y":1182,"color":"yellow","position":{"x":14941,"y":1182},"classes":"pink","locked":"True"},
 {"id":899,"personneid":899,
@@ -11195,7 +11195,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/899.jpg",
+"skype":"","photo":"photo/899.jpg",
 "photoextension":""
 ,"label":"Julien Laloë","x":14682,"y":1252,"color":"skyblue","position":{"x":14682,"y":1252},"classes":"lime","locked":"True"},
 {"id":900,"personneid":900,
@@ -11227,7 +11227,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/900.jpg",
+"skype":"","photo":"photo/900.jpg",
 "photoextension":""
 ,"label":"Thomas Laloë","x":14802,"y":1252,"color":"skyblue","position":{"x":14802,"y":1252},"classes":"lime","locked":"True"},
 {"id":901,"personneid":901,
@@ -11259,7 +11259,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/901.jpg",
+"skype":"","photo":"photo/901.jpg",
 "photoextension":""
 ,"label":"Christophe Laloë","x":14922,"y":1252,"color":"skyblue","position":{"x":14922,"y":1252},"classes":"lime","locked":"True"},
 {"id":207,"personneid":207,
@@ -11291,7 +11291,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/207.jpg",
+"skype":"","photo":"photo/207.jpg",
 "photoextension":""
 ,"label":"Denis Laloë","x":15096,"y":1178,"color":"skyblue","position":{"x":15096,"y":1178},"classes":"lime","locked":"True"},
 {"id":895,"personneid":895,
@@ -11323,7 +11323,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/895.jpg",
+"skype":"","photo":"photo/895.jpg",
 "photoextension":""
 ,"label":"Dominique Lemeillour","x":15245,"y":1178,"color":"yellow","position":{"x":15245,"y":1178},"classes":"pink","locked":"True"},
 {"id":896,"personneid":896,
@@ -11355,7 +11355,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/896.jpg",
+"skype":"","photo":"photo/896.jpg",
 "photoextension":""
 ,"label":"Garance Laloë","x":15163,"y":1250,"color":"pink","position":{"x":15163,"y":1250},"classes":"pink","locked":"True"},
 {"id":897,"personneid":897,
@@ -11387,7 +11387,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/897.jpg",
+"skype":"","photo":"photo/897.jpg",
 "photoextension":""
 ,"label":"Sylvère Laloë","x":15043,"y":1250,"color":"skyblue","position":{"x":15043,"y":1250},"classes":"lime","locked":"True"},
 {"id":159,"personneid":159,
@@ -11419,7 +11419,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/159.jpg",
+"skype":"","photo":"photo/159.jpg",
 "photoextension":""
 ,"label":"Thouse Laloë","x":15480,"y":1032,"color":"pink","position":{"x":15480,"y":1032},"classes":"pink","locked":"True"},
 {"id":161,"personneid":161,
@@ -11451,7 +11451,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/161.jpg",
+"skype":"","photo":"photo/161.jpg",
 "photoextension":""
 ,"label":"Thérèse Laloë","x":15600,"y":1032,"color":"pink","position":{"x":15600,"y":1032},"classes":"pink","locked":"True"},
 {"id":255,"personneid":255,
@@ -11483,7 +11483,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/255.jpg",
+"skype":"","photo":"photo/255.jpg",
 "photoextension":""
 ,"label":"Alice Laloë","x":15720,"y":1032,"color":"pink","position":{"x":15720,"y":1032},"classes":"pink","locked":"True"},
 {"id":162,"personneid":162,
@@ -11515,7 +11515,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/162.jpg",
+"skype":"","photo":"photo/162.jpg",
 "photoextension":""
 ,"label":"Andrée Laloë","x":15840,"y":1032,"color":"pink","position":{"x":15840,"y":1032},"classes":"pink","locked":"True"},
 {"id":208,"personneid":208,
@@ -11547,7 +11547,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/208.jpg",
+"skype":"","photo":"photo/208.jpg",
 "photoextension":""
 ,"label":"Pierre Laloë","x":17200,"y":1032,"color":"skyblue","position":{"x":17200,"y":1032},"classes":"lime","locked":"True"},
 {"id":591,"personneid":591,
@@ -11579,7 +11579,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/591.jpg",
+"skype":"","photo":"photo/591.jpg",
 "photoextension":""
 ,"label":"Antoinette Deminud","x":17143,"y":1032,"color":"yellow","position":{"x":17143,"y":1032},"classes":"pink","locked":"True"},
 {"id":320,"personneid":320,
@@ -11611,7 +11611,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/320.jpg",
+"skype":"","photo":"photo/320.jpg",
 "photoextension":""
 ,"label":"Marie Laloë","x":16137,"y":1101,"color":"pink","position":{"x":16137,"y":1101},"classes":"pink","locked":"True"},
 {"id":596,"personneid":596,
@@ -11643,7 +11643,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/596.jpg",
+"skype":"","photo":"photo/596.jpg",
 "photoextension":""
 ,"label":"?? Cartier","x":16254,"y":1101,"color":"yellow","position":{"x":16254,"y":1101},"classes":"lime","locked":"True"},
 {"id":599,"personneid":599,
@@ -11675,7 +11675,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/599.jpg",
+"skype":"","photo":"photo/599.jpg",
 "photoextension":""
 ,"label":"Denis Edher","x":16104,"y":1173,"color":"skyblue","position":{"x":16104,"y":1173},"classes":"lime","locked":"True"},
 {"id":600,"personneid":600,
@@ -11707,7 +11707,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/600.jpg",
+"skype":"","photo":"photo/600.jpg",
 "photoextension":""
 ,"label":"Bruno Cartier","x":16224,"y":1173,"color":"skyblue","position":{"x":16224,"y":1173},"classes":"lime","locked":"True"},
 {"id":601,"personneid":601,
@@ -11739,7 +11739,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/601.jpg",
+"skype":"","photo":"photo/601.jpg",
 "photoextension":""
 ,"label":"Sabine Cartier","x":16344,"y":1173,"color":"pink","position":{"x":16344,"y":1173},"classes":"pink","locked":"True"},
 {"id":215,"personneid":215,
@@ -11771,7 +11771,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/215.jpg",
+"skype":"","photo":"photo/215.jpg",
 "photoextension":""
 ,"label":"Joseph Laloë","x":16560,"y":1104,"color":"skyblue","position":{"x":16560,"y":1104},"classes":"lime","locked":"True"},
 {"id":430,"personneid":430,
@@ -11803,7 +11803,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/430.jpg",
+"skype":"","photo":"photo/430.jpg",
 "photoextension":""
 ,"label":"??? Rigault","x":16677,"y":1104,"color":"yellow","position":{"x":16677,"y":1104},"classes":"pink","locked":"True"},
 {"id":264,"personneid":264,
@@ -11835,7 +11835,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/264.jpg",
+"skype":"","photo":"photo/264.jpg",
 "photoextension":""
 ,"label":"Christophe Laloë","x":16440,"y":1176,"color":"skyblue","position":{"x":16440,"y":1176},"classes":"lime","locked":"True"},
 {"id":265,"personneid":265,
@@ -11867,7 +11867,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/265.jpg",
+"skype":"","photo":"photo/265.jpg",
 "photoextension":""
 ,"label":"Emmanuelle Laloë","x":16560,"y":1176,"color":"pink","position":{"x":16560,"y":1176},"classes":"pink","locked":"True"},
 {"id":140,"personneid":140,
@@ -11899,7 +11899,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/140.jpg",
+"skype":"","photo":"photo/140.jpg",
 "photoextension":""
 ,"label":"Anne Laloë","x":16680,"y":1176,"color":"pink","position":{"x":16680,"y":1176},"classes":"pink","locked":"True"},
 {"id":209,"personneid":209,
@@ -11931,7 +11931,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/209.jpg",
+"skype":"","photo":"photo/209.jpg",
 "photoextension":""
 ,"label":"Jacques Laloë","x":17145,"y":1106,"color":"skyblue","position":{"x":17145,"y":1106},"classes":"lime","locked":"True"},
 {"id":593,"personneid":593,
@@ -11963,7 +11963,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/593.jpg",
+"skype":"","photo":"photo/593.jpg",
 "photoextension":""
 ,"label":"Renée DeGouberville","x":17263,"y":1106,"color":"yellow","position":{"x":17263,"y":1106},"classes":"pink","locked":"True"},
 {"id":210,"personneid":210,
@@ -11995,7 +11995,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/210.jpg",
+"skype":"","photo":"photo/210.jpg",
 "photoextension":""
 ,"label":"Stephane Laloë","x":16883,"y":1178,"color":"skyblue","position":{"x":16883,"y":1178},"classes":"lime","locked":"True"},
 {"id":383,"personneid":383,
@@ -12027,7 +12027,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/383.jpg",
+"skype":"","photo":"photo/383.jpg",
 "photoextension":""
 ,"label":"xx nn","x":17001,"y":1178,"color":"yellow","position":{"x":17001,"y":1178},"classes":"pink","locked":"True"},
 {"id":346,"personneid":346,
@@ -12059,7 +12059,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/346.jpg",
+"skype":"","photo":"photo/346.jpg",
 "photoextension":""
 ,"label":"Maxime Laloë","x":16725,"y":1250,"color":"skyblue","position":{"x":16725,"y":1250},"classes":"lime","locked":"True"},
 {"id":347,"personneid":347,
@@ -12091,7 +12091,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/347.jpg",
+"skype":"","photo":"photo/347.jpg",
 "photoextension":""
 ,"label":"Mathieu Laloë","x":16845,"y":1250,"color":"skyblue","position":{"x":16845,"y":1250},"classes":"lime","locked":"True"},
 {"id":348,"personneid":348,
@@ -12123,7 +12123,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/348.jpg",
+"skype":"","photo":"photo/348.jpg",
 "photoextension":""
 ,"label":"Juliette Laloë","x":16966,"y":1250,"color":"pink","position":{"x":16966,"y":1250},"classes":"pink","locked":"True"},
 {"id":349,"personneid":349,
@@ -12155,7 +12155,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/349.jpg",
+"skype":"","photo":"photo/349.jpg",
 "photoextension":""
 ,"label":"Suzy Laloë","x":17086,"y":1250,"color":"pink","position":{"x":17086,"y":1250},"classes":"pink","locked":"True"},
 {"id":214,"personneid":214,
@@ -12187,7 +12187,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/214.jpg",
+"skype":"","photo":"photo/214.jpg",
 "photoextension":""
 ,"label":"Xavier Laloë","x":17122,"y":1178,"color":"skyblue","position":{"x":17122,"y":1178},"classes":"lime","locked":"True"},
 {"id":227,"personneid":227,
@@ -12219,7 +12219,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/227.jpg",
+"skype":"","photo":"photo/227.jpg",
 "photoextension":""
 ,"label":"Eric Laloë","x":17242,"y":1178,"color":"skyblue","position":{"x":17242,"y":1178},"classes":"lime","locked":"True"},
 {"id":213,"personneid":213,
@@ -12251,7 +12251,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/213.jpg",
+"skype":"","photo":"photo/213.jpg",
 "photoextension":""
 ,"label":"Benedicte Laloë","x":17362,"y":1178,"color":"pink","position":{"x":17362,"y":1178},"classes":"pink","locked":"True"},
 {"id":212,"personneid":212,
@@ -12283,7 +12283,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/212.jpg",
+"skype":"","photo":"photo/212.jpg",
 "photoextension":""
 ,"label":"Odile Laloë","x":17483,"y":1178,"color":"pink","position":{"x":17483,"y":1178},"classes":"pink","locked":"True"},
 {"id":216,"personneid":216,
@@ -12315,7 +12315,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/216.jpg",
+"skype":"","photo":"photo/216.jpg",
 "photoextension":""
 ,"label":"Jean-Marie Laloë","x":17721,"y":1101,"color":"skyblue","position":{"x":17721,"y":1101},"classes":"lime","locked":"True"},
 {"id":352,"personneid":352,
@@ -12347,7 +12347,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/352.jpg",
+"skype":"","photo":"photo/352.jpg",
 "photoextension":""
 ,"label":"Yvonne Langlois","x":17838,"y":1101,"color":"yellow","position":{"x":17838,"y":1101},"classes":"pink","locked":"True"},
 {"id":268,"personneid":268,
@@ -12379,7 +12379,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/268.jpg",
+"skype":"","photo":"photo/268.jpg",
 "photoextension":""
 ,"label":"Aubert Laloë","x":17601,"y":1173,"color":"skyblue","position":{"x":17601,"y":1173},"classes":"lime","locked":"True"},
 {"id":269,"personneid":269,
@@ -12411,7 +12411,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/269.jpg",
+"skype":"","photo":"photo/269.jpg",
 "photoextension":""
 ,"label":"Catherine Laloë","x":17721,"y":1173,"color":"pink","position":{"x":17721,"y":1173},"classes":"pink","locked":"True"},
 {"id":267,"personneid":267,
@@ -12443,7 +12443,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/267.jpg",
+"skype":"","photo":"photo/267.jpg",
 "photoextension":""
 ,"label":"Béatrice Laloë","x":17841,"y":1173,"color":"pink","position":{"x":17841,"y":1173},"classes":"pink","locked":"True"},
 {"id":321,"personneid":321,
@@ -12475,7 +12475,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/321.jpg",
+"skype":"","photo":"photo/321.jpg",
 "photoextension":""
 ,"label":"Marguerite Laloë","x":18002,"y":1101,"color":"pink","position":{"x":18002,"y":1101},"classes":"pink","locked":"True"},
 {"id":259,"personneid":259,
@@ -12507,7 +12507,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/259.jpg",
+"skype":"","photo":"photo/259.jpg",
 "photoextension":""
 ,"label":"Michel Laloë","x":18122,"y":1101,"color":"skyblue","position":{"x":18122,"y":1101},"classes":"lime","locked":"True"},
 {"id":511,"personneid":511,
@@ -12539,7 +12539,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/511.jpg",
+"skype":"","photo":"photo/511.jpg",
 "photoextension":""
 ,"label":"Nicole De Pèzeville","x":18239,"y":1101,"color":"yellow","position":{"x":18239,"y":1101},"classes":"pink","locked":"True"},
 {"id":350,"personneid":350,
@@ -12571,7 +12571,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/350.jpg",
+"skype":"","photo":"photo/350.jpg",
 "photoextension":""
 ,"label":"Hugues Laloë","x":18122,"y":1173,"color":"skyblue","position":{"x":18122,"y":1173},"classes":"lime","locked":"True"},
 {"id":183,"personneid":183,
@@ -12603,7 +12603,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/183.jpg",
+"skype":"","photo":"photo/183.jpg",
 "photoextension":""
 ,"label":"Pierre La Loé","x":9116,"y":778,"color":"skyblue","position":{"x":9116,"y":778},"classes":"lime","locked":"True"},
 {"id":818,"personneid":818,
@@ -12635,7 +12635,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/818.jpg",
+"skype":"","photo":"photo/818.jpg",
 "photoextension":""
 ,"label":"Jeanne Hebert","x":9234,"y":778,"color":"yellow","position":{"x":9234,"y":778},"classes":"pink","locked":"True"},
 {"id":167,"personneid":167,
@@ -12667,7 +12667,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/167.jpg",
+"skype":"","photo":"photo/167.jpg",
 "photoextension":""
 ,"label":"Amélie La Loé","x":8996,"y":850,"color":"pink","position":{"x":8996,"y":850},"classes":"pink","locked":"True"},
 {"id":193,"personneid":193,
@@ -12699,7 +12699,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/193.jpg",
+"skype":"","photo":"photo/193.jpg",
 "photoextension":""
 ,"label":"Marie La Loé","x":9116,"y":850,"color":"pink","position":{"x":9116,"y":850},"classes":"pink","locked":"True"},
 {"id":57,"personneid":57,
@@ -12731,7 +12731,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/57.jpg",
+"skype":"","photo":"photo/57.jpg",
 "photoextension":""
 ,"label":"Pierre La Loé","x":9236,"y":850,"color":"skyblue","position":{"x":9236,"y":850},"classes":"lime","locked":"True"},
 {"id":52,"personneid":52,
@@ -12763,7 +12763,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/52.jpg",
+"skype":"","photo":"photo/52.jpg",
 "photoextension":""
 ,"label":"Michel La Loé","x":7881,"y":632,"color":"skyblue","position":{"x":7881,"y":632},"classes":"lime","locked":"True"},
 {"id":359,"personneid":359,
@@ -12795,7 +12795,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/359.jpg",
+"skype":"","photo":"photo/359.jpg",
 "photoextension":""
 ,"label":"Marguerite Le Mieux","x":7999,"y":632,"color":"yellow","position":{"x":7999,"y":632},"classes":"pink","locked":"True"},
 {"id":307,"personneid":307,
@@ -12827,7 +12827,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/307.jpg",
+"skype":"","photo":"photo/307.jpg",
 "photoextension":""
 ,"label":"Nicolas La Loé","x":7293,"y":704,"color":"skyblue","position":{"x":7293,"y":704},"classes":"lime","locked":"True"},
 {"id":454,"personneid":454,
@@ -12859,7 +12859,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/454.jpg",
+"skype":"","photo":"photo/454.jpg",
 "photoextension":""
 ,"label":"Marie Blondel","x":7411,"y":704,"color":"yellow","position":{"x":7411,"y":704},"classes":"pink","locked":"True"},
 {"id":252,"personneid":252,
@@ -12891,7 +12891,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/252.jpg",
+"skype":"","photo":"photo/252.jpg",
 "photoextension":""
 ,"label":"Marie-Vict. La Loé","x":7241,"y":776,"color":"pink","position":{"x":7241,"y":776},"classes":"pink","locked":"True"},
 {"id":84,"personneid":84,
@@ -12923,7 +12923,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/84.jpg",
+"skype":"","photo":"photo/84.jpg",
 "photoextension":""
 ,"label":"Marie La Loé","x":7241,"y":848,"color":"pink","position":{"x":7241,"y":848},"classes":"pink","locked":"True"},
 {"id":253,"personneid":253,
@@ -12955,7 +12955,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/253.jpg",
+"skype":"","photo":"photo/253.jpg",
 "photoextension":""
 ,"label":"Marie La Loé","x":7361,"y":776,"color":"pink","position":{"x":7361,"y":776},"classes":"pink","locked":"True"},
 {"id":133,"personneid":133,
@@ -12987,7 +12987,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/133.jpg",
+"skype":"","photo":"photo/133.jpg",
 "photoextension":""
 ,"label":"Marie La Loé","x":7690,"y":704,"color":"pink","position":{"x":7690,"y":704},"classes":"pink","locked":"True"},
 {"id":134,"personneid":134,
@@ -13019,7 +13019,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/134.jpg",
+"skype":"","photo":"photo/134.jpg",
 "photoextension":""
 ,"label":"jacques La Loé","x":8052,"y":702,"color":"skyblue","position":{"x":8052,"y":702},"classes":"lime","locked":"True"},
 {"id":308,"personneid":308,
@@ -13051,7 +13051,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/308.jpg",
+"skype":"","photo":"photo/308.jpg",
 "photoextension":""
 ,"label":"Pierre La Loé","x":7851,"y":702,"color":"skyblue","position":{"x":7851,"y":702},"classes":"lime","locked":"True"},
 {"id":362,"personneid":362,
@@ -13083,7 +13083,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/362.jpg",
+"skype":"","photo":"photo/362.jpg",
 "photoextension":""
 ,"label":"Anne Le Mieux","x":7969,"y":702,"color":"yellow","position":{"x":7969,"y":702},"classes":"pink","locked":"True"},
 {"id":186,"personneid":186,
@@ -13115,7 +13115,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/186.jpg",
+"skype":"","photo":"photo/186.jpg",
 "photoextension":""
 ,"label":"Anne La Loé","x":7491,"y":774,"color":"pink","position":{"x":7491,"y":774},"classes":"pink","locked":"True"},
 {"id":187,"personneid":187,
@@ -13147,7 +13147,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/187.jpg",
+"skype":"","photo":"photo/187.jpg",
 "photoextension":""
 ,"label":"Michel-Pierre La Loé","x":7611,"y":774,"color":"skyblue","position":{"x":7611,"y":774},"classes":"lime","locked":"True"},
 {"id":188,"personneid":188,
@@ -13179,7 +13179,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/188.jpg",
+"skype":"","photo":"photo/188.jpg",
 "photoextension":""
 ,"label":"Jaqueline La Loé","x":7731,"y":774,"color":"pink","position":{"x":7731,"y":774},"classes":"pink","locked":"True"},
 {"id":190,"personneid":190,
@@ -13211,7 +13211,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/190.jpg",
+"skype":"","photo":"photo/190.jpg",
 "photoextension":""
 ,"label":"Jean-Victor La Loé","x":7851,"y":774,"color":"skyblue","position":{"x":7851,"y":774},"classes":"lime","locked":"True"},
 {"id":310,"personneid":310,
@@ -13243,7 +13243,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/310.jpg",
+"skype":"","photo":"photo/310.jpg",
 "photoextension":""
 ,"label":"Jean La Loé","x":7971,"y":774,"color":"skyblue","position":{"x":7971,"y":774},"classes":"lime","locked":"True"},
 {"id":191,"personneid":191,
@@ -13275,7 +13275,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/191.jpg",
+"skype":"","photo":"photo/191.jpg",
 "photoextension":""
 ,"label":"Pierre-Martin La Loé","x":8091,"y":774,"color":"skyblue","position":{"x":8091,"y":774},"classes":"lime","locked":"True"},
 {"id":192,"personneid":192,
@@ -13307,7 +13307,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/192.jpg",
+"skype":"","photo":"photo/192.jpg",
 "photoextension":""
 ,"label":"Anne-Françoise La Loé","x":8211,"y":774,"color":"pink","position":{"x":8211,"y":774},"classes":"pink","locked":"True"},
 {"id":120,"personneid":120,
@@ -13339,7 +13339,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/120.jpg",
+"skype":"","photo":"photo/120.jpg",
 "photoextension":""
 ,"label":"Jeanne La Loé","x":8940,"y":630,"color":"pink","position":{"x":8940,"y":630},"classes":"pink","locked":"True"},
 {"id":279,"personneid":279,
@@ -13371,7 +13371,7 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/279.jpg",
+"skype":"","photo":"photo/279.jpg",
 "photoextension":""
 ,"label":"?? La Loé","x":9060,"y":627,"color":"skyblue","position":{"x":9060,"y":627},"classes":"lime","locked":"True"},
 {"id":278,"personneid":278,
@@ -13403,6 +13403,6 @@
 "twitter":"",
 "mail":"",
 "cep":"",
-"skype":"","photo":"photos/278.jpg",
+"skype":"","photo":"photo/278.jpg",
 "photoextension":""
 ,"label":"Jacqueline La Loé","x":9196,"y":627,"color":"pink","position":{"x":9196,"y":627},"classes":"pink","locked":"True"}]
