@@ -2915,7 +2915,7 @@
 "pere":54,
 "mere":0,
 "nom":"La Loé",
-"prenoms":"Jean François",
+"prenoms":"Jean-François",
 "naissance":"1775/03/26",
 "profession":"Corsaire",
 "nomjeunefille":"",
@@ -2941,7 +2941,7 @@
 "cep":"",
 "skype":"","photo":"photo/56.jpg",
 "photoextension":""
-,"label":"Jean La Loé","x":8661,"y":778,"color":"skyblue","position":{"x":8661,"y":778},"classes":"lime","locked":"True"},
+,"label":"Jean-François La Loé","x":8661,"y":778,"color":"skyblue","position":{"x":8661,"y":778},"classes":"lime","locked":"True"},
 {"id":59,"personneid":59,
 "familleid":1,
 "pere":56,

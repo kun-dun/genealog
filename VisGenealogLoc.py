@@ -257,8 +257,8 @@ custom_js = """
                 },
                 shape: 'box', // Use a box shape for nodes
                 widthConstraint: {
-                    minimum: 70, // Minimum width for all nodes
-                    maximum: 70  // Maximum width for all nodes
+                    minimum: 80, // Minimum width for all nodes
+                    maximum: 80  // Maximum width for all nodes
                 },
                 heightConstraint: {
                     minimum: 20, // Minimum height for all nodes
