@@ -662,7 +662,7 @@ html_content = html_content.replace(
                 font-family: Arial, sans-serif;
                 color: #4CAF50;
                 font-size: 36px;
-            '>Arbre Généalogique Laloë (v1.5)</h1>
+            '>Arbre Généalogique Laloë (v1.6)</h1>
 
             <h1 style='
                 text-align: center;
